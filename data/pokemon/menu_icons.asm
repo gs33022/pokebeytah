@@ -8,7 +8,7 @@ MonPartyData:
 	nybble ICON_MON       ; Charizard
 	nybble ICON_WATER     ; Squirtle
 	nybble ICON_WATER     ; Wartortle
-	nybble ICON_WATER     ; Blastoise
+	nybble ICON_WATER     ; Totartle
 	nybble ICON_BUG       ; Caterpie
 	nybble ICON_BUG       ; Metapod
 	nybble ICON_BUG       ; Butterfree
@@ -26,6 +26,7 @@ MonPartyData:
 	nybble ICON_SNAKE     ; Arbok
 	nybble ICON_FAIRY     ; Pikachu
 	nybble ICON_FAIRY     ; Raichu
+	nybble ICON_FAIRY     ; Gorochu
 	nybble ICON_MON       ; Sandshrew
 	nybble ICON_MON       ; Sandslash
 	nybble ICON_MON       ; NidoranF
@@ -99,6 +100,7 @@ MonPartyData:
 	nybble ICON_MON       ; Hypno
 	nybble ICON_WATER     ; Krabby
 	nybble ICON_WATER     ; Kingler
+	nybble ICON_WATER     ; Blastoise
 	nybble ICON_BALL      ; Voltorb
 	nybble ICON_BALL      ; Electrode
 	nybble ICON_GRASS     ; Exeggcute

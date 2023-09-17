@@ -12,7 +12,7 @@
 	const DEX_CHARIZARD  ; 6
 	const DEX_SQUIRTLE   ; 7
 	const DEX_WARTORTLE  ; 8
-	const DEX_BLASTOISE  ; 9
+	const DEX_TOTARTLE
 	const DEX_CATERPIE   ; 10
 	const DEX_METAPOD    ; 11
 	const DEX_BUTTERFREE ; 12
@@ -30,6 +30,7 @@
 	const DEX_ARBOK      ; 24
 	const DEX_PIKACHU    ; 25
 	const DEX_RAICHU     ; 26
+	const DEX_GOROCHU
 	const DEX_SANDSHREW  ; 27
 	const DEX_SANDSLASH  ; 28
 	const DEX_NIDORAN_F  ; 29
@@ -103,6 +104,7 @@
 	const DEX_HYPNO      ; 97
 	const DEX_KRABBY     ; 98
 	const DEX_KINGLER    ; 99
+	const DEX_BLASTOISE  ; 9
 	const DEX_VOLTORB    ; 100
 	const DEX_ELECTRODE  ; 101
 	const DEX_EXEGGCUTE  ; 102

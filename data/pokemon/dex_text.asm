@@ -297,7 +297,27 @@ _TangelaDexEntry::
 	next "weed. Its vines"
 	next "shake as it walks"
 	dex
+	
+_TotartleDexEntry::
+	text "Some of them are"
+	next "so old, they are"
+	next "believed to have"
 
+	page "lived before the"
+	next "human race ever"
+	next "existed at all"
+	dex
+	
+_GorochuDexEntry::
+	text "GOROCHU is so"
+	next "powerful that it"
+	next "can summon thunder-"
+
+	page "clouds from the"
+	next "sky in order to"
+	next "shock foes"
+	dex
+	
 _GrowlitheDexEntry::
 	text "Very protective"
 	next "of its territory."

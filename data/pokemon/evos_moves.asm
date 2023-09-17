@@ -33,8 +33,8 @@ EvosMovesPointerTable:
 	dw BlastoiseEvosMoves
 	dw PinsirEvosMoves
 	dw TangelaEvosMoves
-	dw MissingNo1FEvosMoves
-	dw MissingNo20EvosMoves
+	dw TotartleEvosMoves
+	dw GorochuEvosMoves
 	dw GrowlitheEvosMoves
 	dw OnixEvosMoves
 	dw FearowEvosMoves
@@ -540,13 +540,19 @@ TangelaEvosMoves:
 	db 49, GROWTH
 	db 0
 
-MissingNo1FEvosMoves:
+TotartleEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 8, BUBBLE
+	db 15, WATER_GUN
+	db 24, BITE
+	db 31, WITHDRAW
+	db 42, SKULL_BASH
+	db 52, HYDRO_PUMP
 	db 0
 
-MissingNo20EvosMoves:
+GorochuEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
@@ -1070,7 +1076,7 @@ NinetalesEvosMoves:
 
 PikachuEvosMoves:
 ; Evolutions
-	db EV_ITEM, THUNDER_STONE, 1, RAICHU
+	db EV_LEVEL, 40, RAICHU
 	db 0
 ; Learnset
 	db 9, THUNDER_WAVE
@@ -1082,8 +1088,11 @@ PikachuEvosMoves:
 
 RaichuEvosMoves:
 ; Evolutions
+	db EV_ITEM, THUNDER_STONE, 1, GOROCHU
 	db 0
 ; Learnset
+	db 45, FOCUS_ENERGY
+	db 50, HYPER_BEAM
 	db 0
 
 MissingNo56EvosMoves:
@@ -1091,7 +1100,7 @@ MissingNo56EvosMoves:
 	db 0
 ; Learnset
 	db 0
-
+	
 MissingNo57EvosMoves:
 ; Evolutions
 	db 0
@@ -2016,7 +2025,7 @@ CharmeleonEvosMoves:
 
 WartortleEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 36, BLASTOISE
+	db EV_LEVEL, 36, TOTARTLE
 	db 0
 ; Learnset
 	db 8, BUBBLE
