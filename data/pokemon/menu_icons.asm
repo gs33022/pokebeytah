@@ -38,6 +38,7 @@ MonPartyData:
 	nybble ICON_MON       ; Nidoreign
 	nybble ICON_FAIRY     ; Clefairy
 	nybble ICON_FAIRY     ; Clefable
+	nybble ICON_QUADRUPED ; Vulpiii
 	nybble ICON_QUADRUPED ; Vulpix
 	nybble ICON_QUADRUPED ; Ninetales
 	nybble ICON_FAIRY     ; Jigglypuff

@@ -58,7 +58,7 @@ EvosMovesPointerTable:
 	dw ElectabuzzEvosMoves
 	dw MagnetonEvosMoves
 	dw KoffingEvosMoves
-	dw MissingNo38EvosMoves
+	dw VulpiiiEvosMoves
 	dw MankeyEvosMoves
 	dw SeelEvosMoves
 	dw DiglettEvosMoves
@@ -843,10 +843,14 @@ KoffingEvosMoves:
 	db 48, EXPLOSION
 	db 0
 
-MissingNo38EvosMoves:
+VulpiiiEvosMoves:
 ; Evolutions
+	db EV_LEVEL, 15, VULPIX
 	db 0
 ; Learnset
+	db 7, QUICK_ATTACK
+	db 10, ROAR
+	db 13, CONFUSE_RAY
 	db 0
 
 MankeyEvosMoves:
@@ -1085,9 +1089,8 @@ VulpixEvosMoves:
 	db EV_ITEM, FIRE_STONE, 1, NINETALES
 	db 0
 ; Learnset
-	db 16, QUICK_ATTACK
-	db 21, ROAR
-	db 28, CONFUSE_RAY
+	db 21, GROWL
+	db 28, EMBER
 	db 35, FLAMETHROWER
 	db 42, FIRE_SPIN
 	db 0

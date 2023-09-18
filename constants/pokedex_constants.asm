@@ -42,6 +42,7 @@
 	const DEX_NIDOREIGN   
 	const DEX_CLEFAIRY   ; 35
 	const DEX_CLEFABLE   ; 36
+	const DEX_VULPIII
 	const DEX_VULPIX     ; 37
 	const DEX_NINETALES  ; 38
 	const DEX_JIGGLYPUFF ; 39

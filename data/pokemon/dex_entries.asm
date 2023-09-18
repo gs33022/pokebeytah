@@ -55,7 +55,7 @@ PokedexEntryPointers:
 	dw ElectabuzzDexEntry
 	dw MagnetonDexEntry
 	dw KoffingDexEntry
-	dw MissingNoDexEntry
+	dw VulpiiiDexEntry
 	dw MankeyDexEntry
 	dw SeelDexEntry
 	dw DiglettDexEntry
@@ -580,6 +580,13 @@ KoffingDexEntry:
 	db 2,0
 	dw 20
 	text_far _KoffingDexEntry
+	text_end
+	
+VulpiiiDexEntry:
+	db "FOX@"
+	db 1,0
+	dw 99
+	text_far _VulpiiiDexEntry
 	text_end
 
 MankeyDexEntry:
