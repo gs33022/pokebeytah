@@ -4,17 +4,17 @@ _FileDataDestroyedText::
 	prompt
 
 _WouldYouLikeToSaveText::
-	text "Would you like to"
-	line "SAVE the game?"
+	text "Want to save your"
+	line "#MON REPORT?"
 	done
 
 _GameSavedText::
-	text "<PLAYER> saved"
-	line "the game!"
+	text "<PLAYER> saved his"
+	line "#MON REPORT!"
 	done
 
 _OlderFileWillBeErasedText::
-	text "The older file"
+	text "The older REPORT"
 	line "will be erased to"
 	cont "save. Okay?"
 	done

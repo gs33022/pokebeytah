@@ -21,4 +21,5 @@
 	     THUNDER_WAVE, SUBSTITUTE,   STRENGTH,     FLASH
 	; end
 
-	db 0 ; padding
+	db BANK(GorochuPicFront)
+	assert BANK(GorochuPicFront) == BANK(GorochuPicBack)

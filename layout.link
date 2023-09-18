@@ -81,13 +81,13 @@ ROMX $C
 	"Pics 4"
 ROMX $D
 	"Pics 5"
-	"Slot Machines"
 ROMX $E
 	"Battle Engine 7"
 ROMX $F
 	"Battle Core"
 ROMX $10
 	"bank10"
+	"Slot Machines"
 ROMX $11
 	"Maps 5"
 	"Pokédex Rating"
@@ -98,6 +98,7 @@ ROMX $12
 	"Screen Effects"
 	"Maps 8"
 ROMX $13
+	"Pics 6"
 	"Maps 9"
 	"Predefs"
 ROMX $14
@@ -153,7 +154,6 @@ ROMX $20
 	"Text 1"
 ROMX $21
 	"Text 2"
-	"Pics 7"
 ROMX $22
 	"Text 3"
 ROMX $23
@@ -176,7 +176,6 @@ ROMX $2B
 	"Pokédex Text"
 ROMX $2C
 	"Move Names"
-	"Pics 6"
 WRAM0
 	"Audio RAM"
 	org $c100

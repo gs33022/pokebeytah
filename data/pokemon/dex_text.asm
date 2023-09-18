@@ -309,13 +309,13 @@ _TotartleDexEntry::
 	dex
 	
 _GorochuDexEntry::
-	text "GOROCHU is so"
-	next "powerful that it"
-	next "can summon thunder-"
+	text "It is so power-"
+	next "ful that it can"
+	next "summon thunder-"
 
 	page "clouds from the"
-	next "sky in order to"
-	next "shock foes"
+	next "sky in order"
+	next "to shock foes"
 	dex
 	
 _GrowlitheDexEntry::

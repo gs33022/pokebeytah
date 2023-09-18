@@ -22,4 +22,5 @@
 	     SURF,         STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(TotartlePicFront)
+	assert BANK(TotartlePicFront) == BANK(TotartlePicBack)

@@ -2,6 +2,8 @@ SECTION "bank1", ROMX
 
 INCLUDE "data/sprites/facings.asm"
 INCLUDE "engine/events/black_out.asm"
+MewPicFront:: INCBIN "gfx/pokemon/front/mew.pic"
+MewPicBack::  INCBIN "gfx/pokemon/back/mewb.pic"
 INCLUDE "engine/battle/safari_zone.asm"
 INCLUDE "engine/movie/title.asm"
 INCLUDE "engine/pokemon/load_mon_data.asm"
