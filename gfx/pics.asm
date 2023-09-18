@@ -369,6 +369,8 @@ GorochuPicFront::  INCBIN "gfx/pokemon/front/gorochu.pic"
 GorochuPicBack::   INCBIN "gfx/pokemon/back/gorochub.pic"
 TotartlePicFront::     INCBIN "gfx/pokemon/front/totartle.pic"
 TotartlePicBack::      INCBIN "gfx/pokemon/back/totartleb.pic"
+NidoreignPicFront::     INCBIN "gfx/pokemon/front/nidoreign.pic"
+NidoreignPicBack::      INCBIN "gfx/pokemon/back/nidoreignb.pic"
 
 RedPicBack::           INCBIN "gfx/player/redb.pic"
 OldManPicBack::        INCBIN "gfx/battle/oldmanb.pic"

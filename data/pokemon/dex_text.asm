@@ -488,6 +488,16 @@ _GolemDexEntry::
 	next "without damage"
 	dex
 
+_NidoreignDexEntry::
+	text "A rare #MON"
+	next "which evolved"
+	next "from a NIDORAN"
+
+	page "exposed to the"
+	next "radiation of a"
+	next "MOON STONE"
+	dex
+	
 _MagmarDexEntry::
 	text "Its body always"
 	next "burns with an"

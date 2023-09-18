@@ -70,12 +70,12 @@ ROMX $8
 	"Music 2"
 ROMX $9
 	"Pics 1"
-	"Battle Engine 3"
 ROMX $A
+	"Battle Engine 3"
 	"Battle Engine 4"
 	"Battle Engine 5"
-	"Battle Engine 6"
 ROMX $B
+	"Battle Engine 6"
 	"Pics 3"
 ROMX $C
 	"Pics 4"

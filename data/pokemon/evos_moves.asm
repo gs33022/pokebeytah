@@ -52,7 +52,7 @@ EvosMovesPointerTable:
 	dw PsyduckEvosMoves
 	dw DrowzeeEvosMoves
 	dw GolemEvosMoves
-	dw MissingNo32EvosMoves
+	dw NidoreignEvosMoves
 	dw MagmarEvosMoves
 	dw MissingNo34EvosMoves
 	dw ElectabuzzEvosMoves
@@ -220,15 +220,18 @@ KangaskhanEvosMoves:
 
 NidoranMEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 16, NIDORINO
+	db EV_LEVEL, 26, NIDORINO
+	db EV_ITEM, MOON_STONE, 1, NIDOREIGN
 	db 0
 ; Learnset
-	db 8, HORN_ATTACK
-	db 14, POISON_STING
-	db 21, FOCUS_ENERGY
-	db 29, FURY_ATTACK
-	db 36, HORN_DRILL
-	db 43, DOUBLE_KICK
+	db 9, SAND_ATTACK
+	db 11, TACKLE
+	db 13, LEER
+	db 15, FURY_ATTACK
+	db 17, BITE
+	db 19, GROWL
+	db 21, THRASH
+	db 23, POISON_STING
 	db 0
 
 ClefairyEvosMoves:
@@ -272,9 +275,9 @@ NidokingEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 8, HORN_ATTACK
-	db 14, POISON_STING
-	db 23, THRASH
+	db 45, MEGA_PUNCH
+	db 50, MEGA_KICK
+	db 55, DOUBLE_EDGE
 	db 0
 
 SlowbroEvosMoves:
@@ -358,24 +361,27 @@ GengarEvosMoves:
 
 NidoranFEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 16, NIDORINA
+	db EV_LEVEL, 26, NIDORINA
+	db EV_ITEM, MOON_STONE, 1, NIDOREIGN
 	db 0
 ; Learnset
-	db 8, SCRATCH
-	db 14, POISON_STING
-	db 21, TAIL_WHIP
-	db 29, BITE
-	db 36, FURY_SWIPES
-	db 43, DOUBLE_KICK
+	db 9, SAND_ATTACK
+	db 11, TACKLE
+	db 13, LEER
+	db 15, FURY_SWIPES
+	db 17, BITE
+	db 19, GROWL
+	db 21, TAKE_DOWN
+	db 23, POISON_STING
 	db 0
 
 NidoqueenEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 8, SCRATCH
-	db 14, POISON_STING
-	db 23, BODY_SLAM
+	db 45, MEGA_PUNCH
+	db 50, MEGA_KICK
+	db 55, DOUBLE_EDGE
 	db 0
 
 CuboneEvosMoves:
@@ -760,10 +766,16 @@ GolemEvosMoves:
 	db 43, EXPLOSION
 	db 0
 
-MissingNo32EvosMoves:
+NidoreignEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 8, TACKLE
+	db 14, SAND_ATTACK
+	db 23, FOCUS_ENERGY
+	db 32, TAKE_DOWN
+	db 41, HORN_DRILL
+	db 50, DOUBLE_KICK
 	db 0
 
 MagmarEvosMoves:
@@ -1896,7 +1908,7 @@ RaticateEvosMoves:
 
 NidorinoEvosMoves:
 ; Evolutions
-	db EV_ITEM, MOON_STONE, 1, NIDOKING
+	db EV_LEVEL, 40, NIDOKING
 	db 0
 ; Learnset
 	db 8, HORN_ATTACK
@@ -1909,15 +1921,14 @@ NidorinoEvosMoves:
 
 NidorinaEvosMoves:
 ; Evolutions
-	db EV_ITEM, MOON_STONE, 1, NIDOQUEEN
+	db EV_LEVEL, 40, NIDOQUEEN
 	db 0
 ; Learnset
-	db 8, SCRATCH
-	db 14, POISON_STING
-	db 23, TAIL_WHIP
+	db 28, SLASH
+	db 31, ROAR
+	db 34, GLARE
 	db 32, BITE
-	db 41, FURY_SWIPES
-	db 50, DOUBLE_KICK
+	db 37, HORN_DRILL
 	db 0
 
 GeodudeEvosMoves:

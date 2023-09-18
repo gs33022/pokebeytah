@@ -49,7 +49,7 @@ PokedexEntryPointers:
 	dw PsyduckDexEntry
 	dw DrowzeeDexEntry
 	dw GolemDexEntry
-	dw MissingNoDexEntry
+	dw NidoreignDexEntry
 	dw MagmarDexEntry
 	dw MissingNoDexEntry
 	dw ElectabuzzDexEntry
@@ -538,6 +538,13 @@ GolemDexEntry:
 	db 4,7
 	dw 6620
 	text_far _GolemDexEntry
+	text_end
+	
+NidoreignDexEntry:
+	db "POISON PIN@"
+	db 3,7
+	dw 888
+	text_far _NidoreignDexEntry
 	text_end
 
 MagmarDexEntry:
