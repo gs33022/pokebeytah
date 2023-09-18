@@ -66,7 +66,7 @@ CryData::
 	mon_cry SFX_CRY_0C, $88, $C0 ; Seel
 	mon_cry SFX_CRY_0B, $AA, $01 ; Diglett
 	mon_cry SFX_CRY_1D, $11, $40 ; Tauros
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_1D, $E0, $80 ; Bittybat
 	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
 	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
 	mon_cry SFX_CRY_10, $DD, $01 ; Farfetch'd
@@ -112,7 +112,7 @@ CryData::
 	mon_cry SFX_CRY_1A, $3D, $80 ; Jolteon
 	mon_cry SFX_CRY_1A, $AA, $FF ; Vaporeon
 	mon_cry SFX_CRY_1F, $EE, $01 ; Machop
-	mon_cry SFX_CRY_1D, $E0, $80 ; Zubat
+	mon_cry SFX_CRY_1D, $FA, $80 ; Zubat
 	mon_cry SFX_CRY_17, $12, $40 ; Ekans
 	mon_cry SFX_CRY_1E, $20, $E0 ; Paras
 	mon_cry SFX_CRY_0E, $77, $60 ; Poliwhirl
@@ -135,7 +135,7 @@ CryData::
 	mon_cry SFX_CRY_11, $20, $10 ; MissingNo.
 	mon_cry SFX_CRY_21, $00, $FF ; Golduck
 	mon_cry SFX_CRY_0D, $EE, $40 ; Hypno
-	mon_cry SFX_CRY_1D, $FA, $80 ; Golbat
+	mon_cry SFX_CRY_1D, $FF, $80 ; Golbat
 	mon_cry SFX_CRY_1E, $99, $FF ; Mewtwo
 	mon_cry SFX_CRY_05, $55, $01 ; Snorlax
 	mon_cry SFX_CRY_17, $80, $00 ; Magikarp

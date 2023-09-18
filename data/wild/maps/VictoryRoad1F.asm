@@ -2,7 +2,7 @@ VictoryRoad1FWildMons:
 	def_grass_wildmons 15 ; encounter rate
 	db 24, MACHOP
 	db 26, GEODUDE
-	db 22, ZUBAT
+	db 22, BITTYBAT
 	db 36, ONIX
 	db 39, ONIX
 	db 42, ONIX

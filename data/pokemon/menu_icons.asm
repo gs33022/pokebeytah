@@ -43,6 +43,7 @@ MonPartyData:
 	nybble ICON_QUADRUPED ; Ninetales
 	nybble ICON_FAIRY     ; Jigglypuff
 	nybble ICON_FAIRY     ; Wigglytuff
+	nybble ICON_MON       ; Bittybat
 	nybble ICON_MON       ; Zubat
 	nybble ICON_MON       ; Golbat
 	nybble ICON_GRASS     ; Oddish

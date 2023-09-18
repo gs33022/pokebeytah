@@ -47,6 +47,7 @@
 	const DEX_NINETALES  ; 38
 	const DEX_JIGGLYPUFF ; 39
 	const DEX_WIGGLYTUFF ; 40
+	const DEX_BITTYBAT
 	const DEX_ZUBAT      ; 41
 	const DEX_GOLBAT     ; 42
 	const DEX_ODDISH     ; 43

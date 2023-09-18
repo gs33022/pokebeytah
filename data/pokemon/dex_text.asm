@@ -597,6 +597,16 @@ _TaurosDexEntry::
 	next "body with its"
 	next "long tails"
 	dex
+	
+_BittybatDexEntry::
+	text "Due to their tiny"
+	next "size, several of"
+	next "these #MON may"
+
+	page "swarm a victim at"
+	next "once so they may"
+	next "prey on it"
+	dex
 
 _FarfetchdDexEntry::
 	text "The sprig of"

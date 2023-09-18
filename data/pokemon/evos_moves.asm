@@ -63,7 +63,7 @@ EvosMovesPointerTable:
 	dw SeelEvosMoves
 	dw DiglettEvosMoves
 	dw TaurosEvosMoves
-	dw MissingNo3DEvosMoves
+	dw BittybatEvosMoves
 	dw MissingNo3EEvosMoves
 	dw MissingNo3FEvosMoves
 	dw FarfetchdEvosMoves
@@ -850,7 +850,7 @@ VulpiiiEvosMoves:
 ; Learnset
 	db 7, QUICK_ATTACK
 	db 10, ROAR
-	db 13, CONFUSE_RAY
+	db 14, CONFUSE_RAY
 	db 0
 
 MankeyEvosMoves:
@@ -900,10 +900,16 @@ TaurosEvosMoves:
 	db 51, TAKE_DOWN
 	db 0
 
-MissingNo3DEvosMoves:
+BittybatEvosMoves:
 ; Evolutions
+	db EV_LEVEL, 26, ZUBAT
 	db 0
 ; Learnset
+	db 10, WING_ATTACK
+	db 15, GUST
+	db 21, BITE
+	db 28, TACKLE
+	db 36, SONICBOOM
 	db 0
 
 MissingNo3EEvosMoves:
@@ -1347,14 +1353,13 @@ MachopEvosMoves:
 
 ZubatEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 22, GOLBAT
+	db EV_LEVEL, 35, GOLBAT
 	db 0
 ; Learnset
-	db 10, SUPERSONIC
-	db 15, BITE
-	db 21, CONFUSE_RAY
-	db 28, WING_ATTACK
-	db 36, HAZE
+	db 28, CONFUSE_RAY
+	db 30, THRASH
+	db 32, FLY
+	db 34, PSYCHIC_M
 	db 0
 
 EkansEvosMoves:
@@ -1577,11 +1582,7 @@ GolbatEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 10, SUPERSONIC
-	db 15, BITE
-	db 21, CONFUSE_RAY
-	db 32, WING_ATTACK
-	db 43, HAZE
+	db 40, CONFUSION
 	db 0
 
 MewtwoEvosMoves:
