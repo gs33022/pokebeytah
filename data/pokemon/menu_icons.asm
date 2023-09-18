@@ -56,6 +56,7 @@ MonPartyData:
 	nybble ICON_MON       ; Meowth
 	nybble ICON_MON       ; Persian
 	nybble ICON_MON       ; Psyduck
+	nybble ICON_MON       ; Weirduck
 	nybble ICON_MON       ; Golduck
 	nybble ICON_MON       ; Mankey
 	nybble ICON_MON       ; Primeape

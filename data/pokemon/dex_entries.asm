@@ -51,7 +51,7 @@ PokedexEntryPointers:
 	dw GolemDexEntry
 	dw NidoreignDexEntry
 	dw MagmarDexEntry
-	dw MissingNoDexEntry
+	dw WeirduckDexEntry
 	dw ElectabuzzDexEntry
 	dw MagnetonDexEntry
 	dw KoffingDexEntry
@@ -552,6 +552,13 @@ MagmarDexEntry:
 	db 4,3
 	dw 980
 	text_far _MagmarDexEntry
+	text_end
+	
+WeirduckDexEntry:
+	db "DUCK@"
+	db 4,3
+	dw 1058
+	text_far _WeirduckDexEntry
 	text_end
 
 ElectabuzzDexEntry:

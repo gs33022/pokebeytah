@@ -507,6 +507,16 @@ _MagmarDexEntry::
 	next "hide perfectly"
 	next "among flames"
 	dex
+	
+_WeirduckDexEntry::
+	text "If it begins to"
+	next "stare at you and"
+	next "won't stop, you"
+
+	page "can snap it out"
+	next "of it by offering"
+	next "a snack or toy"
+	dex
 
 _ElectabuzzDexEntry::
 	text "Normally found"

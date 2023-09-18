@@ -60,6 +60,7 @@
 	const DEX_MEOWTH     ; 52
 	const DEX_PERSIAN    ; 53
 	const DEX_PSYDUCK    ; 54
+	const DEX_WEIRDUCK
 	const DEX_GOLDUCK    ; 55
 	const DEX_MANKEY     ; 56
 	const DEX_PRIMEAPE   ; 57

@@ -54,7 +54,7 @@ EvosMovesPointerTable:
 	dw GolemEvosMoves
 	dw NidoreignEvosMoves
 	dw MagmarEvosMoves
-	dw MissingNo34EvosMoves
+	dw WeirduckEvosMoves
 	dw ElectabuzzEvosMoves
 	dw MagnetonEvosMoves
 	dw KoffingEvosMoves
@@ -731,13 +731,16 @@ ParasectEvosMoves:
 
 PsyduckEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 33, GOLDUCK
+	db EV_LEVEL, 22, WEIRDUCK
 	db 0
 ; Learnset
+	db 17, HEADBUTT
+	db 22, WATER_GUN
+	db 25, FURY_SWIPES
 	db 28, TAIL_WHIP
 	db 31, DISABLE
 	db 36, CONFUSION
-	db 43, FURY_SWIPES
+	db 43, SLASH
 	db 52, HYDRO_PUMP
 	db 0
 
@@ -790,10 +793,19 @@ MagmarEvosMoves:
 	db 55, FLAMETHROWER
 	db 0
 
-MissingNo34EvosMoves:
+WeirduckEvosMoves:
 ; Evolutions
+	db EV_LEVEL, 41, GOLDUCK
 	db 0
 ; Learnset
+	db 20, HEADBUTT
+	db 25, WATER_GUN
+	db 28, FURY_SWIPES
+	db 31, TAIL_WHIP
+	db 34, DISABLE
+	db 39, CONFUSION
+	db 46, SLASH
+	db 55, HYDRO_PUMP
 	db 0
 
 ElectabuzzEvosMoves:
@@ -1536,11 +1548,14 @@ GolduckEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 28, TAIL_WHIP
-	db 31, DISABLE
-	db 39, CONFUSION
-	db 48, FURY_SWIPES
-	db 59, HYDRO_PUMP
+	db 23, HEADBUTT
+	db 28, WATER_GUN
+	db 31, FURY_SWIPES
+	db 34, TAIL_WHIP
+	db 37, DISABLE
+	db 42, CONFUSION
+	db 50, SLASH
+	db 58, HYDRO_PUMP
 	db 0
 
 HypnoEvosMoves:

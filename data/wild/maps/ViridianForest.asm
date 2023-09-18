@@ -6,7 +6,7 @@ IF DEF(_RED)
 	db  3, WEEDLE
 	db  5, WEEDLE
 	db  4, KAKUNA
-	db  6, KAKUNA
+	db  5, NIDORAN_M
 	db  4, METAPOD
 	db  3, CATERPIE
 ENDC
