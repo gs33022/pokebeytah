@@ -67,7 +67,7 @@ PokedexEntryPointers:
 	dw VenonatDexEntry
 	dw DragoniteDexEntry
 	dw CoaltaDexEntry
-	dw MissingNoDexEntry
+	dw BlastykeDexEntry
 	dw MissingNoDexEntry
 	dw DoduoDexEntry
 	dw PoliwagDexEntry
@@ -664,6 +664,13 @@ CoaltaDexEntry:
 	db 2,4
 	dw 441
 	text_far _CoaltaDexEntry
+	text_end
+	
+BlastykeDexEntry:
+	db "WATER JET@"
+	db 2,4
+	dw 322
+	text_far _BlastykeDexEntry
 	text_end
 
 DoduoDexEntry:

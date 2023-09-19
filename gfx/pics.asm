@@ -383,6 +383,8 @@ MagnetitePicFront::   INCBIN "gfx/pokemon/front/magnetite.pic"
 MagnetitePicBack::      INCBIN "gfx/pokemon/back/magnetiteb.pic"
 CoaltaPicFront::   INCBIN "gfx/pokemon/front/coalta.pic"
 CoaltaPicBack::      INCBIN "gfx/pokemon/back/coaltab.pic"
+BlastykePicFront::   INCBIN "gfx/pokemon/front/blastyke.pic"
+BlastykePicBack::      INCBIN "gfx/pokemon/back/blastykeb.pic"
 
 RedPicBack::           INCBIN "gfx/player/redb.pic"
 OldManPicBack::        INCBIN "gfx/battle/oldmanb.pic"

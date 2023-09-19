@@ -55,7 +55,7 @@ MoveNames::
 	li "FLAMETHROWER"
 	li "MIST"
 	li "WATER GUN"
-	li "HYDRO PUMP"
+	li "HYDRO JET"
 	li "SURF"
 	li "ICE BEAM"
 	li "BLIZZARD"
@@ -164,5 +164,7 @@ MoveNames::
 	li "SUPER FANG"
 	li "SLASH"
 	li "SUBSTITUTE"
+	li "PUNCH"
+	li "KICK"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

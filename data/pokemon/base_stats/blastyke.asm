@@ -1,14 +1,14 @@
-	db DEX_BLASTOISE ; pokedex id
+	db DEX_BLASTYKE ; pokedex id
 
-	db  79,  83, 100,  78,  85
+	db  69,  73, 80,  68,  75
 	;   hp  atk  def  spd  spc
 
 	db WATER, WATER ; type
 	db 190 ; catch rate
 	db 150 ; base exp
 
-	INCBIN "gfx/pokemon/front/blastoise.pic", 0, 1 ; sprite dimensions
-	dw BlastoisePicFront, BlastoisePicBack
+	INCBIN "gfx/pokemon/front/blastyke.pic", 0, 1 ; sprite dimensions
+	dw BlastykePicFront, BlastykePicBack
 
 	db TACKLE, TAIL_WHIP, BUBBLE, WATER_GUN ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
@@ -18,9 +18,8 @@
 	     DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
 	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
 	     EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  \
-	     REFLECT,      BIDE,         SKULL_BASH,   REST,         SUBSTITUTE,   \
-	     SURF,         STRENGTH
+	     REFLECT,      BIDE,         SKULL_BASH,   REST,         SUBSTITUTE   \
 	; end
 
-	db BANK(BlastoisePicFront)
-	assert BANK(BlastoisePicFront) == BANK(BlastoisePicBack)
+	db BANK(BlastykePicFront)
+	assert BANK(BlastykePicFront) == BANK(BlastykePicBack)

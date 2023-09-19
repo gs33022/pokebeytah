@@ -667,6 +667,16 @@ _CoaltaDexEntry::
 	next "trained for this"
 	next "before evolving."
 	dex
+	
+_BlastykeDexEntry::
+	text "Do not chide it"
+	next "for the mucus"
+	next "bubbles it blows,"
+
+	page "as it cannot help"
+	next "it no matter how"
+	next "hard it tries"
+	dex
 
 _DoduoDexEntry::
 	text "A bird that makes"

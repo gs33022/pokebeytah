@@ -111,7 +111,8 @@
 	const DEX_HYPNO      ; 97
 	const DEX_KRABBY     ; 98
 	const DEX_KINGLER    ; 99
-	const DEX_BLASTOISE  ; 9
+	const DEX_BLASTYKE
+	const DEX_BLASTOISE
 	const DEX_VOLTORB    ; 100
 	const DEX_ELECTRODE  ; 101
 	const DEX_EXEGGCUTE  ; 102

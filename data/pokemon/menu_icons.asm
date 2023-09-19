@@ -107,6 +107,7 @@ MonPartyData:
 	nybble ICON_MON       ; Hypno
 	nybble ICON_WATER     ; Krabby
 	nybble ICON_WATER     ; Kingler
+	nybble ICON_WATER     ; Blastyke
 	nybble ICON_WATER     ; Blastoise
 	nybble ICON_BALL      ; Voltorb
 	nybble ICON_BALL      ; Electrode
