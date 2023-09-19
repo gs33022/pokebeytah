@@ -9,7 +9,7 @@ _WouldYouLikeToSaveText::
 	done
 
 _GameSavedText::
-	text "<PLAYER> saved his"
+	text "<PLAYER> saved the"
 	line "#MON REPORT!"
 	done
 

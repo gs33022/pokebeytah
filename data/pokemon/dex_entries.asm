@@ -66,7 +66,7 @@ PokedexEntryPointers:
 	dw FarfetchdDexEntry
 	dw VenonatDexEntry
 	dw DragoniteDexEntry
-	dw MissingNoDexEntry
+	dw CoaltaDexEntry
 	dw MissingNoDexEntry
 	dw MissingNoDexEntry
 	dw DoduoDexEntry
@@ -657,6 +657,13 @@ DragoniteDexEntry:
 	db 7,3
 	dw 4630
 	text_far _DragoniteDexEntry
+	text_end
+	
+CoaltaDexEntry:
+	db "FIRE HORSE@"
+	db 2,4
+	dw 441
+	text_far _CoaltaDexEntry
 	text_end
 
 DoduoDexEntry:

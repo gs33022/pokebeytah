@@ -86,6 +86,7 @@
 	const DEX_GEODUDE    ; 74
 	const DEX_GRAVELER   ; 75
 	const DEX_GOLEM      ; 76
+	const DEX_COALTA
 	const DEX_PONYTA     ; 77
 	const DEX_RAPIDASH   ; 78
 	const DEX_SLOWPOKE   ; 79

@@ -69,7 +69,7 @@ EvosMovesPointerTable:
 	dw FarfetchdEvosMoves
 	dw VenonatEvosMoves
 	dw DragoniteEvosMoves
-	dw MissingNo43EvosMoves
+	dw CoaltaEvosMoves
 	dw MissingNo44EvosMoves
 	dw MissingNo45EvosMoves
 	dw DoduoEvosMoves
@@ -973,10 +973,15 @@ DragoniteEvosMoves:
 	db 60, HYPER_BEAM
 	db 0
 
-MissingNo43EvosMoves:
+CoaltaEvosMoves:
 ; Evolutions
+	db EV_LEVEL, 20, PONYTA
 	db 0
 ; Learnset
+	db 4, GROWL
+	db 8, TAIL_WHIP
+	db 13, EMBER
+	db 19, STOMP
 	db 0
 
 MissingNo44EvosMoves:
@@ -1900,24 +1905,18 @@ PonytaEvosMoves:
 	db EV_LEVEL, 40, RAPIDASH
 	db 0
 ; Learnset
-	db 30, TAIL_WHIP
-	db 32, STOMP
-	db 35, GROWL
-	db 39, FIRE_SPIN
-	db 43, TAKE_DOWN
-	db 48, AGILITY
+	db 30, FIRE_SPIN
+	db 32, TAKE_DOWN
+	db 35, AGILITY
+	db 39, FLAMETHROWER
 	db 0
 
 RapidashEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 30, TAIL_WHIP
-	db 32, STOMP
-	db 35, GROWL
-	db 39, FIRE_SPIN
-	db 47, TAKE_DOWN
-	db 55, AGILITY
+	db 47, DOUBLE_KICK
+	db 55, FIRE_BLAST
 	db 0
 
 RattataEvosMoves:

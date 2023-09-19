@@ -9,7 +9,7 @@ CryData::
 	mon_cry SFX_CRY_11, $00, $80 ; Rhydon
 	mon_cry SFX_CRY_03, $00, $80 ; Kangaskhan
 	mon_cry SFX_CRY_00, $00, $80 ; Nidoran♂
-	mon_cry SFX_CRY_19, $CC, $01 ; Clefairy
+	mon_cry SFX_CRY_0E, $00, $35 ; Clefairy
 	mon_cry SFX_CRY_10, $00, $80 ; Spearow
 	mon_cry SFX_CRY_06, $ED, $80 ; Voltorb
 	mon_cry SFX_CRY_09, $00, $80 ; Nidoking
@@ -32,8 +32,9 @@ CryData::
 	mon_cry SFX_CRY_1A, $00, $80 ; Tentacool
 	mon_cry SFX_CRY_1C, $00, $80 ; Gastly
 	mon_cry SFX_CRY_16, $00, $80 ; Scyther
-	mon_cry SFX_CRY_1E, $02, $20 ; Staryu
-	mon_cry SFX_CRY_13, $00, $80 ; Blastoise
+	mon_cry SFX_CRY_1E, $00, $80 ; Staryu
+	mon_cry SFX_CRY_1D, $00, $80 ; Blastoise
+	;mon_cry SFX_CRY_13, $00, $80 ; Omegadge
 	mon_cry SFX_CRY_14, $00, $80 ; Pinsir
 	mon_cry SFX_CRY_12, $00, $80 ; Tangela
 	mon_cry SFX_CRY_1D, $00, $80 ; Totartle
@@ -73,7 +74,7 @@ CryData::
 	mon_cry SFX_CRY_10, $DD, $01 ; Farfetch'd
 	mon_cry SFX_CRY_1A, $44, $40 ; Venonat
 	mon_cry SFX_CRY_0F, $3C, $C0 ; Dragonite
-	mon_cry SFX_CRY_00, $80, $10 ; MissingNo.
+	mon_cry SFX_CRY_25, $20, $80 ; Coalta
 	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
 	mon_cry SFX_CRY_1D, $E0, $80 ; MissingNo.
 	mon_cry SFX_CRY_0B, $BB, $01 ; Doduo
@@ -158,7 +159,7 @@ CryData::
 	mon_cry SFX_CRY_1C, $98, $FF ; Alakazam
 	mon_cry SFX_CRY_14, $28, $C0 ; Pidgeotto
 	mon_cry SFX_CRY_14, $11, $FF ; Pidgeot
-	mon_cry SFX_CRY_1E, $00, $80 ; Starmie
+	mon_cry SFX_CRY_1E, $FF, $FF ; Starmie
 	mon_cry SFX_CRY_0F, $80, $01 ; Bulbasaur
 	mon_cry SFX_CRY_0F, $00, $C0 ; Venusaur
 	mon_cry SFX_CRY_1A, $EE, $FF ; Tentacruel

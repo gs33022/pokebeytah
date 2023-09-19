@@ -657,6 +657,16 @@ _DragoniteDexEntry::
 	next "is said to match"
 	next "that of humans"
 	dex
+	
+_CoaltaDexEntry::
+	text "It is big enough"
+	next "to be ridden by"
+	next "small children,"
+
+	page "and can be"
+	next "trained for this"
+	next "before evolving."
+	dex
 
 _DoduoDexEntry::
 	text "A bird that makes"

@@ -82,6 +82,7 @@ MonPartyData:
 	nybble ICON_MON       ; Geodude
 	nybble ICON_MON       ; Graveler
 	nybble ICON_MON       ; Golem
+	nybble ICON_QUADRUPED ; Coalta
 	nybble ICON_QUADRUPED ; Ponyta
 	nybble ICON_QUADRUPED ; Rapidash
 	nybble ICON_QUADRUPED ; Slowpoke
