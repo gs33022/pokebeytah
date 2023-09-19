@@ -60,7 +60,7 @@ CryData::
 	mon_cry SFX_CRY_04, $FF, $30 ; Magmar
 	mon_cry SFX_CRY_21, $DD, $C0 ; Weirduck
 	mon_cry SFX_CRY_06, $8F, $FF ; Electabuzz
-	mon_cry SFX_CRY_1C, $20, $C0 ; Magneton
+	mon_cry SFX_CRY_1C, $42, $C0 ; Magneton
 	mon_cry SFX_CRY_12, $E6, $DD ; Koffing
 	mon_cry SFX_CRY_24, $CC, $10 ; Vulpiii
 	mon_cry SFX_CRY_0A, $DD, $60 ; Mankey
@@ -69,7 +69,7 @@ CryData::
 	mon_cry SFX_CRY_1D, $11, $40 ; Tauros
 	mon_cry SFX_CRY_1D, $E0, $80 ; Bittybat
 	mon_cry SFX_CRY_19, $BB, $10 ; Coinpur
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_1C, $20, $C0 ; Magnetite
 	mon_cry SFX_CRY_10, $DD, $01 ; Farfetch'd
 	mon_cry SFX_CRY_1A, $44, $40 ; Venonat
 	mon_cry SFX_CRY_0F, $3C, $C0 ; Dragonite

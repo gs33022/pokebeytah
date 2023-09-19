@@ -65,7 +65,7 @@ EvosMovesPointerTable:
 	dw TaurosEvosMoves
 	dw BittybatEvosMoves
 	dw CoinpurEvosMoves
-	dw MissingNo3FEvosMoves
+	dw MagnetiteEvosMoves
 	dw FarfetchdEvosMoves
 	dw VenonatEvosMoves
 	dw DragoniteEvosMoves
@@ -823,12 +823,12 @@ MagnetonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 21, SONICBOOM
-	db 25, THUNDERSHOCK
-	db 29, SUPERSONIC
-	db 38, THUNDER_WAVE
-	db 46, SWIFT
-	db 54, SCREECH
+	db 25, SONICBOOM
+	db 29, THUNDERSHOCK
+	db 33, SUPERSONIC
+	db 42, THUNDER_WAVE
+	db 50, SWIFT
+	db 58, SCREECH
 	db 0
 
 KoffingEvosMoves:
@@ -925,10 +925,17 @@ CoinpurEvosMoves:
 	db 44, SLASH
 	db 0
 
-MissingNo3FEvosMoves:
+MagnetiteEvosMoves:
 ; Evolutions
+	db EV_LEVEL, 45, MAGNETON
 	db 0
 ; Learnset
+	db 21, SONICBOOM
+	db 25, THUNDERSHOCK
+	db 29, SUPERSONIC
+	db 38, THUNDER_WAVE
+	db 46, SWIFT
+	db 54, SCREECH
 	db 0
 
 FarfetchdEvosMoves:
@@ -2000,7 +2007,7 @@ MissingNoACEvosMoves:
 
 MagnemiteEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 30, MAGNETON
+	db EV_LEVEL, 25, MAGNETITE
 	db 0
 ; Learnset
 	db 21, SONICBOOM

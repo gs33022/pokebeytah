@@ -91,6 +91,7 @@
 	const DEX_SLOWPOKE   ; 79
 	const DEX_SLOWBRO    ; 80
 	const DEX_MAGNEMITE  ; 81
+	const DEX_MAGNETITE
 	const DEX_MAGNETON   ; 82
 	const DEX_FARFETCHD  ; 83
 	const DEX_DODUO      ; 84

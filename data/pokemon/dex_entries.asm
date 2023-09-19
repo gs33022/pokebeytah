@@ -62,7 +62,7 @@ PokedexEntryPointers:
 	dw TaurosDexEntry
 	dw BittybatDexEntry
 	dw CoinpurDexEntry
-	dw MissingNoDexEntry
+	dw MagnetiteDexEntry
 	dw FarfetchdDexEntry
 	dw VenonatDexEntry
 	dw DragoniteDexEntry
@@ -629,6 +629,13 @@ CoinpurDexEntry:
 	db 1,0
 	dw 55
 	text_far _CoinpurDexEntry
+	text_end
+	
+MagnetiteDexEntry:
+	db "MAGNET@"
+	db 2,0
+	dw 728
+	text_far _MagnetiteDexEntry
 	text_end
 
 FarfetchdDexEntry:

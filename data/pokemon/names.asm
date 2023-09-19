@@ -62,7 +62,7 @@ MonsterNames::
 	db "TAUROS@@@@"
 	db "BITTYBAT@@"
 	db "COINPUR@@@"
-	db "MISSINGNO."
+	db "MAGNETITE@"
 	db "FARFETCH'D"
 	db "VENONAT@@@"
 	db "DRAGONITE@"

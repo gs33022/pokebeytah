@@ -617,6 +617,16 @@ _CoinpurDexEntry::
 	next "doesn't get along"
 	next "with GROWLITHE"
 	dex
+	
+_MagnetiteDexEntry::
+    text "It's skilled with"
+	next "using its magnets"
+	next "to control elec-"
+
+	page "tricity. It often"
+	next "uses its powers to"
+	next "attract MAGNETON"
+	dex
 
 _FarfetchdDexEntry::
 	text "The sprig of"

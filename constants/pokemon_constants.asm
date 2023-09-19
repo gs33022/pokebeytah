@@ -69,7 +69,7 @@
 	const TAUROS             ; $3C
 	const BITTYBAT           ; $3D
 	const COINPUR            ; $3E
-	const_skip               ; $3F
+	const MAGNETITE          ; $3F
 	const FARFETCHD          ; $40
 	const VENONAT            ; $41
 	const DRAGONITE          ; $42

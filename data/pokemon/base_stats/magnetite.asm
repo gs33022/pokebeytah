@@ -1,14 +1,14 @@
-	db DEX_MAGNEMITE ; pokedex id
+	db DEX_MAGNETITE ; pokedex id
 
-	db  25,  35,  70,  45,  95
+	db  40,  45,  80,  55,  100
 	;   hp  atk  def  spd  spc
 
 	db ELECTRIC, ELECTRIC ; type
-	db 190 ; catch rate
-	db 89 ; base exp
+	db 90 ; catch rate
+	db 120 ; base exp
 
-	INCBIN "gfx/pokemon/front/magnemite.pic", 0, 1 ; sprite dimensions
-	dw MagnemitePicFront, MagnemitePicBack
+	INCBIN "gfx/pokemon/front/magnetite.pic", 0, 1 ; sprite dimensions
+	dw MagnetitePicFront, MagnetitePicBack
 
 	db TACKLE, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
@@ -20,5 +20,5 @@
 	     FLASH
 	; end
 
-	db BANK(MagnemitePicFront)
-	assert BANK(MagnemitePicFront) == BANK(MagnemitePicBack)
+	db BANK(MagnetitePicFront)
+	assert BANK(MagnetitePicFront) == BANK(MagnetitePicBack)
