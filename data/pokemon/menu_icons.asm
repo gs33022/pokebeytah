@@ -55,6 +55,7 @@ MonPartyData:
 	nybble ICON_BUG       ; Venomoth
 	nybble ICON_MON       ; Diglett
 	nybble ICON_MON       ; Dugtrio
+	nybble ICON_MON       ; Coinpur
 	nybble ICON_MON       ; Meowth
 	nybble ICON_MON       ; Persian
 	nybble ICON_MON       ; Psyduck

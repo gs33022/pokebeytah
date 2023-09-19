@@ -68,7 +68,7 @@
 	const DIGLETT            ; $3B
 	const TAUROS             ; $3C
 	const BITTYBAT           ; $3D
-	const_skip               ; $3E
+	const COINPUR            ; $3E
 	const_skip               ; $3F
 	const FARFETCHD          ; $40
 	const VENONAT            ; $41

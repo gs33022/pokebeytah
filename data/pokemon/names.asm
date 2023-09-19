@@ -61,7 +61,7 @@ MonsterNames::
 	db "DIGLETT@@@"
 	db "TAUROS@@@@"
 	db "BITTYBAT@@"
-	db "MISSINGNO."
+	db "COINPUR@@@"
 	db "MISSINGNO."
 	db "FARFETCH'D"
 	db "VENONAT@@@"

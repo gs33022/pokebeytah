@@ -608,6 +608,16 @@ _BittybatDexEntry::
 	next "prey on it"
 	dex
 
+_CoinpurDexEntry::
+    text "Unlike other cats,"
+	next "it prefers shiny"
+	next "objects over yarn"
+
+	page "and other toys. It"
+	next "doesn't get along"
+	next "with GROWLITHE"
+	dex
+
 _FarfetchdDexEntry::
 	text "The sprig of"
 	next "green onions it"

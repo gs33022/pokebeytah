@@ -377,7 +377,8 @@ VulpiiiPicFront::      INCBIN "gfx/pokemon/front/vulpiii.pic"
 VulpiiiPicBack::      INCBIN "gfx/pokemon/back/vulpiiib.pic"
 BittybatPicFront::      INCBIN "gfx/pokemon/front/bittybat.pic"
 BittybatPicBack::      INCBIN "gfx/pokemon/back/bittybatb.pic"
-
+CoinpurPicFront::      INCBIN "gfx/pokemon/front/coinpur.pic"
+CoinpurPicBack::      INCBIN "gfx/pokemon/back/coinpurb.pic"
 
 RedPicBack::           INCBIN "gfx/player/redb.pic"
 OldManPicBack::        INCBIN "gfx/battle/oldmanb.pic"

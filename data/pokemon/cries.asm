@@ -67,7 +67,7 @@ CryData::
 	mon_cry SFX_CRY_0B, $AA, $01 ; Diglett
 	mon_cry SFX_CRY_1D, $11, $40 ; Tauros
 	mon_cry SFX_CRY_1D, $E0, $80 ; Bittybat
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_19, $BB, $10 ; Meowth
 	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
 	mon_cry SFX_CRY_10, $DD, $01 ; Farfetch'd
 	mon_cry SFX_CRY_1A, $44, $40 ; Venonat

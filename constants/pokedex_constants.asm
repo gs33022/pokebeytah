@@ -59,6 +59,7 @@
 	const DEX_VENOMOTH   ; 49
 	const DEX_DIGLETT    ; 50
 	const DEX_DUGTRIO    ; 51
+	const DEX_COINPUR
 	const DEX_MEOWTH     ; 52
 	const DEX_PERSIAN    ; 53
 	const DEX_PSYDUCK    ; 54
