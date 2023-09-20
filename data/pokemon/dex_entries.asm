@@ -78,7 +78,7 @@ PokedexEntryPointers:
 	dw DittoDexEntry
 	dw MeowthDexEntry
 	dw KrabbyDexEntry
-	dw MissingNoDexEntry
+	dw OrefryDexEntry
 	dw MissingNoDexEntry
 	dw MissingNoDexEntry
 	dw VulpixDexEntry
@@ -741,6 +741,13 @@ KrabbyDexEntry:
 	db 1,4
 	dw 140
 	text_far _KrabbyDexEntry
+	text_end
+	
+OrefryDexEntry:
+	db "GOLDFISH@"
+	db 0,8
+	dw 20
+	text_far _OrefryDexEntry
 	text_end
 
 VulpixDexEntry:

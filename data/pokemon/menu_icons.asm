@@ -128,6 +128,7 @@ MonPartyData:
 	nybble ICON_MON       ; Kangaskhan
 	nybble ICON_WATER     ; Horsea
 	nybble ICON_WATER     ; Seadra
+	nybble ICON_WATER     ; Orefry
 	nybble ICON_WATER     ; Goldeen
 	nybble ICON_WATER     ; Seaking
 	nybble ICON_HELIX     ; Staryu

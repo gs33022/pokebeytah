@@ -387,6 +387,8 @@ BlastykePicFront::   INCBIN "gfx/pokemon/front/blastyke.pic"
 BlastykePicBack::      INCBIN "gfx/pokemon/back/blastykeb.pic"
 GuardiaPicFront::   INCBIN "gfx/pokemon/front/guardia.pic"
 GuardiaPicBack::      INCBIN "gfx/pokemon/back/guardiab.pic"
+OrefryPicFront::   INCBIN "gfx/pokemon/front/orefry.pic"
+OrefryPicBack::      INCBIN "gfx/pokemon/back/orefryb.pic"
 
 RedPicBack::           INCBIN "gfx/player/redb.pic"
 OldManPicBack::        INCBIN "gfx/battle/oldmanb.pic"

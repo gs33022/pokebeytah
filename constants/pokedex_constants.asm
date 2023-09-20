@@ -132,6 +132,7 @@
 	const DEX_KANGASKHAN ; 115
 	const DEX_HORSEA     ; 116
 	const DEX_SEADRA     ; 117
+	const DEX_OREFRY
 	const DEX_GOLDEEN    ; 118
 	const DEX_SEAKING    ; 119
 	const DEX_STARYU     ; 120

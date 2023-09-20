@@ -777,6 +777,16 @@ _KrabbyDexEntry::
 	next "when walking"
 	next "sideways"
 	dex
+	
+_OrefryDexEntry::
+	text "It almost became"
+	next "extinct, but due"
+	next "to the efforts"
+
+	page "of one dedicated"
+	next "breeder, it has"
+	next "flourished again"
+	dex
 
 _VulpixDexEntry::
 	text "At the time of"

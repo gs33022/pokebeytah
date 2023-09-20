@@ -81,7 +81,7 @@ EvosMovesPointerTable:
 	dw DittoEvosMoves
 	dw MeowthEvosMoves
 	dw KrabbyEvosMoves
-	dw MissingNo4FEvosMoves
+	dw OrefryEvosMoves
 	dw MissingNo50EvosMoves
 	dw MissingNo51EvosMoves
 	dw VulpixEvosMoves
@@ -389,6 +389,9 @@ CuboneEvosMoves:
 	db EV_LEVEL, 28, MAROWAK
 	db 0
 ; Learnset
+	db 10, BONE_CLUB
+	db 13, TAIL_WHIP
+	db 18, HEADBUTT
 	db 25, LEER
 	db 31, FOCUS_ENERGY
 	db 38, THRASH
@@ -993,7 +996,10 @@ GuardiaEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 29, LEER
+	db 10, BONE_CLUB
+	db 13, TAIL_WHIP
+	db 18, HEADBUTT
+	db 25, LEER
 	db 37, FOCUS_ENERGY
 	db 45, THRASH
 	db 52, BONEMERANG
@@ -1096,10 +1102,15 @@ KrabbyEvosMoves:
 	db 40, HARDEN
 	db 0
 
-MissingNo4FEvosMoves:
+OrefryEvosMoves:
 ; Evolutions
+	db EV_LEVEL, 22, GOLDEEN
 	db 0
 ; Learnset
+	db 15, SUPERSONIC
+	db 17, HORN_DRILL
+	db 19, BUBBLEBEAM
+	db 21, AGILITY
 	db 0
 
 MissingNo50EvosMoves:
@@ -1737,13 +1748,16 @@ MarowakEvosMoves:
 	db EV_LEVEL, 40, GUARDIA
 	db 0
 ; Learnset
+	db 10, BONE_CLUB
+	db 13, TAIL_WHIP
+	db 18, HEADBUTT
 	db 25, LEER
 	db 33, FOCUS_ENERGY
 	db 41, THRASH
 	db 48, BONEMERANG
 	db 55, RAGE
 	db 0
-
+	
 MissingNo92EvosMoves:
 ; Evolutions
 	db 0
@@ -1856,27 +1870,23 @@ MissingNo9CEvosMoves:
 
 GoldeenEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 33, SEAKING
+	db EV_LEVEL, 42, SEAKING
 	db 0
 ; Learnset
-	db 19, SUPERSONIC
-	db 24, HORN_ATTACK
-	db 30, FURY_ATTACK
-	db 37, WATERFALL
-	db 45, HORN_DRILL
-	db 54, AGILITY
+	db 25, FURY_ATTACK
+	db 28, LEER
+	db 31, WATERFALL
+	db 34, THRASH
+	db 37, HYDRO_PUMP
+	db 40, HORN_ATTACK
 	db 0
 
 SeakingEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 19, SUPERSONIC
-	db 24, HORN_ATTACK
-	db 30, FURY_ATTACK
-	db 39, WATERFALL
-	db 48, HORN_DRILL
-	db 54, AGILITY
+	db 46, SURF
+	db 50, HAZE
 	db 0
 
 MissingNo9FEvosMoves:
