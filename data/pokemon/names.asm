@@ -68,7 +68,7 @@ MonsterNames::
 	db "DRAGONITE@"
 	db "COALTA@@@@"
 	db "BLASTYKE@@"
-	db "MISSINGNO."
+	db "GUARDIA@@@"
 	db "DODUO@@@@@"
 	db "POLIWAG@@@"
 	db "JYNX@@@@@@"

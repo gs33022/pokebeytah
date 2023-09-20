@@ -75,7 +75,7 @@
 	const DRAGONITE          ; $42
 	const COALTA             ; $43
 	const BLASTYKE           ; $44
-	const_skip               ; $45
+	const GUARDIA            ; $45
 	const DODUO              ; $46
 	const POLIWAG            ; $47
 	const JYNX               ; $48

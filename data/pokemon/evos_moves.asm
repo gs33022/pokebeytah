@@ -71,7 +71,7 @@ EvosMovesPointerTable:
 	dw DragoniteEvosMoves
 	dw CoaltaEvosMoves
 	dw BlastykeEvosMoves
-	dw MissingNo45EvosMoves
+	dw GuardiaEvosMoves
 	dw DoduoEvosMoves
 	dw PoliwagEvosMoves
 	dw JynxEvosMoves
@@ -554,6 +554,8 @@ GorochuEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 45, FOCUS_ENERGY
+	db 50, HYPER_BEAM
 	db 0
 
 GrowlitheEvosMoves:
@@ -987,10 +989,15 @@ BlastykeEvosMoves:
 	db 30, BUBBLEBEAM
 	db 0
 
-MissingNo45EvosMoves:
+GuardiaEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 29, LEER
+	db 37, FOCUS_ENERGY
+	db 45, THRASH
+	db 52, BONEMERANG
+	db 59, RAGE
 	db 0
 
 DoduoEvosMoves:
@@ -1727,6 +1734,7 @@ PersianEvosMoves:
 
 MarowakEvosMoves:
 ; Evolutions
+	db EV_LEVEL, 40, GUARDIA
 	db 0
 ; Learnset
 	db 25, LEER

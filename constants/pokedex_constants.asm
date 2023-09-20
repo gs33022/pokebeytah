@@ -119,6 +119,7 @@
 	const DEX_EXEGGUTOR  ; 103
 	const DEX_CUBONE     ; 104
 	const DEX_MAROWAK    ; 105
+	const DEX_GUARDIA 
 	const DEX_HITMONLEE  ; 106
 	const DEX_HITMONCHAN ; 107
 	const DEX_LICKITUNG  ; 108

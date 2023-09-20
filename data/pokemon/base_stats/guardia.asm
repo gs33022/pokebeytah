@@ -1,14 +1,14 @@
-	db DEX_MAROWAK ; pokedex id
+	db DEX_GUARDIA ; pokedex id
 
-	db  60,  80, 110,  45,  50
+	db  65,  90, 115, 55,  55
 	;   hp  atk  def  spd  spc
 
 	db GROUND, GROUND ; type
-	db 75 ; catch rate
-	db 124 ; base exp
+	db 65 ; catch rate
+	db 150 ; base exp
 
-	INCBIN "gfx/pokemon/front/marowak.pic", 0, 1 ; sprite dimensions
-	dw MarowakPicFront, MarowakPicBack
+	INCBIN "gfx/pokemon/front/guardia.pic", 0, 1 ; sprite dimensions
+	dw GuardiaPicFront, GuardiaPicBack
 
 	db BONE_CLUB, GROWL, LEER, FOCUS_ENERGY ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
@@ -22,6 +22,5 @@
 	     STRENGTH
 	; end
 
-
-	db BANK(MarowakPicFront)
-	assert BANK(MarowakPicFront) == BANK(MarowakPicBack)
+	db BANK(GuardiaPicFront)
+	assert BANK(GuardiaPicFront) == BANK(GuardiaPicBack)

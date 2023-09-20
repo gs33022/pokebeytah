@@ -677,6 +677,16 @@ _BlastykeDexEntry::
 	next "it no matter how"
 	next "hard it tries"
 	dex
+	
+_GuardiaDexEntry::
+	text "If anyone dares"
+	next "to harm a child"
+	next "it will know no"
+
+	page "matter where they"
+	next "are, and will"
+	next "come for revenge"
+	dex
 
 _DoduoDexEntry::
 	text "A bird that makes"

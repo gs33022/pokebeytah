@@ -68,7 +68,7 @@ PokedexEntryPointers:
 	dw DragoniteDexEntry
 	dw CoaltaDexEntry
 	dw BlastykeDexEntry
-	dw MissingNoDexEntry
+	dw GuardiaDexEntry
 	dw DoduoDexEntry
 	dw PoliwagDexEntry
 	dw JynxDexEntry
@@ -671,6 +671,13 @@ BlastykeDexEntry:
 	db 2,4
 	dw 322
 	text_far _BlastykeDexEntry
+	text_end
+	
+GuardiaDexEntry:
+	db "PROTECTOR@"
+	db 6,11
+	dw 2138
+	text_far _GuardiaDexEntry
 	text_end
 
 DoduoDexEntry:
