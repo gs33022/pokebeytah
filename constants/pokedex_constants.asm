@@ -103,6 +103,7 @@
 	const DEX_MUK        ; 89
 	const DEX_SHELLDER   ; 90
 	const DEX_CLOYSTER   ; 91
+	const DEX_JYNX       ; 124
 	const DEX_GASTLY     ; 92
 	const DEX_HAUNTER    ; 93
 	const DEX_GENGAR     ; 94
@@ -139,7 +140,6 @@
 	const DEX_STARMIE    ; 121
 	const DEX_MR_MIME    ; 122
 	const DEX_SCYTHER    ; 123
-	const DEX_JYNX       ; 124
 	const DEX_FREEZETI
 	const DEX_ELECTABUZZ ; 125
 	const DEX_MAGMAR     ; 126

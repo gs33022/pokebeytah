@@ -99,6 +99,7 @@ MonPartyData:
 	nybble ICON_MON       ; Muk
 	nybble ICON_HELIX     ; Shellder
 	nybble ICON_HELIX     ; Cloyster
+	nybble ICON_MON       ; Jynx
 	nybble ICON_MON       ; Gastly
 	nybble ICON_MON       ; Haunter
 	nybble ICON_MON       ; Gengar
@@ -135,7 +136,6 @@ MonPartyData:
 	nybble ICON_HELIX     ; Starmie
 	nybble ICON_MON       ; Mr.Mime
 	nybble ICON_BUG       ; Scyther
-	nybble ICON_MON       ; Jynx
 	nybble ICON_MON       ; Freezeti
 	nybble ICON_MON       ; Electabuzz
 	nybble ICON_MON       ; Magmar
