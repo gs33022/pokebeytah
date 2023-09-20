@@ -161,9 +161,9 @@ EvosMovesPointerTable:
 	dw MissingNo9CEvosMoves
 	dw GoldeenEvosMoves
 	dw SeakingEvosMoves
-	dw MissingNo9FEvosMoves
-	dw MissingNoA0EvosMoves
-	dw MissingNoA1EvosMoves
+	dw TykerEvosMoves
+	dw StraigarEvosMoves
+	dw GorotoraEvosMoves
 	dw MissingNoA2EvosMoves
 	dw PonytaEvosMoves
 	dw RapidashEvosMoves
@@ -836,12 +836,12 @@ KoffingEvosMoves:
 
 VulpiiiEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 15, VULPIX
+	db EV_LEVEL, 13, VULPIX
 	db 0
 ; Learnset
-	db 7, QUICK_ATTACK
-	db 10, ROAR
-	db 14, CONFUSE_RAY
+	db 6, QUICK_ATTACK
+	db 9, ROAR
+	db 12, CONFUSE_RAY
 	db 0
 
 MankeyEvosMoves:
@@ -905,7 +905,7 @@ BittybatEvosMoves:
 
 CoinpurEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 15, MEOWTH
+	db EV_LEVEL, 14, MEOWTH
 	db 0
 ; Learnset
 	db 9,  DOUBLESLAP
@@ -1144,14 +1144,14 @@ NinetalesEvosMoves:
 
 PikachuEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 40, RAICHU
+	db EV_LEVEL, 23, RAICHU
 	db 0
 ; Learnset
-	db 9, THUNDER_WAVE
-	db 16, QUICK_ATTACK
-	db 26, SWIFT
-	db 33, AGILITY
-	db 43, THUNDER
+	db 14, TAIL_WHIP
+	db 16, THUNDERSHOCK
+	db 18, SAND_ATTACK
+	db 20, SWIFT
+	db 22, FOCUS_ENERGY
 	db 0
 
 RaichuEvosMoves:
@@ -1159,8 +1159,11 @@ RaichuEvosMoves:
 	db EV_ITEM, THUNDER_STONE, 1, GOROCHU
 	db 0
 ; Learnset
-	db 45, FOCUS_ENERGY
-	db 50, HYPER_BEAM
+	db 25, THUNDERBOLT
+	db 28, LEER
+	db 31, THUNDER_WAVE
+	db 34, HORN_DRILL
+	db 37, TACKLE ; 50-MAN VOLT
 	db 0
 
 MissingNo56EvosMoves:
@@ -1896,22 +1899,36 @@ SeakingEvosMoves:
 	db 50, HAZE
 	db 0
 
-MissingNo9FEvosMoves:
+TykerEvosMoves:
 ; Evolutions
+	db EV_LEVEL, 23, STRAIGAR
 	db 0
 ; Learnset
+	db 14, GROWL
+	db 16, THUNDERSHOCK
+	db 18, TAIL_WHIP
+	db 20, QUICK_ATTACK
+	db 22, ROAR
 	db 0
 
-MissingNoA0EvosMoves:
+StraigarEvosMoves:
 ; Evolutions
+	db EV_ITEM, THUNDER_STONE, 1, GOROTORA
 	db 0
 ; Learnset
+	db 25, THUNDERBOLT
+	db 28, LEER
+	db 31, THUNDER_WAVE
+	db 34, HORN_DRILL ; LUNGE
+	db 37, THUNDER
 	db 0
 
-MissingNoA1EvosMoves:
+GorotoraEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 45, FOCUS_ENERGY
+	db 50, HYPER_BEAM
 	db 0
 
 MissingNoA2EvosMoves:

@@ -165,9 +165,9 @@
 	const_skip               ; $9C
 	const GOLDEEN            ; $9D
 	const SEAKING            ; $9E
-	const_skip               ; $9F
-	const_skip               ; $A0
-	const_skip               ; $A1
+	const TYKER              ; $9F
+	const STRAIGAR           ; $A0
+	const GOROTORA           ; $A1
 	const_skip               ; $A2
 	const PONYTA             ; $A3
 	const RAPIDASH           ; $A4

@@ -158,9 +158,9 @@ PokedexEntryPointers:
 	dw MissingNoDexEntry
 	dw GoldeenDexEntry
 	dw SeakingDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw TykerDexEntry
+	dw StraigarDexEntry
+	dw GorotoraDexEntry
 	dw MissingNoDexEntry
 	dw PonytaDexEntry
 	dw RapidashDexEntry
@@ -1211,7 +1211,28 @@ SeakingDexEntry:
 	dw 860
 	text_far _SeakingDexEntry
 	text_end
+	
+TykerDexEntry:
+	db "SHOCK CAT@"
+	db 1,4
+	dw 172
+	text_far _TykerDexEntry
+	text_end
 
+StraigarDexEntry:
+	db "SHOCK CAT@"
+	db 3,11
+	dw 2262
+	text_far _StraigarDexEntry
+	text_end
+	
+GorotoraDexEntry:
+	db "SHOCK CAT@"
+	db 6,3
+	dw 4387
+	text_far _GorotoraDexEntry
+	text_end
+	
 PonytaDexEntry:
 	db "FIRE HORSE@"
 	db 3,3

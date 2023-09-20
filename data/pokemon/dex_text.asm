@@ -1447,6 +1447,36 @@ _SeakingDexEntry::
 	next "fully up rivers"
 	next "and creeks"
 	dex
+	
+_TykerDexEntry::
+	text "Makes a purring"
+	next "crackle like a"
+	next "motor while it"
+
+	page "generates static"
+	next "electricity in"
+	next "its body"
+	dex
+	
+_StraigarDexEntry::
+	text "Marks territory"
+	next "by rubbing its"
+	next "face on objects"
+
+	page "to leave a"
+	next "positive static"
+	next "charge on them"
+	dex
+	
+_GorotoraDexEntry::
+	text "Its purrs sound"
+	next "like deep rolling"
+	next "thunder."
+
+	page "It shocks its"
+	next "prey before coming"
+	next "for the attack"
+	dex
 
 _PonytaDexEntry::
 	text "Its hooves are 10"

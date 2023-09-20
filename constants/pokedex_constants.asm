@@ -91,6 +91,9 @@
 	const DEX_RAPIDASH   ; 78
 	const DEX_SLOWPOKE   ; 79
 	const DEX_SLOWBRO    ; 80
+	const DEX_TYKER
+	const DEX_STRAIGAR
+	const DEX_GOROTORA
 	const DEX_MAGNEMITE  ; 81
 	const DEX_MAGNETITE
 	const DEX_MAGNETON   ; 82

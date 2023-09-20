@@ -87,6 +87,9 @@ MonPartyData:
 	nybble ICON_QUADRUPED ; Rapidash
 	nybble ICON_QUADRUPED ; Slowpoke
 	nybble ICON_MON       ; Slowbro
+	nybble ICON_MON       ; Tyker
+	nybble ICON_MON       ; Straigar
+	nybble ICON_MON       ; Gorotora
 	nybble ICON_BALL      ; Magnemite
 	nybble ICON_BALL      ; Magnetite
 	nybble ICON_BALL      ; Magneton
