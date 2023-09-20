@@ -79,7 +79,7 @@ PokedexEntryPointers:
 	dw MeowthDexEntry
 	dw KrabbyDexEntry
 	dw OrefryDexEntry
-	dw MissingNoDexEntry
+	dw FreezetiDexEntry
 	dw MissingNoDexEntry
 	dw VulpixDexEntry
 	dw NinetalesDexEntry
@@ -748,6 +748,13 @@ OrefryDexEntry:
 	db 0,8
 	dw 20
 	text_far _OrefryDexEntry
+	text_end
+	
+FreezetiDexEntry:
+	db "ICE BEAST@"
+	db 4,3
+	dw 849
+	text_far _FreezetiDexEntry
 	text_end
 
 VulpixDexEntry:

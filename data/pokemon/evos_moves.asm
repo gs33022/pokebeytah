@@ -82,7 +82,7 @@ EvosMovesPointerTable:
 	dw MeowthEvosMoves
 	dw KrabbyEvosMoves
 	dw OrefryEvosMoves
-	dw MissingNo50EvosMoves
+	dw FreezetiEvosMoves
 	dw MissingNo51EvosMoves
 	dw VulpixEvosMoves
 	dw NinetalesEvosMoves
@@ -1036,11 +1036,11 @@ JynxEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 18, LICK
-	db 23, DOUBLESLAP
-	db 31, ICE_PUNCH
-	db 39, BODY_SLAM
-	db 47, THRASH
+	db 18, LICK ; POWDER SNOW 
+	db 23, CONFUSION
+	db 31, AURORA_BEAM
+	db 39, DOUBLESLAP
+	db 47, HEADBUTT
 	db 58, BLIZZARD
 	db 0
 
@@ -1113,10 +1113,16 @@ OrefryEvosMoves:
 	db 21, AGILITY
 	db 0
 
-MissingNo50EvosMoves:
+FreezetiEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 18, LICK ; POWDER SNOW
+	db 23, BODY_SLAM
+	db 31, ICE_PUNCH
+	db 39, HEADBUTT
+	db 47, ICE_BEAM
+	db 58, BLIZZARD
 	db 0
 
 MissingNo51EvosMoves:

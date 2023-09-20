@@ -86,7 +86,7 @@
 	const MEOWTH             ; $4D
 	const KRABBY             ; $4E
 	const OREFRY             ; $4F
-	const_skip               ; $50
+	const FREEZETI           ; $50
 	const_skip               ; $51
 	const VULPIX             ; $52
 	const NINETALES          ; $53

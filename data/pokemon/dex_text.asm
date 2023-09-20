@@ -787,6 +787,16 @@ _OrefryDexEntry::
 	next "breeder, it has"
 	next "flourished again"
 	dex
+	
+_FreezetiDexEntry::
+	text "It does not like"
+	next "to socialize and"
+	next "hides in caves"
+
+	page "near the top of"
+	next "cold and lonely"
+	next "mountains"
+	dex
 
 _VulpixDexEntry::
 	text "At the time of"

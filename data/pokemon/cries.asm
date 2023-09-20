@@ -87,7 +87,7 @@ CryData::
 	mon_cry SFX_CRY_20, $20, $E0 ; Krabby
 	mon_cry SFX_CRY_16, $90, $40 ; Orefry
 	;mon_cry SFX_CRY_22, $FF, $40 ; MissingNo.
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_0D, $40, $FF ; Freezeti
 	mon_cry SFX_CRY_0E, $E0, $60 ; MissingNo.
 	mon_cry SFX_CRY_24, $4F, $10 ; Vulpix
 	mon_cry SFX_CRY_24, $88, $60 ; Ninetales

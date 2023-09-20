@@ -136,6 +136,7 @@ MonPartyData:
 	nybble ICON_MON       ; Mr.Mime
 	nybble ICON_BUG       ; Scyther
 	nybble ICON_MON       ; Jynx
+	nybble ICON_MON       ; Freezeti
 	nybble ICON_MON       ; Electabuzz
 	nybble ICON_MON       ; Magmar
 	nybble ICON_BUG       ; Pinsir

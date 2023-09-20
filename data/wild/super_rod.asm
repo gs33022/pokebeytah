@@ -46,13 +46,13 @@ SuperRodData:
 
 .Group2:
 	db 2
-	db 15, GOLDEEN
+	db 15, OREFRY
 	db 15, POLIWAG
 
 .Group3:
 	db 3
 	db 15, PSYDUCK
-	db 15, GOLDEEN
+	db 15, OREFRY
 	db 15, KRABBY
 
 .Group4:
@@ -76,7 +76,7 @@ SuperRodData:
 	db 4
 	db 5, TENTACOOL
 	db 15, KRABBY
-	db 15, GOLDEEN
+	db 15, OREFRY
 	db 15, MAGIKARP
 
 .Group8:
@@ -84,7 +84,7 @@ SuperRodData:
 	db 15, STARYU
 	db 15, HORSEA
 	db 15, SHELLDER
-	db 15, GOLDEEN
+	db 15, OREFRY
 
 .Group9:
 	db 4
@@ -95,7 +95,7 @@ SuperRodData:
 
 .Group10:
 	db 4
-	db 23, SEAKING
+	db 23, GOLDEEN
 	db 15, KRABBY
-	db 15, GOLDEEN
+	db 15, OREFRY
 	db 15, MAGIKARP
