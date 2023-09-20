@@ -93,8 +93,8 @@ PokedexEntryPointers:
 	dw KabutopsDexEntry
 	dw HorseaDexEntry
 	dw SeadraDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw CheepDexEntry
+	dw JabettaDexEntry
 	dw SandshrewDexEntry
 	dw SandslashDexEntry
 	dw OmanyteDexEntry
@@ -826,7 +826,21 @@ SeadraDexEntry:
 	dw 550
 	text_far _SeadraDexEntry
 	text_end
+	
+CheepDexEntry:
+	db "FLYINGFISH@"
+	db 1,8
+	dw 176
+	text_far _CheepDexEntry
+	text_end
 
+JabettaDexEntry:
+	db "FIGHTFISH@"
+	db 3,11
+	dw 1131
+	text_far _JabettaDexEntry
+	text_end
+	
 SandshrewDexEntry:
 	db "MOUSE@"
 	db 2,0

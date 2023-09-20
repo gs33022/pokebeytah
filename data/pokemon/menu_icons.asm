@@ -132,6 +132,8 @@ MonPartyData:
 	nybble ICON_WATER     ; Orefry
 	nybble ICON_WATER     ; Goldeen
 	nybble ICON_WATER     ; Seaking
+	nybble ICON_WATER     ; Cheep
+	nybble ICON_WATER     ; Jabetta
 	nybble ICON_HELIX     ; Staryu
 	nybble ICON_HELIX     ; Starmie
 	nybble ICON_MON       ; Mr.Mime

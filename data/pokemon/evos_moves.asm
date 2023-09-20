@@ -96,8 +96,8 @@ EvosMovesPointerTable:
 	dw KabutopsEvosMoves
 	dw HorseaEvosMoves
 	dw SeadraEvosMoves
-	dw MissingNo5EEvosMoves
-	dw MissingNo5FEvosMoves
+	dw CheepEvosMoves
+	dw JabettaEvosMoves
 	dw SandshrewEvosMoves
 	dw SandslashEvosMoves
 	dw OmanyteEvosMoves
@@ -731,14 +731,10 @@ PsyduckEvosMoves:
 	db EV_LEVEL, 22, WEIRDUCK
 	db 0
 ; Learnset
-	db 17, HEADBUTT
-	db 22, WATER_GUN
-	db 25, FURY_SWIPES
-	db 28, TAIL_WHIP
-	db 31, DISABLE
-	db 36, CONFUSION
-	db 43, SLASH
-	db 52, HYDRO_PUMP
+	db 15, HEADBUTT
+	db 17, WATER_GUN
+	db 19, SLASH
+	db 21, TAIL_WHIP ; LUNGE
 	db 0
 
 DrowzeeEvosMoves:
@@ -795,14 +791,12 @@ WeirduckEvosMoves:
 	db EV_LEVEL, 41, GOLDUCK
 	db 0
 ; Learnset
-	db 20, HEADBUTT
-	db 25, WATER_GUN
-	db 28, FURY_SWIPES
-	db 31, TAIL_WHIP
-	db 34, DISABLE
-	db 39, CONFUSION
-	db 46, SLASH
-	db 55, HYDRO_PUMP
+	db 25, HEADBUTT ; LUNGE
+	db 28, SUPERSONIC
+	db 31, GLARE
+	db 34, HAZE
+	db 37, PSYBEAM
+	db 40, HYDRO_PUMP
 	db 0
 
 ElectabuzzEvosMoves:
@@ -1249,16 +1243,29 @@ SeadraEvosMoves:
 	db 52, HYDRO_PUMP
 	db 0
 
-MissingNo5EEvosMoves:
+CheepEvosMoves:
 ; Evolutions
+	db EV_LEVEL, 28, JABETTA
 	db 0
 ; Learnset
+	db 17, WATER_GUN
+	db 19, COUNTER
+	db 21, BUBBLE
+	db 23, DOUBLE_KICK
+	db 25, BUBBLEBEAM
+	db 27, HYDRO_PUMP
 	db 0
 
-MissingNo5FEvosMoves:
+JabettaEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 32, JUMP_KICK
+	db 34, SEISMIC_TOSS
+	db 36, MEGA_PUNCH
+	db 38, LOW_KICK
+	db 40, STRENGTH
+	db 42, SURF
 	db 0
 
 SandshrewEvosMoves:
@@ -1597,14 +1604,8 @@ GolduckEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 23, HEADBUTT
-	db 28, WATER_GUN
-	db 31, FURY_SWIPES
-	db 34, TAIL_WHIP
-	db 37, DISABLE
-	db 42, CONFUSION
-	db 50, SLASH
-	db 58, HYDRO_PUMP
+	db 45, DISABLE
+	db 49, SURF
 	db 0
 
 HypnoEvosMoves:

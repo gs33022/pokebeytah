@@ -46,7 +46,7 @@ SuperRodData:
 
 .Group2:
 	db 2
-	db 15, OREFRY
+	db 15, CHEEP
 	db 15, POLIWAG
 
 .Group3:
@@ -97,5 +97,5 @@ SuperRodData:
 	db 4
 	db 23, GOLDEEN
 	db 15, KRABBY
-	db 15, OREFRY
+	db 15, CHEEP
 	db 15, MAGIKARP

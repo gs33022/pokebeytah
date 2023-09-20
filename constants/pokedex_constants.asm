@@ -136,6 +136,8 @@
 	const DEX_OREFRY
 	const DEX_GOLDEEN    ; 118
 	const DEX_SEAKING    ; 119
+	const DEX_CHEEP
+	const DEX_JABETTA
 	const DEX_STARYU     ; 120
 	const DEX_STARMIE    ; 121
 	const DEX_MR_MIME    ; 122

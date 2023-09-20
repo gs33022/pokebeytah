@@ -100,8 +100,8 @@
 	const KABUTOPS           ; $5B
 	const HORSEA             ; $5C
 	const SEADRA             ; $5D
-	const_skip               ; $5E
-	const_skip               ; $5F
+	const CHEEP              ; $5E
+	const JABETTA            ; $5F
 	const SANDSHREW          ; $60
 	const SANDSLASH          ; $61
 	const OMANYTE            ; $62

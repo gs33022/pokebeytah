@@ -897,6 +897,26 @@ _SeadraDexEntry::
 	next "pectoral fins and"
 	next "stout tail"
 	dex
+	
+_CheepDexEntry::
+	text "Hundreds gather"
+	next "to compete in big"
+	next "feeding frenzies."
+
+	page "The losers often"
+	next "become easy prey"
+	next "for SHARPOON"
+	dex
+	
+_JabettaDexEntry::
+	text "It often settles"
+	next "territorial feuds"
+	next "with a duel."
+
+	page "Their fights may"
+	next "damage nearby"
+	next "coral reefs"
+	dex
 
 _SandshrewDexEntry::
 	text "Burrows deep"

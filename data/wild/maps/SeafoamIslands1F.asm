@@ -1,14 +1,14 @@
 SeafoamIslands1FWildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 30, SEEL
+	db 30, STARYU
 IF DEF(_RED)
-	db 30, SLOWPOKE
-	db 30, SHELLDER
-	db 30, HORSEA
-	db 28, HORSEA
+	db 30, KRABBY
+	db 32, SEADRA
+	db 30, KRABBY
+	db 28, CHEEP
 	db 21, BITTYBAT
 	db 29, ZUBAT
-	db 28, PSYDUCK
+	db 28, PSYDUCK ; RIBBITO
 	db 28, WEIRDUCK
 	db 38, JYNX
 ENDC
