@@ -68,3 +68,6 @@ Facility_Coll::
 
 Plateau_Coll::
 	coll_tiles $1b, $23, $2c, $2d, $3b, $45
+	
+BetaGym_Coll::
+	coll_tiles $0B, $0E, $1E, $1F, $11

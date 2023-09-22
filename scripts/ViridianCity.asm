@@ -16,12 +16,9 @@ ViridianCityDefaultScript:
 	jp ViridianCityCheckGotPokedexScript
 
 ViridianCityCheckGymOpenScript:
-	CheckEvent EVENT_VIRIDIAN_GYM_OPEN
-	ret nz
-	ld a, [wObtainedBadges]
-	cp ~(1 << BIT_EARTHBADGE)
+	CheckEvent EVENT_GOT_POKEDEX
 	jr nz, .gym_closed
-	SetEvent EVENT_VIRIDIAN_GYM_OPEN
+	SetEvent EVENT_VIRIDIAN_GYM_OPEN 
 	ret
 .gym_closed
 	ld a, [wYCoord]
@@ -44,7 +41,7 @@ ViridianCityCheckGotPokedexScript:
 	CheckEvent EVENT_GOT_POKEDEX
 	ret nz
 	ld a, [wYCoord]
-	cp 9
+	cp 3
 	ret nz
 	ld a, [wXCoord]
 	cp 19

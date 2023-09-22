@@ -731,8 +731,9 @@ PsyduckEvosMoves:
 	db EV_LEVEL, 22, WEIRDUCK
 	db 0
 ; Learnset
+	db 7, WATER_GUN
 	db 15, HEADBUTT
-	db 17, WATER_GUN
+	db 17, BUBBLE
 	db 19, SLASH
 	db 21, TAIL_WHIP ; LUNGE
 	db 0
@@ -1839,11 +1840,11 @@ BulbasaurEvosMoves:
 	db 0
 ; Learnset
 	db 7, SCRATCH
-	db 10, SAND_ATTACK
-	db 13, LEER
+	db 10, VINE_WHIP
+	db 13, SAND_ATTACK
 	db 15, GROWTH
 	db 17, LEECH_SEED
-	db 19, VINE_WHIP
+	db 19, LEER
 	db 0
 
 VenusaurEvosMoves:
@@ -2089,12 +2090,13 @@ SquirtleEvosMoves:
 ; Learnset
 	db 7, PUNCH
 	db 9, KICK
-	db 11, TACKLE
+	db 11, WATER_GUN
 	db 13, TAIL_WHIP
 	db 15, COMET_PUNCH
 	db 17, LEER
 	db 19, WITHDRAW
 	db 21, STOMP
+	db 22, TACKLE
 	db 0
 
 CharmeleonEvosMoves:

@@ -5,7 +5,7 @@ IF DEF(_RED)
 	db 30, KRABBY
 	db 32, SEADRA
 	db 30, KRABBY
-	db 28, CHEEP
+	db 27, CHEEP
 	db 21, BITTYBAT
 	db 29, ZUBAT
 	db 28, PSYDUCK ; RIBBITO

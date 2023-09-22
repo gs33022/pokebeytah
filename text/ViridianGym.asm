@@ -1,240 +1,169 @@
-_ViridianGymGiovanniPreBattleText::
-	text "Fwahahaha! This is"
-	line "my hideout!"
-
-	para "I planned to"
-	line "resurrect TEAM"
-	cont "ROCKET here!"
-
-	para "But, you have"
-	line "caught me again!"
-	cont "So be it! This"
-	cont "time, I'm not"
-	cont "holding back!"
-
-	para "Once more, you"
-	line "shall face"
-	cont "GIOVANNI, the"
-	cont "greatest trainer!"
+_ViridianGymBrockPreBattleText::
+	text "So, you're here."
+	
+	para "I'm BROCK."
+	line "I'm PEWTER's GYM"
+	cont "LEADER!"
+	
+	para "Me and my #MON"
+	line "ground ourselves"
+	cont "for hours in"
+	
+	para "training!"
+	line "Fuhaha!"
+	cont "Are you prepared"
+	
+	para "to quake in fear"
+	line "of my ground-type"
+	cont "#MON?"
+	
+	para "Show me your"
+	line "best!"
 	done
+	
+_ViridianGymBrockPostBattleAdviceText::
+	text "There are all"
+	line "kinds of trainers"
+	cont "in the world!"
 
-_ViridianGymGiovanniReceivedEarthBadgeText::
-	text "Ha!"
-	line "That was a truly"
-	cont "intense fight!"
-	cont "You have won!"
-	cont "As proof, here is"
-	cont "the EARTHBADGE!@"
-	text_end
-
-_ViridianGymGiovanniPostBattleAdviceText::
-	text "Having lost, I"
-	line "cannot face my"
-	cont "underlings!"
-	cont "TEAM ROCKET is"
-	cont "finished forever!"
-
-	para "I will dedicate my"
-	line "life to the study"
-	cont "of #MON!"
-
-	para "Let us meet again"
-	line "some day!"
-	cont "Farewell!@"
-	text_end
-
-_ViridianGymGiovanniEarthBadgeInfoText::
-	text "The EARTHBADGE"
-	line "makes #MON of"
-	cont "any level obey!"
-
-	para "It is evidence of"
-	line "your mastery as a"
+	para "You appear to be"
+	line "very gifted as a"
 	cont "#MON trainer!"
 
-	para "With it, you can"
-	line "enter the #MON"
-	cont "LEAGUE!"
-
-	para "It is my gift for"
-	line "your #MON"
-	cont "LEAGUE challenge!"
+	para "Go to the GYM in"
+	line "CERULEAN and test"
+	cont "your abilities!"
 	done
 
-_ViridianGymGiovanniReceivedTM27Text::
+_ViridianGymBrockWaitTakeThisText::
+	text "Wait! Take this"
+	line "with you!"
+	done
+
+_ViridianGymReceivedTM34Text::
 	text "<PLAYER> received"
-	line "TM27!@"
+	line "TM34!@"
 	text_end
 
-_ViridianGymGiovanniTM27ExplanationText::
+_TM39ExplanationText::
 	text_start
 
-	para "TM27 is FISSURE!"
-	line "It will take out"
-	cont "#MON with just"
-	cont "one hit!"
-
-	para "I made it when I"
-	line "ran the GYM here,"
-	cont "too long ago..."
-	done
-
-_ViridianGymGiovanniTM27NoRoomText::
-	text "You do not have"
-	line "space for this!"
-	done
-
-_ViridianGymCooltrainerM1BattleText::
-	text "Heh! You must be"
-	line "running out of"
-	cont "steam by now!"
-	done
-
-_ViridianGymCooltrainerM1EndBattleText::
-	text "I"
-	line "ran out of gas!"
-	prompt
-
-_ViridianGymCooltrainerM1AfterBattleText::
-	text "You need power to"
-	line "keep up with our"
-	cont "GYM LEADER!"
-	done
-
-_ViridianGymHiker1BattleText::
-	text "Rrrroar! I'm"
-	line "working myself"
-	cont "into a rage!"
-	done
-
-_ViridianGymHiker1EndBattleText::
-	text "Wargh!"
-	prompt
-
-_ViridianGymHiker1AfterBattleText::
-	text "I'm still not"
-	line "worthy!"
-	done
-
-_ViridianGymRocker1BattleText::
-	text "#MON and I, we"
-	line "make wonderful"
-	cont "music together!"
-	done
-
-_ViridianGymRocker1EndBattleText::
-	text "You are in"
-	line "perfect harmony!"
-	prompt
-
-_ViridianGymRocker1AfterBattleText::
-	text "Do you know the"
-	line "identity of our"
-	cont "GYM LEADER?"
-	done
-
-_ViridianGymHiker2BattleText::
-	text "Karate is the"
-	line "ultimate form of"
-	cont "martial arts!"
-	done
-
-_ViridianGymHiker2EndBattleText::
-	text "Atcho!"
-	prompt
-
-_ViridianGymHiker2AfterBattleText::
-	text "If my #MON"
-	line "were as good at"
-	cont "Karate as I..."
-	done
-
-_ViridianGymCooltrainerM2BattleText::
-	text "The truly talented"
-	line "win with style!"
-	done
-
-_ViridianGymCooltrainerM2EndBattleText::
-	text "I"
-	line "lost my grip!"
-	prompt
-
-_ViridianGymCooltrainerM2AfterBattleText::
-	text "The LEADER will"
-	line "scold me!"
-	done
-
-_ViridianGymHiker3BattleText::
-	text "I'm the KARATE"
-	line "KING! Your fate"
-	cont "rests with me!"
-	done
-
-_ViridianGymHiker3EndBattleText::
-	text "Ayah!"
-	prompt
-
-_ViridianGymHiker3AfterBattleText::
-	text "#MON LEAGUE?"
-	line "You? Don't get"
-	cont "cocky!"
-	done
-
-_ViridianGymRocker2BattleText::
-	text "Your #MON will"
-	line "cower at the"
-	cont "crack of my whip!"
-	done
-
-_ViridianGymRocker2EndBattleText::
-	text "Yowch!"
-	line "Whiplash!"
-	prompt
-
-_ViridianGymRocker2AfterBattleText::
-	text "Wait! I was just"
-	line "careless!"
-	done
-
-_ViridianGymCooltrainerM3BattleText::
-	text "VIRIDIAN GYM was"
-	line "closed for a long"
-	cont "time, but now our"
-	cont "LEADER is back!"
-	done
-
-_ViridianGymCooltrainerM3EndBattleText::
-	text "I"
-	line "was beaten?"
-	prompt
-
-_ViridianGymCooltrainerM3AfterBattleText::
-	text "You can go onto"
-	line "#MON LEAGUE"
-	cont "only by defeating"
-	cont "our GYM LEADER!"
-	done
-
-_ViridianGymGuidePreBattleText::
-	text "Yo! Champ in"
-	line "making!"
-
-	para "Even I don't know"
-	line "VIRIDIAN LEADER's"
-	cont "identity!"
-
-	para "This will be the"
-	line "toughest of all"
-	cont "the GYM LEADERs!"
-
-	para "I heard that the"
-	line "trainers here"
-	cont "like ground-type"
+	para "A TM contains a"
+	line "technique that"
+	cont "can be taught to"
 	cont "#MON!"
+
+	para "A TM is good only"
+	line "once! So when you"
+	cont "use one to teach"
+	cont "a new technique,"
+	cont "pick the #MON"
+	cont "carefully!"
+
+	para "TM34 contains"
+	line "BIDE!"
+
+	para "Your #MON will"
+	line "absorb damage in"
+	cont "battle then pay"
+	cont "it back double!"
 	done
+
+_ViridianGymTM34NoRoomText::
+	text "You don't have"
+	line "room for this!"
+	done
+
+_ViridianGymBrockReceivedBoulderBadgeText::
+	text "I took"
+	line "you for granted."
+
+	para "As proof of your"
+	line "victory, here's"
+	cont "the BOULDERBADGE!"
+
+	para "<PLAYER> received"
+	line "the BOULDERBADGE!@"
+	text_end
+
+_ViridianGymBrockBoulderBadgeInfoText::
+	text_start
+
+	para "That's an official"
+	line "#MON LEAGUE"
+	cont "BADGE!"
+
+	para "Its bearer's"
+	line "#MON become"
+	cont "more powerful!"
+
+	para "The technique"
+	line "FLASH can now be"
+	cont "used any time!"
+	prompt
+
+_ViridianGymCooltrainerMBattleText::
+	text "Stop right there,"
+	line "kid!"
+
+	para "You're still light"
+	line "years from facing"
+	cont "BROCK!"
+	done
+
+_ViridianGymCooltrainerMEndBattleText::
+	text "Darn!"
+
+	para "Light years isn't"
+	line "time! It measures"
+	cont "distance!"
+	prompt
+
+_ViridianGymCooltrainerMAfterBattleText::
+	text "You're pretty hot,"
+	line "but not as hot"
+	cont "as BROCK!"
+	done
+
+_ViridianGymGuidePreAdviceText::
+	text "Hiya! I can tell"
+	line "you have what it"
+	cont "takes to become a"
+	cont "#MON champ!"
+
+	para "I'm no trainer,"
+	line "but I can tell"
+	cont "you how to win!"
+
+	para "Let me take you"
+	line "to the top!"
+	done
+
+_ViridianGymGuideBeginAdviceText::
+	text "All right! Let's"
+	line "get happening!"
+	prompt
+
+_ViridianGymGuideAdviceText::
+	text "The 1st #MON"
+	line "out in a match is"
+	cont "at the top of the"
+	cont "#MON LIST!"
+
+	para "By changing the"
+	line "order of #MON,"
+	cont "matches could be"
+	cont "made easier!"
+	done
+
+_ViridianGymGuideFreeServiceText::
+	text "It's a free"
+	line "service! Let's"
+	cont "get happening!"
+	prompt
 
 _ViridianGymGuidePostBattleText::
-	text "Blow me away!"
-	line "GIOVANNI was the"
-	cont "GYM LEADER here?"
+	text "Just as I thought!"
+	line "You're #MON"
+	cont "champ material!"
 	done
