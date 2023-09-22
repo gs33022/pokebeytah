@@ -28,9 +28,9 @@ ViridianGym_ScriptPointers:
 	dw_const CheckFightingMapTrainers,              SCRIPT_VIRIDIANGYM_DEFAULT
 	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_VIRIDIANGYM_START_BATTLE
 	dw_const EndTrainerBattle,                      SCRIPT_VIRIDIANGYM_END_BATTLE
-	dw_const ViridianGymBrockPostBattleAdviceText,         SCRIPT_VIRIDIANGYM_GIOVANNI_POST_BATTLE
+	dw_const ViridanGymBrockPostBattle,             SCRIPT_VIRIDIANGYM_BROCK_POST_BATTLE
 
-ViridianGymBrockPostBattle:
+ViridanGymBrockPostBattle:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, ViridianGymResetScripts
