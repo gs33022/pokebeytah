@@ -1,7 +1,13 @@
 ViridianGym_Script:
-	ld hl, .CityName
-	ld de, .LeaderName
-	call LoadGymLeaderAndCityName
+	ld hl, wCurrentMapScriptFlags
+	bit 5, [hl]
+	res 5, [hl]
+	push hl
+	call nz, .LoadNames
+	pop hl
+	bit 6, [hl]
+	res 6, [hl]
+	call nz, ViridianGymSetDoorTile
 	call EnableAutoTextBoxDrawing
 	ld hl, ViridianGymTrainerHeaders
 	ld de, ViridianGym_ScriptPointers
@@ -10,11 +16,30 @@ ViridianGym_Script:
 	ld [wViridianGymCurScript], a
 	ret
 
+.LoadNames:
+	ld hl, .CityName
+	ld de, .LeaderName
+	jp LoadGymLeaderAndCityName
+
 .CityName:
 	db "VIRIDIAN CITY@"
 
 .LeaderName:
 	db "GIOVANNI@"
+	
+ViridianGymSetDoorTile:
+	CheckEvent EVENT_GOT_POKEDEX
+	jr nz, .doorsOpen
+	ld a, $19 ; double door tile ID
+	jr .replaceTile
+.doorsOpen
+	ld a, SFX_GO_INSIDE
+	call PlaySound
+	ld a, $2 ; clear floor tile ID
+.replaceTile
+	ld [wNewTileBlockID], a
+	lb bc, 2, 2
+	predef_jump ReplaceTileBlock
 
 ViridianGymResetScripts:
 	xor a
@@ -78,6 +103,8 @@ ViridianGym_TextPointers:
 	def_text_pointers
 	dw_const ViridianGymBrockText,             TEXT_VIRIDIANGYM_YUJIROU
 	dw_const ViridianGymCooltrainerMText,      TEXT_VIRIDIANGYM_COOLTRAINER_M
+	dw_const ViridianGymJudge1Text,            TEXT_VIRIDIANGYM_JUDGE1
+	dw_const ViridianGymJudge2Text,            TEXT_VIRIDIANGYM_JUDGE2
 	dw_const ViridianGymGuideText,             TEXT_VIRIDIANGYM_GYM_GUIDE
 	dw_const ViridianGymBrockWaitTakeThisText, TEXT_VIRIDIANGYM_BROCK_WAIT_TAKE_THIS
 	dw_const ViridianGymReceivedTM34Text,      TEXT_VIRIDIANGYM_RECEIVED_TM34
@@ -216,4 +243,12 @@ ViridianGymGuideFreeServiceText:
 
 ViridianGymGuidePostBattleText:
 	text_far _ViridianGymGuidePostBattleText
+	text_end
+
+ViridianGymJudge1Text:
+	text_far _ViridianGymJudge1Text
+	text_end
+	
+ViridianGymJudge2Text:
+	text_far _ViridianGymJudge2Text
 	text_end

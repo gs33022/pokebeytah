@@ -12,30 +12,7 @@ ViridianCity_ScriptPointers:
 	dw_const ViridianCityPlayerMovingDownScript,         SCRIPT_VIRIDIANCITY_PLAYER_MOVING_DOWN
 
 ViridianCityDefaultScript:
-	call ViridianCityCheckGymOpenScript
 	jp ViridianCityCheckGotPokedexScript
-
-ViridianCityCheckGymOpenScript:
-	CheckEvent EVENT_GOT_POKEDEX
-	jr nz, .gym_closed
-	SetEvent EVENT_VIRIDIAN_GYM_OPEN 
-	ret
-.gym_closed
-	ld a, [wYCoord]
-	cp 8
-	ret nz
-	ld a, [wXCoord]
-	cp 32
-	ret nz
-	ld a, TEXT_VIRIDIANCITY_GYM_LOCKED
-	ldh [hSpriteIndexOrTextID], a
-	call DisplayTextID
-	xor a
-	ldh [hJoyHeld], a
-	call ViridianCityMovePlayerDownScript
-	ld a, SCRIPT_VIRIDIANCITY_PLAYER_MOVING_DOWN
-	ld [wViridianCityCurScript], a
-	ret
 
 ViridianCityCheckGotPokedexScript:
 	CheckEvent EVENT_GOT_POKEDEX

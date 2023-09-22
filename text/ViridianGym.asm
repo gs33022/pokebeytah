@@ -126,17 +126,17 @@ _ViridianGymCooltrainerMAfterBattleText::
 	done
 
 _ViridianGymGuidePreAdviceText::
-	text "Hiya! I can tell"
-	line "you have what it"
-	cont "takes to become a"
-	cont "#MON champ!"
-
-	para "I'm no trainer,"
-	line "but I can tell"
-	cont "you how to win!"
+	text "Hiya! The name's"
+	line "DANPEI! I'm a"
+	cont "former trainer"
+	
+	para "turned GYM GUIDE,"
+	line "so I can tell you"
+	cont "how to win!"
 
 	para "Let me take you"
-	line "to the top!"
+	line "to the top, champ"
+	cont "in the making!"
 	done
 
 _ViridianGymGuideBeginAdviceText::
@@ -166,4 +166,12 @@ _ViridianGymGuidePostBattleText::
 	text "Just as I thought!"
 	line "You're #MON"
 	cont "champ material!"
+	done
+	
+_ViridianGymJudge1Text::
+	text "A"
+	done
+	
+_ViridianGymJudge2Text::
+	text "B"
 	done
