@@ -100,7 +100,6 @@ ROMX $12
 ROMX $13
 	"Pics 6"
 	"Maps 9"
-	"Predefs"
 ROMX $14
 	"Maps 10"
 	"Battle Engine 8"
@@ -152,6 +151,7 @@ ROMX $1F
 	"Music 3"
 ROMX $20
 	"Text 1"
+	"Predefs"
 ROMX $21
 	"Text 2"
 ROMX $22

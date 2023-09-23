@@ -314,7 +314,7 @@ WeepinbellPicBack::    INCBIN "gfx/pokemon/back/weepinbellb.pic"
 VictreebelPicFront::   INCBIN "gfx/pokemon/front/victreebel.pic"
 VictreebelPicBack::    INCBIN "gfx/pokemon/back/victreebelb.pic"
 
-SECTION "Pics 6", ROMX
+SECTION "Trainer Pics 1", ROMX
 
 YoungsterPic::     INCBIN "gfx/trainers/youngster.pic"
 BugCatcherPic::    INCBIN "gfx/trainers/bugcatcher.pic"
@@ -328,6 +328,7 @@ HikerPic::         INCBIN "gfx/trainers/hiker.pic"
 BikerPic::         INCBIN "gfx/trainers/biker.pic"
 BurglarPic::       INCBIN "gfx/trainers/burglar.pic"
 EngineerPic::      INCBIN "gfx/trainers/engineer.pic"
+StudentPic::       INCBIN "gfx/trainers/student.pic"
 FisherPic::        INCBIN "gfx/trainers/fisher.pic"
 SwimmerPic::       INCBIN "gfx/trainers/swimmer.pic"
 CueBallPic::       INCBIN "gfx/trainers/cueball.pic"
@@ -340,6 +341,9 @@ TamerPic::         INCBIN "gfx/trainers/tamer.pic"
 BirdKeeperPic::    INCBIN "gfx/trainers/birdkeeper.pic"
 BlackbeltPic::     INCBIN "gfx/trainers/blackbelt.pic"
 Rival1Pic::        INCBIN "gfx/trainers/rival1.pic"
+
+SECTION "Trainer Pics 2", ROMX
+
 ProfOakPic::       INCBIN "gfx/trainers/prof.oak.pic"
 ChiefPic::
 ScientistPic::     INCBIN "gfx/trainers/scientist.pic"
@@ -362,8 +366,11 @@ LoreleiPic::       INCBIN "gfx/trainers/lorelei.pic"
 ChannelerPic::     INCBIN "gfx/trainers/channeler.pic"
 AgathaPic::        INCBIN "gfx/trainers/agatha.pic"
 LancePic::         INCBIN "gfx/trainers/lance.pic"
+YujirouPic::       INCBIN "gfx/trainers/yujirou.pic"
+CooltrainerBetaMPic::  INCBIN "gfx/trainers/cooltrainerm.pic"
+CooltrainerBetaFPic::  INCBIN "gfx/trainers/cooltrainerf.pic"
 
-SECTION "Pics 7", ROMX
+SECTION "Pics 6", ROMX
 
 GorochuPicFront::  INCBIN "gfx/pokemon/front/gorochu.pic"
 GorochuPicBack::   INCBIN "gfx/pokemon/back/gorochub.pic"

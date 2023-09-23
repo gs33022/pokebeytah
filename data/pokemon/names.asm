@@ -163,7 +163,7 @@ MonsterNames::
 	db "GOROTORA@@"
 	db "MISSINGNO."
 	db "PONYTA@@@@"
-	db "RAPIDASH@@"
+	db "TROTTA@@@@"
 	db "RATTATA@@@"
 	db "RATICATE@@"
 	db "NIDORINO@@"

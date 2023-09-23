@@ -1,24 +1,24 @@
 _ViridianGymBrockPreBattleText::
-	text "So, you're here."
+	text "What's up?"
 	
-	para "I'm BROCK."
-	line "I'm PEWTER's GYM"
-	cont "LEADER!"
+	para "I'm DOUG, and"
+	line "I'm VIRIDIAN's"
+	cont "GYM LEADER!"
 	
-	para "Me and my #MON"
-	line "ground ourselves"
-	cont "for hours in"
+	para "I may look"
+	line "normal, but you"
+	cont "should never"
 	
-	para "training!"
-	line "Fuhaha!"
-	cont "Are you prepared"
+	para "underestimate the"
+	line "power of #MON!"
+	cont "They can be"
 	
-	para "to quake in fear"
-	line "of my ground-type"
-	cont "#MON?"
+	para "pretty dangerous"
+	line "if put in the"
+	cont "wrong hands,"
 	
-	para "Show me your"
-	line "best!"
+	para "after all!"
+	line "Shall we begin?"
 	done
 	
 _ViridianGymBrockPostBattleAdviceText::
@@ -103,26 +103,75 @@ _ViridianGymBrockBoulderBadgeInfoText::
 	prompt
 
 _ViridianGymCooltrainerMBattleText::
-	text "Stop right there,"
-	line "kid!"
+	text "Hohoho! Welcome"
+	line "to the VIRIDIAN"
+	cont "CITY GYM!"
 
-	para "You're still light"
-	line "years from facing"
-	cont "BROCK!"
+	para "You're in the big"
+	line "leagues now, kid!"
 	done
 
 _ViridianGymCooltrainerMEndBattleText::
-	text "Darn!"
-
-	para "Light years isn't"
-	line "time! It measures"
-	cont "distance!"
+	text "You" 
+	line "are really good!"
 	prompt
 
 _ViridianGymCooltrainerMAfterBattleText::
 	text "You're pretty hot,"
 	line "but not as hot"
-	cont "as BROCK!"
+	cont "as DOUG!"
+	done
+	
+_ViridianGymCooltrainerFBattleText::
+	text "Just try to defeat"
+	line "my #MON!"
+
+	para "I'm not your"
+	line "typical YOUNGSTER!"
+	done
+
+_ViridianGymCooltrainerFEndBattleText::
+	text "My"
+	line "#MON!"
+	prompt
+
+_ViridianGymCooltrainerFAfterBattleText::
+	text "Go on ahead."
+	line "I have nothing"
+	cont "left to say."
+	done
+	
+_ViridianGymStudentBattleText::
+	text "I'm DOUG's"
+	line "girlfriend!"
+
+	para "You'll never make"
+	line "it past me!"
+	done
+
+_ViridianGymStudentEndBattleText::
+	text "I've"
+	line "been steamed!"
+	prompt
+
+_ViridianGymStudentAfterBattleText::
+	text "My boyfriend"
+	line "will crush you!"
+	done
+	
+_ViridianGymCooltrainerM2BattleText::
+	text "Feel the strength"
+	line "of GYM trainers!"
+	done
+
+_ViridianGymCooltrainerM2EndBattleText::
+	text "I"
+	line "can't believe it!"
+	prompt
+
+_ViridianGymCooltrainerM2AfterBattleText::
+	text "I need to keep up"
+	line "my training!"
 	done
 
 _ViridianGymGuidePreAdviceText::
@@ -169,7 +218,21 @@ _ViridianGymGuidePostBattleText::
 	done
 	
 _ViridianGymJudge1Text::
-	text "A"
+	text "As VIRIDIAN CITY's"
+	line "JUDGE, we will be"
+	cont "reviewing your"
+	
+	para "battles to make"
+	line "sure that both"
+	cont "trainers and the"
+	
+	para "LEADER fight by"
+	line "the rules. Go to"
+	cont "the right of me"
+	
+	para "by DANPEI if"
+	line "you'd like any"
+	cont "tips."
 	done
 	
 _ViridianGymJudge2Text::

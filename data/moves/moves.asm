@@ -12,7 +12,7 @@ Moves:
 ; Characteristics of each move.
 	table_width MOVE_LENGTH, Moves
 	move POUND,        NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35
-	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        50, NORMAL,       100, 25
+	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        50, FIGHTING,     100, 25
 	move DOUBLESLAP,   TWO_TO_FIVE_ATTACKS_EFFECT,  15, NORMAL,        85, 10
 	move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  18, NORMAL,        85, 15
 	move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        80, NORMAL,        85, 20
@@ -61,7 +61,7 @@ Moves:
 	move SUPERSONIC,   CONFUSION_EFFECT,             0, NORMAL,        55, 20
 	move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,        1, NORMAL,        90, 20
 	move DISABLE,      DISABLE_EFFECT,               0, NORMAL,        55, 20
-	move ACID,         DEFENSE_DOWN_SIDE_EFFECT,    40, POISON,       100, 30
+	move ACID,         DEFENSE_DOWN_SIDE_EFFECT,    80, POISON,       100, 20
 	move EMBER,        BURN_SIDE_EFFECT1,           40, FIRE,         100, 25
 	move FLAMETHROWER, BURN_SIDE_EFFECT1,           95, FIRE,         100, 15
 	move MIST,         MIST_EFFECT,                  0, ICE,          100, 30
@@ -94,11 +94,11 @@ Moves:
 	move STRING_SHOT,  SPEED_DOWN1_EFFECT,           0, BUG,           95, 40
 	move DRAGON_RAGE,  SPECIAL_DAMAGE_EFFECT,        1, DRAGON,       100, 10
 	move FIRE_SPIN,    TRAPPING_EFFECT,             15, FIRE,          70, 15
-	move THUNDERSHOCK, PARALYZE_SIDE_EFFECT1,       40, ELECTRIC,     100, 30
+	move THUNDERSHOCK, PARALYZE_SIDE_EFFECT1,       40, ELECTRIC,     100, 25
 	move THUNDERBOLT,  PARALYZE_SIDE_EFFECT1,       95, ELECTRIC,     100, 15
-	move THUNDER_WAVE, PARALYZE_EFFECT,              0, ELECTRIC,     100, 20
-	move THUNDER,      PARALYZE_SIDE_EFFECT1,      120, ELECTRIC,      70, 10
-	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        50, ROCK,          65, 15
+	move THUNDER_WAVE, PARALYZE_SIDE_EFFECT1,       35, ELECTRIC,     100, 25
+	move THUNDER,      PARALYZE_SIDE_EFFECT1,      120, ELECTRIC,      70, 5
+	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        50, GROUND,        65, 15
 	move EARTHQUAKE,   NO_ADDITIONAL_EFFECT,       100, GROUND,       100, 10
 	move FISSURE,      OHKO_EFFECT,                  1, GROUND,        30,  5
 	move DIG,          CHARGE_EFFECT,              100, GROUND,       100, 10
@@ -123,9 +123,9 @@ Moves:
 	move WITHDRAW,     DEFENSE_UP1_EFFECT,           0, WATER,        100, 40
 	move DEFENSE_CURL, DEFENSE_UP1_EFFECT,           0, NORMAL,       100, 40
 	move BARRIER,      DEFENSE_UP2_EFFECT,           0, PSYCHIC_TYPE, 100, 30
-	move LIGHT_SCREEN, LIGHT_SCREEN_EFFECT,          0, PSYCHIC_TYPE, 100, 30
-	move HAZE,         HAZE_EFFECT,                  0, ICE,          100, 30
-	move REFLECT,      REFLECT_EFFECT,               0, PSYCHIC_TYPE, 100, 20
+	move LIGHT_SCREEN, LIGHT_SCREEN_EFFECT,          0, FIRE,         100, 30
+	move HAZE,         HAZE_EFFECT,                  0, WATER,        100, 30
+	move REFLECT,      REFLECT_EFFECT,               0, GRASS,        100, 20
 	move FOCUS_ENERGY, FOCUS_ENERGY_EFFECT,          0, NORMAL,       100, 30
 	move BIDE,         BIDE_EFFECT,                  0, NORMAL,       100, 10
 	move METRONOME,    METRONOME_EFFECT,             0, NORMAL,       100, 10
@@ -175,7 +175,10 @@ Moves:
 	move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 10
 	move SLASH,        NO_ADDITIONAL_EFFECT,        70, NORMAL,       100, 20
 	move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, NORMAL,       100, 10
-	move PUNCH,        NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 30
-	move KICK,         NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 30
+	move PUNCH,        NO_ADDITIONAL_EFFECT,        35, FIGHTING,     100, 30
+	move KICK,         NO_ADDITIONAL_EFFECT,        35, FIGHTING,     100, 30
+	move TWAVE_BEYTAH, PARALYZE_SIDE_EFFECT1,       80, ELECTRIC,     100, 20
+	move UPPERCUT,     FLINCH_SIDE_EFFECT2,         55, FIGHTING,      80, 15
+	move PUNCH_OUT,    NO_ADDITIONAL_EFFECT,        40, FIGHTING,     100, 30
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS

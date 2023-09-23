@@ -167,6 +167,9 @@ MoveSoundTable:
 	db SFX_BATTLE_2C,          $d8, $04 ; SUBSTITUTE
 	db SFX_BATTLE_0C,          $10, $80 ; PUNCH
 	db SFX_SUPER_EFFECTIVE,    $00, $80 ; KICK
+	db SFX_BATTLE_2F,          $20, $80 ; TWAVE_BEYTAH
+	db SFX_BATTLE_0D,          $00, $40 ; UPPERCUT
+	db SFX_BATTLE_17,          $01, $e0 ; PUNCH_OUT
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80

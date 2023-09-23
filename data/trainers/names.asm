@@ -12,7 +12,7 @@ TrainerNames::
 	li "BIKER"
 	li "BURGLAR"
 	li "ENGINEER"
-	li "JUGGLER"
+	li "STUDENT"
 	li "FISHERMAN"
 	li "SWIMMER"
 	li "CUE BALL"
@@ -47,4 +47,7 @@ TrainerNames::
 	li "CHANNELER"
 	li "AGATHA"
 	li "LANCE"
+	li "DOUG"
+	li "COOLTRAINER♂"
+	li "COOLTRAINER♀"
 	assert_list_length NUM_TRAINERS

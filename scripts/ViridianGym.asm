@@ -95,7 +95,9 @@ ViridianGymScriptReceiveTM34:
 	ResetEvents EVENT_1ST_ROUTE22_RIVAL_BATTLE, EVENT_ROUTE22_RIVAL_WANTS_BATTLE
 
 	; deactivate gym trainers
-	SetEvent EVENT_BEAT_PEWTER_GYM_TRAINER_0
+	SetEvent EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0
+	SetEvent EVENT_BEAT_VIRIDIAN_GYM_TRAINER_1
+	SetEvent EVENT_BEAT_VIRIDIAN_GYM_TRAINER_2
 
 	jp ViridianGymResetScripts
 
@@ -103,6 +105,9 @@ ViridianGym_TextPointers:
 	def_text_pointers
 	dw_const ViridianGymBrockText,             TEXT_VIRIDIANGYM_YUJIROU
 	dw_const ViridianGymCooltrainerMText,      TEXT_VIRIDIANGYM_COOLTRAINER_M
+	dw_const ViridianGymCooltrainerFText,      TEXT_VIRIDIANGYM_COOLTRAINER_F
+	dw_const ViridianGymStudentText,           TEXT_VIRIDIANGYM_STUDENT
+	dw_const ViridianGymCooltrainerM2Text,      TEXT_VIRIDIANGYM_COOLTRAINER_M2
 	dw_const ViridianGymJudge1Text,            TEXT_VIRIDIANGYM_JUDGE1
 	dw_const ViridianGymJudge2Text,            TEXT_VIRIDIANGYM_JUDGE2
 	dw_const ViridianGymGuideText,             TEXT_VIRIDIANGYM_GYM_GUIDE
@@ -113,7 +118,14 @@ ViridianGym_TextPointers:
 ViridianGymTrainerHeaders:
 	def_trainers 2
 ViridianGymTrainerHeader0:
-	trainer EVENT_BEAT_PEWTER_GYM_TRAINER_0, 5, ViridianGymCooltrainerMBattleText, ViridianGymCooltrainerMEndBattleText, ViridianGymCooltrainerMAfterBattleText
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0, 1, ViridianGymCooltrainerMBattleText, ViridianGymCooltrainerMEndBattleText, ViridianGymCooltrainerMAfterBattleText
+ViridianGymTrainerHeader1:
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_1, 1, ViridianGymCooltrainerFBattleText, ViridianGymCooltrainerFEndBattleText, ViridianGymCooltrainerFAfterBattleText
+	ViridianGymTrainerHeader2:
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_2, 1, ViridianGymStudentBattleText, ViridianGymStudentEndBattleText, ViridianGymStudentAfterBattleText
+	ViridianGymTrainerHeader3:
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_3, 1, ViridianGymCooltrainerM2BattleText, ViridianGymCooltrainerM2EndBattleText, ViridianGymCooltrainerM2AfterBattleText
+	
 	db -1 ; end
 
 ViridianGymBrockText:
@@ -197,7 +209,61 @@ ViridianGymCooltrainerMEndBattleText:
 ViridianGymCooltrainerMAfterBattleText:
 	text_far _ViridianGymCooltrainerMAfterBattleText
 	text_end
+	
+ViridianGymCooltrainerFText:
+	text_asm
+	ld hl, ViridianGymTrainerHeader1
+	call TalkToTrainer
+	jp TextScriptEnd
 
+ViridianGymCooltrainerFBattleText:
+	text_far _ViridianGymCooltrainerFBattleText
+	text_end
+
+ViridianGymCooltrainerFEndBattleText:
+	text_far _ViridianGymCooltrainerFEndBattleText
+	text_end
+
+ViridianGymCooltrainerFAfterBattleText:
+	text_far _ViridianGymCooltrainerFAfterBattleText
+	text_end
+	
+ViridianGymStudentText:
+	text_asm
+	ld hl, ViridianGymTrainerHeader2
+	call TalkToTrainer
+	jp TextScriptEnd
+	
+ViridianGymStudentBattleText:
+	text_far _ViridianGymStudentBattleText
+	text_end
+
+ViridianGymStudentEndBattleText:
+	text_far _ViridianGymStudentEndBattleText
+	text_end
+
+ViridianGymStudentAfterBattleText:
+	text_far _ViridianGymStudentAfterBattleText
+	text_end
+
+ViridianGymCooltrainerM2Text:
+	text_asm
+	ld hl, ViridianGymTrainerHeader3
+	call TalkToTrainer
+	jp TextScriptEnd
+	
+ViridianGymCooltrainerM2BattleText:
+	text_far _ViridianGymCooltrainerM2BattleText
+	text_end
+
+ViridianGymCooltrainerM2EndBattleText:
+	text_far _ViridianGymCooltrainerM2EndBattleText
+	text_end
+
+ViridianGymCooltrainerM2AfterBattleText:
+	text_far _ViridianGymCooltrainerM2AfterBattleText
+	text_end
+	
 ViridianGymGuideText:
 	text_asm
 	ld a, [wBeatGymFlags]

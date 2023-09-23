@@ -16,7 +16,7 @@ TrainerAIPointers:
 	dbw 3, GenericAI
 	dbw 3, GenericAI
 	dbw 3, GenericAI
-	dbw 3, JugglerAI ; unused_juggler
+	dbw 3, GenericAI ; student
 	dbw 3, GenericAI
 	dbw 3, GenericAI
 	dbw 3, GenericAI
@@ -51,4 +51,7 @@ TrainerAIPointers:
 	dbw 3, GenericAI
 	dbw 2, AgathaAI ; agatha
 	dbw 1, LanceAI ; lance
+	dbw 1, YujirouAI ; yujirou
+	dbw 2, CooltrainerBetaAI ; CooltrainerM in Viridian Gym
+	dbw 1, CooltrainerBetaAI ; CooltrainerF in Viridian Gym
 	assert_table_length NUM_TRAINERS

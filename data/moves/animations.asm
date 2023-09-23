@@ -166,6 +166,9 @@ AttackAnimationPointers:
 	dw SubstituteAnim
 	dw PunchAnim
 	dw KickAnim
+	dw TwaveBeytahAnim
+	dw UppercutAnim
+	dw PunchOutAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -253,7 +256,8 @@ CometPunchAnim:
 	battle_anim COMET_PUNCH, SUBANIM_0_STAR_THRICE, 0, 4
 	battle_anim COMET_PUNCH, SUBANIM_0_STAR_THRICE, 0, 4
 	db -1 ; end
-
+	
+UppercutAnim:
 MegaPunchAnim:
 	battle_anim MEGA_PUNCH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
@@ -354,6 +358,7 @@ MegaKickAnim:
 	battle_anim MEGA_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 
+PunchOutAnim:
 JumpKickAnim:
 	battle_anim JUMP_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
@@ -692,6 +697,7 @@ ThunderBoltAnim:
 	battle_anim THUNDERBOLT, SUBANIM_1_LIGHTNING_BALL, 1, 1
 	db -1 ; end
 
+TwaveBeytahAnim:
 ThunderWaveAnim:
 	battle_anim THUNDER_WAVE, SUBANIM_1_LIGHTNING_BALL, 1, 2
 	battle_anim NO_MOVE, SUBANIM_0_BIND, 0, 2

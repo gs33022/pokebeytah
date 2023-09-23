@@ -624,6 +624,7 @@ SlowpokeEvosMoves:
 KadabraEvosMoves:
 ; Evolutions
 	db EV_TRADE, 1, ALAKAZAM
+	db EV_LEVEL, 40, ALAKAZAM
 	db 0
 ; Learnset
 	db 16, CONFUSION
@@ -637,6 +638,7 @@ KadabraEvosMoves:
 GravelerEvosMoves:
 ; Evolutions
 	db EV_TRADE, 1, GOLEM
+	db EV_LEVEL, 36, GOLEM
 	db 0
 ; Learnset
 	db 11, DEFENSE_CURL
@@ -662,13 +664,14 @@ ChanseyEvosMoves:
 MachokeEvosMoves:
 ; Evolutions
 	db EV_TRADE, 1, MACHAMP
+	db EV_LEVEL, 42, MACHAMP
 	db 0
 ; Learnset
-	db 20, LOW_KICK
-	db 25, LEER
-	db 36, FOCUS_ENERGY
-	db 44, SEISMIC_TOSS
-	db 52, SUBMISSION
+	db 28, PUNCH
+	db 31, COUNTER
+	db 34, MEGA_PUNCH
+	db 37, LOW_KICK
+	db 40, PUNCH_OUT
 	db 0
 
 MrMimeEvosMoves:
@@ -731,9 +734,8 @@ PsyduckEvosMoves:
 	db EV_LEVEL, 22, WEIRDUCK
 	db 0
 ; Learnset
-	db 7, WATER_GUN
 	db 15, HEADBUTT
-	db 17, BUBBLE
+	db 17, WATER_GUN
 	db 19, SLASH
 	db 21, TAIL_WHIP ; LUNGE
 	db 0
@@ -850,11 +852,17 @@ MankeyEvosMoves:
 	db EV_LEVEL, 28, PRIMEAPE
 	db 0
 ; Learnset
-	db 15, KARATE_CHOP
-	db 21, FURY_SWIPES
-	db 27, FOCUS_ENERGY
-	db 33, SEISMIC_TOSS
-	db 39, THRASH
+	db 12, KARATE_CHOP
+	db 14, TACKLE
+	db 16, THRASH
+	db 18, LEER
+	db 20, SUBMISSION
+	db 22, TAIL_WHIP
+	db 24, PUNCH
+	db 26, LOW_KICK
+	db 28, COMET_PUNCH
+	db 30, DOUBLE_KICK
+	db 32, HI_JUMP_KICK
 	db 0
 
 SeelEvosMoves:
@@ -1149,7 +1157,7 @@ PikachuEvosMoves:
 	db 0
 ; Learnset
 	db 14, TAIL_WHIP
-	db 16, THUNDERSHOCK
+	db 16, THUNDER_WAVE ; actually Tshock
 	db 18, SAND_ATTACK
 	db 20, SWIFT
 	db 22, FOCUS_ENERGY
@@ -1160,11 +1168,11 @@ RaichuEvosMoves:
 	db EV_ITEM, THUNDER_STONE, 1, GOROCHU
 	db 0
 ; Learnset
-	db 25, THUNDERBOLT
+	db 25, THUNDERSHOCK; actually Tbolt
 	db 28, LEER
-	db 31, THUNDER_WAVE
+	db 31, TWAVE_BEYTAH; replace by actual Twave
 	db 34, HORN_DRILL
-	db 37, TACKLE ; 50-MAN VOLT
+	db 37, THUNDERBOLT
 	db 0
 
 MissingNo56EvosMoves:
@@ -1252,7 +1260,7 @@ CheepEvosMoves:
 	db EV_LEVEL, 28, JABETTA
 	db 0
 ; Learnset
-	db 17, WATER_GUN
+	db 17, PECK
 	db 19, COUNTER
 	db 21, BUBBLE
 	db 23, DOUBLE_KICK
@@ -1396,11 +1404,12 @@ MachopEvosMoves:
 	db EV_LEVEL, 28, MACHOKE
 	db 0
 ; Learnset
-	db 20, LOW_KICK
-	db 25, LEER
-	db 32, FOCUS_ENERGY
-	db 39, SEISMIC_TOSS
-	db 46, SUBMISSION
+	db 14, KARATE_CHOP
+	db 16, LEER
+	db 18, COMET_PUNCH
+	db 20, UPPERCUT
+	db 22, SUBMISSION
+	db 24, STRENGTH
 	db 0
 
 ZubatEvosMoves:
@@ -1507,11 +1516,11 @@ PrimeapeEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 15, KARATE_CHOP
-	db 21, FURY_SWIPES
-	db 27, FOCUS_ENERGY
-	db 37, SEISMIC_TOSS
-	db 46, THRASH
+	db 35, UPPERCUT
+	db 37, COUNTER
+	db 39, JUMP_KICK
+	db 40, ROLLING_KICK
+	db 42, SEISMIC_TOSS
 	db 0
 
 DugtrioEvosMoves:
@@ -1591,11 +1600,8 @@ MachampEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 20, LOW_KICK
-	db 25, LEER
-	db 36, FOCUS_ENERGY
-	db 44, SEISMIC_TOSS
-	db 52, SUBMISSION
+	db 37, MEGA_KICK
+	db 50, BARRIER ; BETA BARRIER
 	db 0
 
 MissingNo7FEvosMoves:
@@ -1778,6 +1784,7 @@ MissingNo92EvosMoves:
 HaunterEvosMoves:
 ; Evolutions
 	db EV_TRADE, 1, GENGAR
+	db EV_LEVEL, 42, GENGAR
 	db 0
 ; Learnset
 	db 29, HYPNOSIS
@@ -1840,11 +1847,11 @@ BulbasaurEvosMoves:
 	db 0
 ; Learnset
 	db 7, SCRATCH
-	db 10, VINE_WHIP
-	db 13, SAND_ATTACK
+	db 9, SAND_ATTACK
+	db 12, LEER
 	db 15, GROWTH
 	db 17, LEECH_SEED
-	db 19, LEER
+	db 19, VINE_WHIP
 	db 0
 
 VenusaurEvosMoves:
@@ -2090,13 +2097,13 @@ SquirtleEvosMoves:
 ; Learnset
 	db 7, PUNCH
 	db 9, KICK
-	db 11, WATER_GUN
+	db 11, TACKLE
 	db 13, TAIL_WHIP
 	db 15, COMET_PUNCH
 	db 17, LEER
 	db 19, WITHDRAW
 	db 21, STOMP
-	db 22, TACKLE
+	db 21, SKULL_BASH
 	db 0
 
 CharmeleonEvosMoves:

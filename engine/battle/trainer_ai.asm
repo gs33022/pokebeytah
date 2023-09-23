@@ -321,6 +321,7 @@ TrainerAI:
 
 INCLUDE "data/trainers/ai_pointers.asm"
 
+CooltrainerBetaAI:
 JugglerAI:
 	cp 25 percent + 1
 	ret nc
@@ -345,7 +346,7 @@ CooltrainerFAI:
 	; The intended 25% chance to consider switching will not apply.
 	; Uncomment the line below to fix this.
 	cp 25 percent + 1
-	; ret nc
+	ret nc
 	ld a, 10
 	call AICheckIfHPBelowFraction
 	jp c, AIUseHyperPotion
@@ -447,6 +448,17 @@ LanceAI:
 GenericAI:
 	and a ; clear carry
 	ret
+	
+YujirouAI:
+	cp 25 percent + 1
+	ret nc
+	ld a, 10
+	call AICheckIfHPBelowFraction
+	jp c, AIUsePotion
+	ld a, 5
+	call AICheckIfHPBelowFraction
+	ret nc
+	jp AISwitchIfEnoughMons
 
 ; end of individual trainer AI routines
 

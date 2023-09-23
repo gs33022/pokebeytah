@@ -15,7 +15,7 @@ ViridianCityDefaultScript:
 	jp ViridianCityCheckGotPokedexScript
 
 ViridianCityCheckGotPokedexScript:
-	CheckEvent EVENT_GOT_POKEDEX
+	CheckEvent EVENT_GOT_TM42
 	ret nz
 	ld a, [wYCoord]
 	cp 3
@@ -173,7 +173,7 @@ ViridianCityYoungster2Text:
 
 ViridianCityGirlText:
 	text_asm
-	CheckEvent EVENT_GOT_POKEDEX
+	CheckEvent EVENT_GOT_TM42
 	jr nz, .got_pokedex
 	ld hl, .HasntHadHisCoffeeYetText
 	call PrintText

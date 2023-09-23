@@ -12,7 +12,7 @@ TrainerDataPointers:
 	dw BikerData
 	dw BurglarData
 	dw EngineerData
-	dw UnusedJugglerData
+	dw StudentData
 	dw FisherData
 	dw SwimmerData
 	dw CueBallData
@@ -47,6 +47,9 @@ TrainerDataPointers:
 	dw ChannelerData
 	dw AgathaData
 	dw LanceData
+	dw YujirouData
+	dw CooltrainerBetaMData
+	dw CooltrainerBetaFData
 	assert_table_length NUM_TRAINERS
 
 ; if first byte != $FF, then
@@ -311,8 +314,9 @@ EngineerData:
 	db 21, MAGNEMITE, 0
 	db 18, MAGNEMITE, MAGNEMITE, MAGNETON, 0
 
-UnusedJugglerData:
-; none
+StudentData:
+	db 6, JIGGLYPUFF, EEVEE, 0
+	db 18, MAGNEMITE, MAGNEMITE, MAGNETON, 0
 
 FisherData:
 ; SS Anne 2F Rooms
@@ -620,7 +624,7 @@ CooltrainerMData:
 	db 49, NIDOKING, 0
 	db 44, KINGLER, CLOYSTER, 0
 ; Viridian Gym
-	db 39, SANDSLASH, DUGTRIO, 0
+	db 6, RATTATA, PIDGEY, 0
 	db 43, RHYHORN, 0
 
 CooltrainerFData:
@@ -637,6 +641,8 @@ CooltrainerFData:
 	db 45, IVYSAUR, VENUSAUR, 0
 	db 45, NIDORINA, NIDOQUEEN, 0
 	db 43, PERSIAN, NINETALES, RAICHU, 0
+; Viridian Gym
+	db 6, PIDGEY, CLEFAIRY, 0
 
 BrunoData:
 	db $FF, 53, PRIMEAPE, 55, HITMONCHAN, 55, HITMONLEE, 56, ONIX, 58, MACHAMP, 0
@@ -743,3 +749,15 @@ AgathaData:
 
 LanceData:
 	db $FF, 58, GYARADOS, 56, DRAGONAIR, 56, DRAGONAIR, 60, AERODACTYL, 62, DRAGONITE, 0
+
+YujirouData:
+; Viridian Gym
+	db $FF, 10, EEVEE, 12, LICKITUNG, 0
+	
+CooltrainerBetaMData:
+; Viridian Gym
+	db $FF, 5, RATTATA, 6, MEOWTH, 0
+	
+CooltrainerBetaFData:
+; Viridian Gym
+	db $FF, 5, PIDGEY, 6, CLEFAIRY, 0

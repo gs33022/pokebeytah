@@ -15,7 +15,7 @@ TrainerNamePointers:
 	dw wTrainerName
 	dw .BurglarName
 	dw .EngineerName
-	dw .UnusedJugglerName
+	dw .StudentName
 	dw wTrainerName
 	dw .SwimmerName
 	dw wTrainerName
@@ -50,6 +50,9 @@ TrainerNamePointers:
 	dw wTrainerName
 	dw wTrainerName
 	dw wTrainerName
+	dw .YujirouName
+	dw .CooltrainerBetaMName
+	dw .CooltrainerBetaFName
 	assert_table_length NUM_TRAINERS
 
 .YoungsterName:     db "YOUNGSTER@"
@@ -61,7 +64,7 @@ TrainerNamePointers:
 .SuperNerdName:     db "SUPER NERD@"
 .BurglarName:       db "BURGLAR@"
 .EngineerName:      db "ENGINEER@"
-.UnusedJugglerName: db "JUGGLER@"
+.StudentName:       db "STUDENT@"
 .SwimmerName:       db "SWIMMER@"
 .BeautyName:        db "BEAUTY@"
 .RockerName:        db "ROCKER@"
@@ -73,3 +76,6 @@ TrainerNamePointers:
 .RocketName:        db "ROCKET@"
 .CooltrainerMName:  db "COOLTRAINER♂@"
 .CooltrainerFName:  db "COOLTRAINER♀@"
+.YujirouName:       db "YUJIROU@"
+.CooltrainerBetaMName:  db "COOLTRAINER♂@"
+.CooltrainerBetaFName:  db "COOLTRAINER♀@"

@@ -172,6 +172,9 @@
 	const SUBSTITUTE   ; a4
 	const PUNCH
 	const KICK
+	const TWAVE_BEYTAH
+	const UPPERCUT
+	const PUNCH_OUT
 	const STRUGGLE     ; a5
 DEF NUM_ATTACKS EQU const_value - 1
 

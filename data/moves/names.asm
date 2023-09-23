@@ -18,7 +18,7 @@ MoveNames::
 	li "GUST"
 	li "WING ATTACK"
 	li "WHIRLWIND"
-	li "FLY"
+	li "DIVE BOMB"
 	li "BIND"
 	li "SLAM"
 	li "VINE WHIP"
@@ -83,9 +83,9 @@ MoveNames::
 	li "STRING SHOT"
 	li "DRAGON RAGE"
 	li "FIRE SPIN"
-	li "THUNDERSHOCK"
-	li "THUNDERBOLT"
-	li "THUNDER WAVE"
+	li "THUNDERBOLT" ; old Thunder Shock
+	li "THUNDERCRASH" ; old Thunderbolt
+	li "THUNDERSHOCK" ; old Thunder Wave
 	li "THUNDER"
 	li "ROCK THROW"
 	li "EARTHQUAKE"
@@ -112,9 +112,9 @@ MoveNames::
 	li "WITHDRAW"
 	li "DEFENSE CURL"
 	li "BARRIER"
-	li "LIGHT SCREEN"
-	li "HAZE"
-	li "REFLECT"
+	li "FIRE FENCING"
+	li "AQUA SHIELD"
+	li "FLORAL FENCE"
 	li "FOCUS ENERGY"
 	li "BIDE"
 	li "METRONOME"
@@ -166,5 +166,14 @@ MoveNames::
 	li "SUBSTITUTE"
 	li "PUNCH"
 	li "KICK"
+	li "THUNDER WAVE"
+	li "UPPERCUT"
+	li "PUNCH OUT"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
+
+
+
+; add: Punch Out, Gastro Acid, Stun Cut, Powder Snow,
+; Poison Beam thing?, 4 Dragon moves ig, Squid Ink,
+; Star Freeze, Lunge, stronger Vine Whip, beta Barrier
