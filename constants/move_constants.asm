@@ -175,6 +175,9 @@
 	const TWAVE_BEYTAH
 	const UPPERCUT
 	const PUNCH_OUT
+	const STUN_CUT
+	const GASTRO_ACID
+	const POWDER_SNOW
 	const STRUGGLE     ; a5
 DEF NUM_ATTACKS EQU const_value - 1
 

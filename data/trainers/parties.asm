@@ -760,4 +760,4 @@ CooltrainerBetaMData:
 	
 CooltrainerBetaFData:
 ; Viridian Gym
-	db $FF, 5, PIDGEY, 6, CLEFAIRY, 0
+	db $FF, 5, JIGGLYPUFF, 6, CLEFAIRY, 0

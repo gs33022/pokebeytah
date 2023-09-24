@@ -1157,7 +1157,7 @@ PikachuEvosMoves:
 	db 0
 ; Learnset
 	db 14, TAIL_WHIP
-	db 16, THUNDER_WAVE ; actually Tshock
+	db 16, THUNDERSHOCK
 	db 18, SAND_ATTACK
 	db 20, SWIFT
 	db 22, FOCUS_ENERGY
@@ -1168,11 +1168,11 @@ RaichuEvosMoves:
 	db EV_ITEM, THUNDER_STONE, 1, GOROCHU
 	db 0
 ; Learnset
-	db 25, THUNDERSHOCK; actually Tbolt
+	db 25, THUNDERBOLT
 	db 28, LEER
-	db 31, TWAVE_BEYTAH; replace by actual Twave
+	db 31, THUNDER_WAVE
 	db 34, HORN_DRILL
-	db 37, THUNDERBOLT
+	db 37, THUNDER
 	db 0
 
 MissingNo56EvosMoves:
@@ -1601,7 +1601,7 @@ MachampEvosMoves:
 	db 0
 ; Learnset
 	db 37, MEGA_KICK
-	db 50, BARRIER ; BETA BARRIER
+	db 50, BARRIER
 	db 0
 
 MissingNo7FEvosMoves:

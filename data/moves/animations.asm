@@ -169,6 +169,9 @@ AttackAnimationPointers:
 	dw TwaveBeytahAnim
 	dw UppercutAnim
 	dw PunchOutAnim
+	dw StunCutAnim
+	dw GastroAcidAnim
+	dw PowderSnowAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -292,6 +295,7 @@ VicegripAnim:
 	battle_anim VICEGRIP, SUBANIM_0_SLICE_BOTH_SIDES, 0, 8
 	db -1 ; end
 
+StunCutAnim:
 GuillotineAnim:
 	battle_anim GUILLOTINE, SUBANIM_0_SLICE_BOTH_SIDES, 0, 6
 	db -1 ; end
@@ -502,6 +506,8 @@ DisableAnim:
 AcidAnim:
 	battle_anim ACID, SUBANIM_1_BLOB_TOSS, 1, 6
 	battle_anim ACID, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_WAVY_SCREEN
 	db -1 ; end
 
 EmberAnim:
@@ -1151,6 +1157,19 @@ SubstituteAnim:
 	battle_anim SUBSTITUTE, SE_SLIDE_MON_OFF
 	battle_anim NO_MOVE, SUBANIM_0_BALL_POOF, 0, 8
 	battle_anim NO_MOVE, SE_SUBSTITUTE_MON
+	db -1 ; end
+	
+GastroAcidAnim:
+	battle_anim GASTRO_ACID, SUBANIM_1_BLOB_TOSS, 1, 6
+	battle_anim GASTRO_ACID, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
+	db -1 ; end
+	
+PowderSnowAnim:
+	battle_anim BLIZZARD, SUBANIM_0_ICE_FALL, 0, 4
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim BLIZZARD, SUBANIM_0_ICE_FALL, 0, 4		
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim HYDRO_PUMP, SUBANIM_0_ICE_FALL, 0, 4
 	db -1 ; end
 
 BallTossAnim:
