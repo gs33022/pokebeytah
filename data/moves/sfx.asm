@@ -172,7 +172,7 @@ MoveSoundTable:
 	db SFX_BATTLE_17,          $01, $e0 ; PUNCH_OUT
 	db SFX_BATTLE_0F,          $00, $40 ; STUN_CUT
 	db SFX_BATTLE_2A,          $80, $c0 ; GASTRO_ACID
-	db SFX_BATTLE_28,          $90, $80 ; ICE_BEAM
+	db SFX_BATTLE_0C,          $f0, $f0 ; POWDER_SNOW
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80

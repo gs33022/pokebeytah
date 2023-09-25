@@ -1165,11 +1165,9 @@ GastroAcidAnim:
 	db -1 ; end
 	
 PowderSnowAnim:
-	battle_anim BLIZZARD, SUBANIM_0_ICE_FALL, 0, 4
-	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
-	battle_anim BLIZZARD, SUBANIM_0_ICE_FALL, 0, 4		
-	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
-	battle_anim HYDRO_PUMP, SUBANIM_0_ICE_FALL, 0, 4
+	battle_anim GUST, SUBANIM_1_TORNADO, 1, 6
+	battle_anim PAY_DAY, SUBANIM_0_ICE_FALL, 0, 4
+	battle_anim PAY_DAY, SUBANIM_0_ICE_FALL, 0, 4	
 	db -1 ; end
 
 BallTossAnim:

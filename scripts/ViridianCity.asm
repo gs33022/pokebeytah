@@ -15,7 +15,7 @@ ViridianCityDefaultScript:
 	jp ViridianCityCheckGotPokedexScript
 
 ViridianCityCheckGotPokedexScript:
-	CheckEvent EVENT_GOT_TM42
+	CheckEvent EVENT_BEAT_BROCK
 	ret nz
 	ld a, [wYCoord]
 	cp 3
@@ -173,7 +173,7 @@ ViridianCityYoungster2Text:
 
 ViridianCityGirlText:
 	text_asm
-	CheckEvent EVENT_GOT_TM42
+	CheckEvent EVENT_BEAT_BROCK
 	jr nz, .got_pokedex
 	ld hl, .HasntHadHisCoffeeYetText
 	call PrintText
@@ -207,7 +207,7 @@ ViridianCityOldManSleepyText:
 
 ViridianCityFisherText:
 	text_asm
-	CheckEvent EVENT_GOT_TM42
+	CheckEvent EVENT_GOT_TM34
 	jr nz, .got_item
 	ld hl, .YouCanHaveThisText
 	call PrintText

@@ -28,7 +28,7 @@ ViridianGym_Script:
 	db "GIOVANNI@"
 	
 ViridianGymSetDoorTile:
-	CheckEvent EVENT_GOT_POKEDEX
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_TRAINER_3
 	jr nz, .doorsOpen
 	ld a, $19 ; double door tile ID
 	jr .replaceTile
@@ -98,6 +98,8 @@ ViridianGymScriptReceiveTM34:
 	SetEvent EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0
 	SetEvent EVENT_BEAT_VIRIDIAN_GYM_TRAINER_1
 	SetEvent EVENT_BEAT_VIRIDIAN_GYM_TRAINER_2
+	SetEvent EVENT_BEAT_VIRIDIAN_GYM_TRAINER_3
+
 
 	jp ViridianGymResetScripts
 

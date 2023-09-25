@@ -11,15 +11,15 @@ CryData::
 	mon_cry SFX_CRY_00, $00, $80 ; Nidoran♂
 	mon_cry SFX_CRY_0E, $00, $35 ; Clefairy
 	mon_cry SFX_CRY_10, $00, $80 ; Spearow
-	mon_cry SFX_CRY_06, $ED, $80 ; Voltorb
+	mon_cry SFX_CRY_06, $00, $80 ; Voltorb
 	mon_cry SFX_CRY_09, $00, $80 ; Nidoking
 	mon_cry SFX_CRY_1F, $00, $80 ; Slowbro
-	mon_cry SFX_CRY_0F, $20, $80 ; Ivysaur
+	mon_cry SFX_CRY_08, $00, $80 ; Ivysaur
 	mon_cry SFX_CRY_0D, $00, $80 ; Exeggutor
 	mon_cry SFX_CRY_0C, $00, $80 ; Lickitung
 	mon_cry SFX_CRY_0B, $00, $80 ; Exeggcute
 	mon_cry SFX_CRY_05, $00, $80 ; Grimer
-	mon_cry SFX_CRY_07, $00, $FF ; Gengar
+	mon_cry SFX_CRY_07, $00, $80 ; Gengar
 	mon_cry SFX_CRY_01, $00, $80 ; Nidoran♀
 	mon_cry SFX_CRY_0A, $00, $80 ; Nidoqueen
 	mon_cry SFX_CRY_19, $00, $80 ; Cubone
@@ -39,7 +39,7 @@ CryData::
 	mon_cry SFX_CRY_12, $00, $80 ; Tangela
 	mon_cry SFX_CRY_1D, $00, $80 ; Totartle
 	mon_cry SFX_CRY_09, $FF, $08 ; Gorochu
-	mon_cry SFX_CRY_1F, $20, $40 ; Growlithe
+	mon_cry SFX_CRY_22, $00, $80 ; Growlithe
 	mon_cry SFX_CRY_17, $FF, $C0 ; Onix
 	mon_cry SFX_CRY_18, $40, $A0 ; Fearow
 	mon_cry SFX_CRY_0E, $DF, $04 ; Pidgey
@@ -102,7 +102,7 @@ CryData::
 	mon_cry SFX_CRY_19, $99, $10 ; Horsea
 	mon_cry SFX_CRY_19, $3C, $01 ; Seadra
 	mon_cry SFX_CRY_00, $90, $80 ; Cheep
-	mon_cry SFX_CRY_00, $50, $80 ; Jabetta (PLACEHOLDER)
+	mon_cry SFX_CRY_00, $50, $80 ; Jabetta
 	mon_cry SFX_CRY_00, $20, $40 ; Sandshrew
 	mon_cry SFX_CRY_00, $FF, $FF ; Sandslash
 	mon_cry SFX_CRY_1F, $F0, $01 ; Omanyte
@@ -172,13 +172,13 @@ CryData::
 	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
 	mon_cry SFX_CRY_25, $00, $80 ; Ponyta
 	mon_cry SFX_CRY_25, $20, $C0 ; Rapidash
-	mon_cry SFX_CRY_22, $00, $80 ; Rattata
-	mon_cry SFX_CRY_22, $20, $FF ; Raticate
+	mon_cry SFX_CRY_20, $90, $10 ; Rattata
+	mon_cry SFX_CRY_20, $70, $10 ; Raticate
 	mon_cry SFX_CRY_00, $2C, $C0 ; Nidorino
 	mon_cry SFX_CRY_01, $2C, $E0 ; Nidorina
 	mon_cry SFX_CRY_24, $F0, $10 ; Geodude
 	mon_cry SFX_CRY_25, $AA, $FF ; Porygon
-	mon_cry SFX_CRY_23, $20, $F0 ; Aerodactyl
+	mon_cry SFX_CRY_23, $00, $80 ; Aerodactyl
 	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
 	mon_cry SFX_CRY_1C, $80, $60 ; Magnemite
 	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.

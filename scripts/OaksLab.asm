@@ -599,11 +599,6 @@ OaksLabOakGivesPokedexScript:
 	call DisplayTextID
 	SetEvent EVENT_GOT_POKEDEX
 	SetEvent EVENT_OAK_GOT_PARCEL
-	ld a, HS_LYING_OLD_MAN
-	ld [wMissableObjectIndex], a
-	predef HideObject
-	ld a, HS_OLD_MAN
-	ld [wMissableObjectIndex], a
 	predef ShowObject
 	ld a, [wSavedNPCMovementDirections2Index]
 	ld b, 0

@@ -148,9 +148,7 @@ INCLUDE "engine/pokemon/bills_pc.asm"
 SECTION "Battle Engine 3", ROMX
 
 INCLUDE "engine/battle/print_type.asm"
-INCLUDE "engine/battle/save_trainer_name.asm"
 INCLUDE "engine/battle/move_effects/focus_energy.asm"
-
 
 SECTION "Battle Engine 4", ROMX
 
@@ -258,11 +256,9 @@ SECTION "Diploma", ROMX
 
 INCLUDE "engine/events/diploma.asm"
 
-
 SECTION "Trainer Sight", ROMX
 
 INCLUDE "engine/overworld/trainer_sight.asm"
-
 
 SECTION "Battle Engine 10", ROMX
 
@@ -355,3 +351,6 @@ INCLUDE "data/battle_anims/frame_blocks.asm"
 INCLUDE "engine/movie/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 INCLUDE "engine/items/tm_prices.asm"
+
+SECTION "Slots", ROMX
+INCLUDE "engine/battle/just_slot_machine_stuff.asm" ; to free bank1E

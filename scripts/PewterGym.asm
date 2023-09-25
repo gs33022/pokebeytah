@@ -47,14 +47,13 @@ PewterGymScriptReceiveTM34:
 	ld a, TEXT_PEWTERGYM_BROCK_WAIT_TAKE_THIS
 	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
-	SetEvent EVENT_BEAT_BROCK
-	lb bc, TM_BIDE, 1
+	SetEvent EVENT_BEAT_MISTY
+	lb bc, TM_DIG, 1
 	call GiveItem
 	jr nc, .BagFull
 	ld a, TEXT_PEWTERGYM_RECEIVED_TM34
 	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
-	SetEvent EVENT_GOT_TM34
 	jr .gymVictory
 .BagFull
 	ld a, TEXT_PEWTERGYM_TM34_NO_ROOM
@@ -62,9 +61,9 @@ PewterGymScriptReceiveTM34:
 	call DisplayTextID
 .gymVictory
 	ld hl, wObtainedBadges
-	set BIT_BOULDERBADGE, [hl]
+	set BIT_CASCADEBADGE, [hl]
 	ld hl, wBeatGymFlags
-	set BIT_BOULDERBADGE, [hl]
+	set BIT_CASCADEBADGE, [hl]
 
 	ld a, HS_GYM_GUY
 	ld [wMissableObjectIndex], a
@@ -97,7 +96,7 @@ PewterGymTrainerHeader0:
 
 PewterGymBrockText:
 	text_asm
-	CheckEvent EVENT_BEAT_BROCK
+	CheckEvent EVENT_BEAT_MISTY
 	jr z, .beforeBeat
 	CheckEventReuseA EVENT_GOT_TM34
 	jr nz, .afterBeat
@@ -180,7 +179,7 @@ PewterGymCooltrainerMAfterBattleText:
 PewterGymGuideText:
 	text_asm
 	ld a, [wBeatGymFlags]
-	bit BIT_BOULDERBADGE, a
+	bit BIT_CASCADEBADGE, a
 	jr nz, .afterBeat
 	ld hl, PewterGymGuidePreAdviceText
 	call PrintText

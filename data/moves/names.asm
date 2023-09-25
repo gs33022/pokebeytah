@@ -175,9 +175,7 @@ MoveNames::
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
 
-
-
-; add: Gastro Acid, Stun Cut, Powder Snow,
+; add:
 ; Poison Beam thing?, 4 Dragon moves ig, Squid Ink,
 ; Star Freeze, Lunge, stronger Vine Whip,
 ; beta Flying move

@@ -22,7 +22,7 @@ PewterCityDefaultScript:
 	ret
 
 PewterCityCheckPlayerLeavingEastScript:
-	CheckEvent EVENT_BEAT_BROCK
+	CheckEvent EVENT_BEAT_MISTY
 	ret nz
 IF DEF(_DEBUG)
 	call DebugPressedOrHeldB

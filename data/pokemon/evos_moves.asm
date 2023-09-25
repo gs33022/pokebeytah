@@ -1039,7 +1039,7 @@ JynxEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 18, LICK ; POWDER SNOW 
+	db 18, POWDER_SNOW 
 	db 23, CONFUSION
 	db 31, AURORA_BEAM
 	db 39, DOUBLESLAP
