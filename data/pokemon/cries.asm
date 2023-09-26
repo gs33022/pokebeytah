@@ -58,7 +58,7 @@ CryData::
 	mon_cry SFX_CRY_12, $E0, $40 ; Golem
 	mon_cry SFX_CRY_01, $20, $C0 ; Nidoreign
 	mon_cry SFX_CRY_04, $FF, $30 ; Magmar
-	mon_cry SFX_CRY_21, $DD, $C0 ; Weirduck
+	mon_cry SFX_CRY_11, $20, $10 ; Weirduck
 	mon_cry SFX_CRY_06, $8F, $FF ; Electabuzz
 	mon_cry SFX_CRY_1C, $42, $C0 ; Magneton
 	mon_cry SFX_CRY_12, $E6, $DD ; Koffing
@@ -88,7 +88,7 @@ CryData::
 	mon_cry SFX_CRY_16, $90, $40 ; Orefry
 	;mon_cry SFX_CRY_22, $FF, $40 ; MissingNo.
 	mon_cry SFX_CRY_0D, $40, $FF ; Freezeti
-	mon_cry SFX_CRY_0E, $E0, $60 ; MissingNo.
+	mon_cry SFX_CRY_00, $80, $10 ; Cactormous
 	mon_cry SFX_CRY_24, $4F, $10 ; Vulpix
 	mon_cry SFX_CRY_24, $88, $60 ; Ninetales
 	mon_cry SFX_CRY_0F, $EE, $01 ; Pikachu

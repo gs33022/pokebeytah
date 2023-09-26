@@ -184,6 +184,7 @@ INCLUDE "text/VermilionPokecenter.asm"
 INCLUDE "text/PokemonFanClub.asm"
 INCLUDE "text/VermilionMart.asm"
 INCLUDE "text/VermilionGym.asm"
+INCLUDE "text/ShadyShopMtMoon.asm"
 
 
 SECTION "Text 8", ROMX
@@ -266,7 +267,6 @@ INCLUDE "data/text/text_6.asm"
 SECTION "Text 11", ROMX
 
 INCLUDE "data/text/text_7.asm"
-
 
 SECTION "Pokédex Text", ROMX
 

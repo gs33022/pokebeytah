@@ -1219,3 +1219,8 @@ INCLUDE "data/maps/headers/AgathasRoom.asm"
 INCLUDE "scripts/AgathasRoom.asm"
 INCLUDE "data/maps/objects/AgathasRoom.asm"
 AgathasRoom_Blocks: INCBIN "maps/AgathasRoom.blk"
+
+INCLUDE "data/maps/headers/ShadyShopMtMoon.asm"
+INCLUDE "scripts/ShadyShopMtMoon.asm"
+INCLUDE "data/maps/objects/ShadyShopMtMoon.asm"
+ShadyShopMtMoon_Blocks: INCBIN "maps/ShadyShopMtMoon.blk"

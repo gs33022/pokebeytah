@@ -80,7 +80,7 @@ PokedexEntryPointers:
 	dw KrabbyDexEntry
 	dw OrefryDexEntry
 	dw FreezetiDexEntry
-	dw MissingNoDexEntry
+	dw CactormousDexEntry
 	dw VulpixDexEntry
 	dw NinetalesDexEntry
 	dw PikachuDexEntry
@@ -755,6 +755,13 @@ FreezetiDexEntry:
 	db 4,3
 	dw 849
 	text_far _FreezetiDexEntry
+	text_end
+	
+CactormousDexEntry:
+	db "CACTUS@"
+	db 4,7
+	dw 882
+	text_far _CactormousDexEntry
 	text_end
 
 VulpixDexEntry:

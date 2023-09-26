@@ -642,7 +642,7 @@ CooltrainerFData:
 	db 45, NIDORINA, NIDOQUEEN, 0
 	db 43, PERSIAN, NINETALES, RAICHU, 0
 ; Viridian Gym
-	db 6, PIDGEY, CLEFAIRY, 0
+	db 6, PIDGEY, RATTATA, 0
 
 BrunoData:
 	db $FF, 53, PRIMEAPE, 55, HITMONCHAN, 55, HITMONLEE, 56, ONIX, 58, MACHAMP, 0
@@ -760,4 +760,4 @@ CooltrainerBetaMData:
 	
 CooltrainerBetaFData:
 ; Viridian Gym
-	db $FF, 5, JIGGLYPUFF, 6, CLEFAIRY, 0
+	db $FF, 5, PIDGEY, 6, CLEFAIRY, 0

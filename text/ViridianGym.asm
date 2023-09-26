@@ -31,7 +31,7 @@ _ViridianGymBrockPostBattleAdviceText::
 	cont "#MON trainer!"
 
 	para "Go to the GYM in"
-	line "CERULEAN and test"
+	line "PEWTER and test"
 	cont "your abilities!"
 	done
 
@@ -80,10 +80,10 @@ _ViridianGymBrockReceivedBoulderBadgeText::
 
 	para "As proof of your"
 	line "victory, here's"
-	cont "the BOULDERBADGE!"
+	cont "the FRIEND BADGE!"
 
 	para "<PLAYER> received"
-	line "the BOULDERBADGE!@"
+	line "the FRIEND BADGE!@"
 	text_end
 
 _ViridianGymBrockBoulderBadgeInfoText::

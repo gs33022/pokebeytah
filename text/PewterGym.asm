@@ -1,15 +1,17 @@
 _PewterGymBrockPreBattleText::
-	text "So, you're here."
+	text "Welcome to PEWTER"
+	line "CITY's GYM. I'm"
+	cont "BROCK, and I'm"
 	
-	para "I'm BROCK."
-	line "I'm PEWTER's GYM"
-	cont "LEADER!"
+	para "its LEADER. Me"
+	line "and my #MON"
+	cont "ground ourselves"
 	
-	para "Me and my #MON"
-	line "ground ourselves"
-	cont "for hours in"
+	para "for hours in"
+	line "training! Zaps of"
+	cont "electricity can't"
 	
-	para "training!"
+	para "affect us!"
 	line "Fuhaha!"
 	cont "Are you prepared"
 	

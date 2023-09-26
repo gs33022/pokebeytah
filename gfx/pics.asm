@@ -408,6 +408,8 @@ StraigarPicFront::   INCBIN "gfx/pokemon/front/straigar.pic"
 StraigarPicBack::      INCBIN "gfx/pokemon/back/straigarb.pic"
 GorotoraPicFront::   INCBIN "gfx/pokemon/front/gorotora.pic"
 GorotoraPicBack::      INCBIN "gfx/pokemon/back/gorotorab.pic"
+CactormousPicFront::   INCBIN "gfx/pokemon/front/cactormous.pic"
+CactormousPicBack::      INCBIN "gfx/pokemon/back/cactormousb.pic"
 
 RedPicBack::           INCBIN "gfx/player/redb.pic"
 OldManPicBack::        INCBIN "gfx/battle/oldmanb.pic"

@@ -9,5 +9,4 @@ WaterTilesets:
 	db CAVERN
 	db FACILITY
 	db PLATEAU
-	db BETA_GYM
 	db -1 ; end

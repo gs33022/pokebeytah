@@ -25,6 +25,7 @@ WarpTileIDPointers:
 	dw .FacilityWarpTileIDs
 	dw .PlateauWarpTileIDs
 	dw .BetaGymWarpTileIDs
+	dw .ShadyShopWarpTileIDs
 	assert_table_length NUM_TILESETS
 
 MACRO warp_tiles
@@ -94,6 +95,9 @@ ENDM
 	
 .BetaGymWarpTileIDs:
 	warp_tiles $4A
+	
+.ShadyShopWarpTileIDs:
+	warp_tiles $1C, $1D, $1E, $1F, $0C, $0D, $0E, $0F, $4B, $4C
 
 .ShipPortWarpTileIDs:
 .ClubWarpTileIDs:

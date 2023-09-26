@@ -19,31 +19,22 @@ _PewterGymBrockWaitTakeThisText::
 
 _PewterGymReceivedTM34Text::
 	text "<PLAYER> received"
-	line "TM34!@"
+	line "TM28!@"
 	text_end
 
 _TM34ExplanationText::
 	text_start
 
-	para "A TM contains a"
-	line "technique that"
-	cont "can be taught to"
-	cont "#MON!"
-
-	para "A TM is good only"
-	line "once! So when you"
-	cont "use one to teach"
-	cont "a new technique,"
-	cont "pick the #MON"
-	cont "carefully!"
-
-	para "TM34 contains"
-	line "BIDE!"
+	para "TM28 contains"
+	line "DIG!"
 
 	para "Your #MON will"
-	line "absorb damage in"
-	cont "battle then pay"
-	cont "it back double!"
+	line "go underground"
+	cont "for one turn,"
+	cont "then attack the"
+	
+	para "next for huge"
+	line "damage!"
 	done
 
 _PewterGymTM34NoRoomText::
@@ -66,16 +57,12 @@ _PewterGymBrockReceivedBoulderBadgeText::
 _PewterGymBrockBoulderBadgeInfoText::
 	text_start
 
-	para "That's an official"
-	line "#MON LEAGUE"
-	cont "BADGE!"
-
 	para "Its bearer's"
 	line "#MON become"
 	cont "more powerful!"
 
 	para "The technique"
-	line "FLASH can now be"
+	line "CUT can now be"
 	cont "used any time!"
 	prompt
 
@@ -103,17 +90,12 @@ _PewterGymCooltrainerMAfterBattleText::
 	done
 
 _PewterGymGuidePreAdviceText::
-	text "Hiya! I can tell"
-	line "you have what it"
-	cont "takes to become a"
-	cont "#MON champ!"
-
-	para "I'm no trainer,"
-	line "but I can tell"
-	cont "you how to win!"
-
-	para "Let me take you"
-	line "to the top!"
+	text "Hello, champ in"
+	line "the making! Here"
+	cont "for some advice"
+	
+	para "on how to defeat"
+	line "BROCK?"
 	done
 
 _PewterGymGuideBeginAdviceText::
@@ -122,15 +104,15 @@ _PewterGymGuideBeginAdviceText::
 	prompt
 
 _PewterGymGuideAdviceText::
-	text "The 1st #MON"
-	line "out in a match is"
-	cont "at the top of the"
-	cont "#MON LIST!"
-
-	para "By changing the"
-	line "order of #MON,"
-	cont "matches could be"
-	cont "made easier!"
+	text "BROCK specializes"
+	line "in ground-type"
+	cont "#MON!"
+	
+	para "Water and grass-"
+	line "types would be"
+	cont "great in order"
+	
+	para "to defeat him!"
 	done
 
 _PewterGymGuideFreeServiceText::
@@ -140,7 +122,7 @@ _PewterGymGuideFreeServiceText::
 	prompt
 
 _PewterGymGuidePostBattleText::
-	text "Just as I thought!"
-	line "You're #MON"
-	cont "champ material!"
+	text "You did it!"
+	line "Just six more GYMs"
+	cont "left to go!"
 	done

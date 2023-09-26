@@ -797,6 +797,16 @@ _FreezetiDexEntry::
 	next "cold and lonely"
 	next "mountains"
 	dex
+	
+_CactormousDexEntry::
+	text "The pieces it can"
+	next "tear off itself"
+	next "to attack will"
+
+	page "regrow, so it can"
+	next "afford to be very"
+	next "reckless"
+	dex
 
 _VulpixDexEntry::
 	text "At the time of"

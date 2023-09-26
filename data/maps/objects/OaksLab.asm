@@ -12,7 +12,7 @@
 	const OAKSLAB_SCIENTIST2
 
 OaksLab_Object:
-	db $3 ; border block
+	db $0 ; border block
 
 	def_warp_events
 	warp_event  4, 11, LAST_MAP, 3

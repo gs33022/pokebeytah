@@ -66,3 +66,5 @@ SECTION "Tilesets 4", ROMX
 
 BetaGym_GFX::		INCBIN "gfx/tilesets/betagym.2bpp"
 BetaGym_Block::		INCBIN "gfx/blocksets/betagym.bst"
+ShadyShop_GFX::		INCBIN "gfx/tilesets/shadyshop.2bpp"
+ShadyShop_Block::   INCBIN "gfx/blocksets/shadyshop.bst"

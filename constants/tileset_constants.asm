@@ -26,4 +26,5 @@
 	const FACILITY     ; 22
 	const PLATEAU      ; 23
 	const BETA_GYM     ; 24
+	const SHADY_SHOP   ; 25
 DEF NUM_TILESETS EQU const_value

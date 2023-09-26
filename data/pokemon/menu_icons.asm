@@ -129,6 +129,7 @@ MonPartyData:
 	nybble ICON_MON       ; Rhydon
 	nybble ICON_FAIRY     ; Chansey
 	nybble ICON_GRASS     ; Tangela
+	nybble ICON_GRASS     ; Cactormous
 	nybble ICON_MON       ; Kangaskhan
 	nybble ICON_WATER     ; Horsea
 	nybble ICON_WATER     ; Seadra

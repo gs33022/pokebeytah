@@ -83,7 +83,7 @@ EvosMovesPointerTable:
 	dw KrabbyEvosMoves
 	dw OrefryEvosMoves
 	dw FreezetiEvosMoves
-	dw MissingNo51EvosMoves
+	dw CactormousEvosMoves
 	dw VulpixEvosMoves
 	dw NinetalesEvosMoves
 	dw PikachuEvosMoves
@@ -1120,7 +1120,7 @@ FreezetiEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 18, LICK ; POWDER SNOW
+	db 18, POWDER_SNOW
 	db 23, BODY_SLAM
 	db 31, ICE_PUNCH
 	db 39, HEADBUTT
@@ -1128,10 +1128,16 @@ FreezetiEvosMoves:
 	db 58, BLIZZARD
 	db 0
 
-MissingNo51EvosMoves:
+CactormousEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 18, ABSORB
+	db 23, BODY_SLAM
+	db 31, MEGA_DRAIN
+	db 39, BARRAGE
+	db 47, GROWTH
+	db 58, SOLARBEAM
 	db 0
 
 VulpixEvosMoves:

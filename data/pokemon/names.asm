@@ -80,7 +80,7 @@ MonsterNames::
 	db "KRABBY@@@@"
 	db "OREFRY@@@@"
 	db "FREEZETI@@"
-	db "MISSINGNO."
+	db "CACTORMOUS"
 	db "VULPVI@@@@"
 	db "VULPIX@@@@"
 	db "PIKACHU@@@"

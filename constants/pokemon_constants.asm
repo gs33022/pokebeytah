@@ -87,7 +87,7 @@
 	const KRABBY             ; $4E
 	const OREFRY             ; $4F
 	const FREEZETI           ; $50
-	const_skip               ; $51
+	const CACTORMOUS         ; $51
 	const VULPIX             ; $52
 	const NINETALES          ; $53
 	const PIKACHU            ; $54
