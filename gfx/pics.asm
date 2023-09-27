@@ -369,6 +369,9 @@ LancePic::         INCBIN "gfx/trainers/lance.pic"
 YujirouPic::       INCBIN "gfx/trainers/yujirou.pic"
 CooltrainerBetaMPic::  INCBIN "gfx/trainers/cooltrainerm.pic"
 CooltrainerBetaFPic::  INCBIN "gfx/trainers/cooltrainerf.pic"
+FirefighterPic::   INCBIN "gfx/trainers/firefighter.pic"
+JuniorPic::        INCBIN "gfx/trainers/junior.pic"
+
 
 SECTION "Pics 6", ROMX
 

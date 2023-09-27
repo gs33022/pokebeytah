@@ -1133,7 +1133,7 @@ CactormousEvosMoves:
 	db 0
 ; Learnset
 	db 18, ABSORB
-	db 23, BODY_SLAM
+	db 23, PIN_MISSILE
 	db 31, MEGA_DRAIN
 	db 39, BARRAGE
 	db 47, GROWTH

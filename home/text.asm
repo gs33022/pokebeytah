@@ -135,6 +135,8 @@ ENDM
 
 PrintPlayerName:: print_name wPlayerName
 PrintRivalName::  print_name wRivalName
+PrintJuniorName:: print_name wJuniorName
+
 
 TrainerChar:: print_name TrainerCharText
 TMChar::      print_name TMCharText

@@ -34,12 +34,14 @@ _CeruleanGymMistyCascadeBadgeInfoText::
 	line "even outsiders!"
 
 	para "There's more, you"
-	line "can now use CUT"
+	line "can now use FLY"
 	cont "any time!"
 
-	para "You can CUT down"
-	line "small bushes to"
-	cont "open new paths!"
+	para "You can FLY to"
+	line "any town or city"
+	cont "you've previously"
+	
+	para "visited!"
 
 	para "You can also have"
 	line "my favorite TM!"
@@ -67,15 +69,14 @@ _CeruleanGymMistyReceivedCascadeBadgeText::
 	text_end
 
 _CeruleanGymBattleText1::
-	text "I'm more than good"
-	line "enough for you!"
-
-	para "MISTY can wait!"
+	text "I'm going to wash"
+	line "your confidence"
+	cont "right away!"
 	done
 
 _CeruleanGymEndBattleText1::
-	text "You"
-	line "overwhelmed me!"
+	text "MY"
+	line "confidence!"
 	prompt
 
 _CeruleanGymAfterBattleText1::

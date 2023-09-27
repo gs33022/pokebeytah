@@ -829,7 +829,7 @@ _OutOfSafariBallsText::
 	prompt
 
 _WildRanText::
-	text "Wild @"
+	text "The wild @"
 	text_ram wEnemyMonNick
 	text_start
 	line "ran!"
@@ -923,9 +923,9 @@ _TrainerAboutToUseText::
 _TrainerSentOutText::
 	text_ram wTrainerName
 	text " sent"
-	line "out @"
+	line "@"
 	text_ram wEnemyMonNick
-	text "!"
+	text " out!"
 	done
 
 _NoWillText::
@@ -1234,7 +1234,7 @@ _GrewLevelText::
 	text_end
 
 _WildMonAppearedText::
-	text "Wild @"
+	text "A wild @"
 	text_ram wEnemyMonNick
 	text_start
 	line "appeared!"
@@ -1738,6 +1738,15 @@ _IntroduceRivalText::
 	para "...Erm, what is"
 	line "his name again?"
 	prompt
+	
+_IntroduceJuniorText::
+	text "This is my grand-"
+	line "son's little"
+	cont "brother."
+	
+	para "Um, do you remem-"
+	line "ber his name?"
+	prompt
 
 _OakSpeechText3::
 	text "<PLAYER>!"
@@ -1770,6 +1779,12 @@ _HisNameIsText::
 	line "remember now! His"
 	cont "name is <RIVAL>!"
 	prompt
+	
+_BroHisNameIsText::
+	text "That's right! I"
+	line "remember now! His"
+	cont "name is <JUNIOR>!"
+	prompt
 
 _WillBeTradedText::
 	text_ram wNameOfPlayerMonToBeTraded
@@ -1788,3 +1803,26 @@ _TextIDErrorText::
 _ContCharText::
 	text "<_CONT>@"
 	text_end
+
+_NidoranPetText::
+	text "It's two NIDORAN!"
+	text_end
+	
+_MagikarPetText::
+	text "A MAGIKARP swims"
+	line "around in a"
+	cont "tank."
+	text_end
+	
+_BellsproutPetText::
+	text "A BELLSPROUT sleeps"
+	line "with its feet under"
+	cont "some dirt."
+	text_end
+	
+_DratiniPetName::
+	text "A blue snake-like"
+	line "#MON is curled"
+	cont "up."
+	text_end
+

@@ -44,19 +44,19 @@ _Route3Youngster2AfterBattleText::
 	done
 
 _Route3CooltrainerF1BattleText::
-	text "You looked at me,"
-	line "didn't you?"
+	text "My boyfriend is"
+	line "a BUG CATCHER in"
+	cont "VIRIDIAN FOREST!"
 	done
 
 _Route3CooltrainerF1EndBattleText::
-	text "You're"
-	line "mean!"
+	text "How"
+	line "dare you!"
 	prompt
 
 _Route3CooltrainerF1AfterBattleText::
-	text "Quit staring if"
-	line "you don't want to"
-	cont "fight!"
+	text "You'll pay for"
+	line "hurting my bugs!"
 	done
 
 _Route3Youngster3BattleText::

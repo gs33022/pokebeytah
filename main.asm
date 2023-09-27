@@ -332,7 +332,6 @@ SECTION "Vending Machine", ROMX
 
 INCLUDE "engine/events/vending_machine.asm"
 
-
 SECTION "Itemfinder 2", ROMX
 
 INCLUDE "engine/menus/league_pc.asm"

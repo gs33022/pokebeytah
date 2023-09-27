@@ -14,7 +14,7 @@ _ViridianNicknameHouseLittleGirlText::
 	done
 
 _ViridianNicknameHouseSpearowText::
-	text "SPEARY: Tetweet!"
+	text "BRITNEY: Tetweet!"
 	done
 
 _ViridianNicknameHouseSpearySignText::

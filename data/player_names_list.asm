@@ -10,6 +10,12 @@ DefaultNamesRivalList:
 	db "BLUE@"
 	db "GARY@"
 	db "JOHN@"
+	
+DefaultNamesJuniorList:
+	db "JUNIOR"
+	db "SATOSHI"
+	db "QUENTIN"
+	db "SHADOW"
 ENDC
 
 IF DEF(_BLUE)
@@ -24,4 +30,10 @@ DefaultNamesRivalList:
 	db "RED@"
 	db "ASH@"
 	db "JACK@"
+	
+DefaultNamesJuniorList:
+	db "JUNIOR"
+	db "SATOSHI"
+	db "QUENTIN"
+	db "SHADOW"
 ENDC

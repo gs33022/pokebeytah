@@ -1747,6 +1747,9 @@ wPlayerMoney:: ds 3 ; BCD
 
 wRivalName:: ds NAME_LENGTH
 
+wJuniorName:: ds NAME_LENGTH
+
+
 ; bit 7 = battle animation
 ; 0: On
 ; 1: Off

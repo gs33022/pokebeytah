@@ -13,6 +13,11 @@ IF DEF(_DEBUG)
 	ld de, wRivalName
 	ld bc, NAME_LENGTH
 	call CopyData
+	
+	ld hl, DebugBattleJuniorName
+	ld de, wJuniorName
+	ld bc, NAME_LENGTH
+	call CopyData
 
 	call LoadFontTilePatterns
 	call LoadHpBarAndStatusTilePatterns
@@ -64,6 +69,9 @@ DebugBattlePlayerName:
 
 DebugBattleRivalName:
 	db "Juerry@"
+	
+DebugBattleJuniorName:
+	db "Tuffy@"
 
 DebugMenuOptions:
 	db   "FIGHT"

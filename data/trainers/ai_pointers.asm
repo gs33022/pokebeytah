@@ -54,4 +54,6 @@ TrainerAIPointers:
 	dbw 1, YujirouAI ; yujirou
 	dbw 2, CooltrainerBetaAI ; CooltrainerM in Viridian Gym
 	dbw 1, CooltrainerBetaAI ; CooltrainerF in Viridian Gym
+	dbw 1, GenericAI ; firefighter
+	dbw 3, GenericAI ; junior
 	assert_table_length NUM_TRAINERS

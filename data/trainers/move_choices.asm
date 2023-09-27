@@ -59,4 +59,6 @@ TrainerClassMoveChoiceModifications:
 	move_choices 1       ; YUJIROU
 	move_choices 1, 3    ; COOLTRAINER_BETA_M
 	move_choices 1, 3    ; COOLTRAINER_BETA_F
+	move_choices 1, 3    ; FIREFIGHTER
+	move_choices 1       ; JUNIOR
 	assert_list_length NUM_TRAINERS

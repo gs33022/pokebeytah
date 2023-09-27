@@ -47,7 +47,7 @@ CeruleanGymReceiveTM11:
 	ld a, TEXT_CERULEANGYM_MISTY_CASCADE_BADGE_INFO
 	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
-	SetEvent EVENT_BEAT_MISTY
+	SetEvent EVENT_BEAT_LT_SURGE
 	lb bc, TM_BUBBLEBEAM, 1
 	call GiveItem
 	jr nc, .BagFull
@@ -62,9 +62,9 @@ CeruleanGymReceiveTM11:
 	call DisplayTextID
 .gymVictory
 	ld hl, wObtainedBadges
-	set BIT_CASCADEBADGE, [hl]
+	set BIT_THUNDERBADGE, [hl]
 	ld hl, wBeatGymFlags
-	set BIT_CASCADEBADGE, [hl]
+	set BIT_THUNDERBADGE, [hl]
 
 	; deactivate gym trainers
 	SetEvents EVENT_BEAT_CERULEAN_GYM_TRAINER_0, EVENT_BEAT_CERULEAN_GYM_TRAINER_1
@@ -74,7 +74,7 @@ CeruleanGymReceiveTM11:
 CeruleanGym_TextPointers:
 	def_text_pointers
 	dw_const CeruleanGymMistyText,                 TEXT_CERULEANGYM_MISTY
-	dw_const CeruleanGymCooltrainerFText,          TEXT_CERULEANGYM_COOLTRAINER_F
+	dw_const CeruleanGymCooltrainerFText,          TEXT_CERULEANGYM_FIREFIGHTER
 	dw_const CeruleanGymSwimmerText,               TEXT_CERULEANGYM_SWIMMER
 	dw_const CeruleanGymGymGuideText,              TEXT_CERULEANGYM_GYM_GUIDE
 	dw_const CeruleanGymMistyCascadeBadgeInfoText, TEXT_CERULEANGYM_MISTY_CASCADE_BADGE_INFO
@@ -91,7 +91,7 @@ CeruleanGymTrainerHeader1:
 
 CeruleanGymMistyText:
 	text_asm
-	CheckEvent EVENT_BEAT_MISTY
+	CheckEvent EVENT_BEAT_LT_SURGE
 	jr z, .beforeBeat
 	CheckEventReuseA EVENT_GOT_TM11
 	jr nz, .afterBeat
@@ -189,7 +189,7 @@ CeruleanGymAfterBattleText2:
 
 CeruleanGymGymGuideText:
 	text_asm
-	CheckEvent EVENT_BEAT_MISTY
+	CheckEvent EVENT_BEAT_LT_SURGE
 	jr nz, .afterBeat
 	ld hl, .ChampInMakingText
 	call PrintText

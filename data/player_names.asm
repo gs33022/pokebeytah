@@ -12,6 +12,13 @@ DefaultNamesRival:
 	next "GARY"
 	next "JOHN"
 	db   "@"
+	
+DefaultNamesJunior:
+	db   "NEW NAME"
+	next "SATOSHI"
+	next "QUENTIN"
+	next "SHADOW"
+	db   "@"
 ENDC
 
 IF DEF(_BLUE)
@@ -27,5 +34,12 @@ DefaultNamesRival:
 	next "RED"
 	next "ASH"
 	next "JACK"
+	db   "@"
+	
+DefaultNamesJunior:
+	db   "NEW NAME"
+	next "SATOSHI"
+	next "QUENTIN"
+	next "SHADOW"
 	db   "@"
 ENDC

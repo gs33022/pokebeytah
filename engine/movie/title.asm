@@ -12,6 +12,9 @@ PrepareTitleScreen::
 	ld hl, DebugNewGameRivalName
 	ld de, wRivalName
 	call CopyDebugName
+	ld hl, DebugNewGameJuniorName
+	ld de, wJuniorName
+	call CopyDebugName
 	xor a
 	ldh [hWY], a
 	ld [wLetterPrintingDelayFlags], a
@@ -412,3 +415,6 @@ DebugNewGamePlayerName:
 
 DebugNewGameRivalName:
 	db "SONY@"
+	
+DebugNewGameJuniorName:
+	db "EA@"

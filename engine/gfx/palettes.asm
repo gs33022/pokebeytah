@@ -260,6 +260,7 @@ SetPalFunctions:
 ; The length of the blk data of each badge on the Trainer Card.
 ; The Rainbow Badge has 3 entries because of its many colors.
 BadgeBlkDataLengths:
+	db 6     ; Friend Badge
 	db 6     ; Boulder Badge
 	db 6     ; Cascade Badge
 	db 6     ; Thunder Badge
@@ -267,7 +268,6 @@ BadgeBlkDataLengths:
 	db 6     ; Soul Badge
 	db 6     ; Marsh Badge
 	db 6     ; Volcano Badge
-	db 6     ; Earth Badge
 
 DeterminePaletteID:
 	bit TRANSFORMED, a ; a is battle status 3

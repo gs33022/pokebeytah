@@ -38,6 +38,10 @@ PrepareOakSpeech:
 	ld de, wRivalName
 	ld bc, NAME_LENGTH
 	jp CopyData
+	ld hl, DebugNewGameJuniorName
+	ld de, wJuniorName
+	ld bc, NAME_LENGTH
+	jp CopyData
 
 OakSpeech:
 	ld a, SFX_STOP_ALL_MUSIC
@@ -99,6 +103,15 @@ OakSpeech:
 	ld hl, IntroduceRivalText
 	call PrintText
 	call ChooseRivalName
+	call ClearScreen
+	ld de, JuniorPic
+	lb bc, BANK(JuniorPic), $00
+	call IntroDisplayPicCenteredOrUpperRight
+	call FadeInIntroPic
+	ld hl, IntroduceJuniorText
+	call PrintText
+	call ChooseJuniorName
+	call ClearScreen
 .skipSpeech
 	call GBFadeOutToWhite
 	call ClearScreen
@@ -174,6 +187,9 @@ IntroducePlayerText:
 	text_end
 IntroduceRivalText:
 	text_far _IntroduceRivalText
+	text_end
+IntroduceJuniorText:
+	text_far _IntroduceJuniorText
 	text_end
 OakSpeechText3:
 	text_far _OakSpeechText3

@@ -491,3 +491,6 @@ NameTextString:
 
 NicknameTextString:
 	db "NICKNAME?@"
+	
+BrothersTextString:
+	db "BRO's @"

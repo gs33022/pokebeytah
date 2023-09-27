@@ -65,4 +65,6 @@ ENDM
 	trainer_const YUJIROU
 	trainer_const COOLTRAINER_BETA_M
 	trainer_const COOLTRAINER_BETA_F
+	trainer_const FIREFIGHTER
+	trainer_const JUNIOR
 DEF NUM_TRAINERS EQU const_value - 1

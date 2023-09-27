@@ -14,7 +14,7 @@ ShadyShopMtMoonDealerText:
 	ld a, MONEY_BOX
 	ld [wTextBoxID], a
 	call DisplayTextBoxID
-	call WideYesNoChoice
+	call MonSellingChoice
 	ld a, [wCurrentMenuItem]
 	and a
 	jp nz, .choseNo

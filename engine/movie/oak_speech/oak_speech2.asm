@@ -59,10 +59,44 @@ ChooseRivalName:
 .done
 	ld hl, HisNameIsText
 	jp PrintText
+	
+ChooseJuniorName:
+	call OakSpeechSlidePicRight
+	ld de, DefaultNamesJunior
+	call DisplayIntroNameTextBox
+	ld a, [wCurrentMenuItem]
+	and a
+	jr z, .customName
+	ld hl, DefaultNamesJuniorList
+	call GetDefaultName
+	ld de, wJuniorName
+	call OakSpeechSlidePicLeft
+	jr .done
+.customName
+	ld hl, wJuniorName
+	ld a, NAME_RIVAL_SCREEN
+	ld [wNamingScreenType], a
+	call DisplayNamingScreen
+	ld a, [wStringBuffer]
+	cp "@"
+	jr z, .customName
+	call ClearScreen
+	call Delay3
+	ld de, JuniorPic
+	ld b, $13
+	call IntroDisplayPicCenteredOrUpperRight
+.done
+	ld hl, BroHisNameIsText
+	jp PrintText
 
 HisNameIsText:
 	text_far _HisNameIsText
 	text_end
+	
+BroHisNameIsText:
+	text_far _BroHisNameIsText
+	text_end
+
 
 OakSpeechSlidePicLeft:
 	push de
