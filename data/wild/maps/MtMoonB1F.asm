@@ -6,8 +6,8 @@ MtMoonB1FWildMons:
 	db  8, GEODUDE
 	db  9, BITTYBAT
 	db 10, PARAS
-	db 10, BITTYBAT
-	db 11, BITTYBAT
+	db 10, MANKEY
+	db 11, EKANS
 	db  9, CLEFAIRY
 	db  9, GEODUDE
 	end_grass_wildmons

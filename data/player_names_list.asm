@@ -4,6 +4,12 @@ DefaultNamesPlayerList:
 	db "RED@"
 	db "ASH@"
 	db "JACK@"
+	
+DefaultNamesGirlList:
+  	db "NEW NAME@"
+    db "GREEN@"
+    db "LEAF@"
+    db "AMANDA@"
 
 DefaultNamesRivalList:
 	db "NEW NAME@"
@@ -14,7 +20,7 @@ DefaultNamesRivalList:
 DefaultNamesJuniorList:
 	db "NEW NAME@"
 	db "YELLOW@"
-	db "HARRISON@"
+	db "ERIC@"
 	db "JUNIOR@"
 ENDC
 
@@ -24,6 +30,12 @@ DefaultNamesPlayerList:
 	db "BLUE@"
 	db "GARY@"
 	db "JOHN@"
+	
+DefaultNamesGirlList:
+  	db "NEW NAME@"
+    db "GREEN@"
+    db "LEAF@"
+    db "AMANDA@"
 
 DefaultNamesRivalList:
 	db "NEW NAME@"
@@ -34,6 +46,6 @@ DefaultNamesRivalList:
 DefaultNamesJuniorList:
 	db "NEW NAME@"
 	db "YELLOW@"
-	db "HARRISON@"
+	db "ERIC@"
 	db "JUNIOR@"
 ENDC

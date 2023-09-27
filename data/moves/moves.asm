@@ -183,5 +183,6 @@ Moves:
 	move STUN_CUT,     PARALYZE_SIDE_EFFECT1,       45, FIGHTING,      75, 15
 	move GASTRO_ACID,  DEFENSE_DOWN_SIDE_EFFECT,    40, POISON,       100, 30
 	move POWDER_SNOW,  FREEZE_SIDE_EFFECT,          40, ICE,          100, 15
+	move POISON_BEAM,  DEFENSE_DOWN_SIDE_EFFECT,    65, POISON,       100, 20
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS

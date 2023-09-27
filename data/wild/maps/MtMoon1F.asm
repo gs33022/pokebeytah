@@ -3,13 +3,13 @@ MtMoon1FWildMons:
 	db  8, BITTYBAT
 	db  7, BITTYBAT
 	db  9, BITTYBAT
+	db  7, GEODUDE
+	db  9, BITTYBAT
+	db 10, MANKEY
 	db  8, GEODUDE
-	db  6, BITTYBAT
-	db 10, BITTYBAT
-	db 10, GEODUDE
 	db  8, PARAS
-	db 11, BITTYBAT
-	db  8, CLEFAIRY
+	db  9, EKANS
+	db 10, CLEFAIRY
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

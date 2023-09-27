@@ -172,6 +172,7 @@ AttackAnimationPointers:
 	dw StunCutAnim
 	dw GastroAcidAnim
 	dw PowderSnowAnim
+	dw PoisonBeamAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -1170,6 +1171,11 @@ PowderSnowAnim:
 	battle_anim PAY_DAY, SUBANIM_0_ICE_FALL, 0, 4	
 	db -1 ; end
 
+PoisonBeamAnim:	
+	battle_anim POISON_BEAM, SUBANIM_0_BEAM, 0, 3
+	battle_anim ACID, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
+	db -1 ; end
+	
 BallTossAnim:
 	battle_anim NO_MOVE, SUBANIM_0_BALL_TOSS_HIGH, 0, 3
 	db -1 ; end

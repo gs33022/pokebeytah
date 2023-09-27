@@ -1978,8 +1978,13 @@ RunMapScript::
 
 LoadWalkingPlayerSpriteGraphics::
 	ld de, RedSprite
-	ld hl, vNPCSprites
-	jr LoadPlayerSpriteGraphicsCommon
+    ld a, [wPlayerGender]
+    and a
+    jr z, .AreGuy1
+    ld de, GreenSprite
+.AreGuy1
+    ld hl,vNPCSprites
+    jr LoadPlayerSpriteGraphicsCommon
 
 LoadSurfingPlayerSpriteGraphics::
 	ld de, SeelSprite
@@ -1987,6 +1992,12 @@ LoadSurfingPlayerSpriteGraphics::
 	jr LoadPlayerSpriteGraphicsCommon
 
 LoadBikePlayerSpriteGraphics::
+	ld de, RedBikeSprite
+	ld a, [wPlayerGender]
+    and a
+    jr z, .AreGuy2
+    ld de, GreenBikeSprite
+.AreGuy2
 	ld de, RedBikeSprite
 	ld hl, vNPCSprites
 

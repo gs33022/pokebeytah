@@ -1728,6 +1728,11 @@ _IntroducePlayerText::
 	text "First, what is"
 	line "your name?"
 	prompt
+	
+_BoyGirlText::
+    text "Play as a boy, or"
+    line "as a girl?"
+    done
 
 _IntroduceRivalText::
 	text "This is my grand-"
@@ -1740,8 +1745,8 @@ _IntroduceRivalText::
 	prompt
 	
 _IntroduceJuniorText::
-	text "This is my grand-"
-	line "son's little"
+	text "Now, this is my"
+	line "grandson's little"
 	cont "brother."
 	
 	para "Um, do you remem-"
@@ -1781,9 +1786,9 @@ _HisNameIsText::
 	prompt
 	
 _BroHisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <JUNIOR>!"
+	text "Oh, I remember"
+	line "now! His name is"
+	cont "<JUNIOR>!"
 	prompt
 
 _WillBeTradedText::

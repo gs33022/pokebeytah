@@ -5,6 +5,13 @@ DefaultNamesPlayer:
 	next "ASH"
 	next "JACK"
 	db   "@"
+	
+DefaultNamesGirl:
+  	db   "NEW NAME"
+    next "GREEN"
+    next "LEAF"
+   next "AMANDA"
+    db   "@"
 
 DefaultNamesRival:
 	db   "NEW NAME"
@@ -16,7 +23,7 @@ DefaultNamesRival:
 DefaultNamesJunior:
 	db   "NEW NAME"
 	next "YELLOW"
-	next "HARRISON"
+	next "ERIC"
 	next "JUNIOR"
 	db   "@"
 ENDC
@@ -28,6 +35,13 @@ DefaultNamesPlayer:
 	next "GARY"
 	next "JOHN"
 	db   "@"
+	
+DefaultNamesGirl:
+  	db   "NEW NAME"
+    next "GREEN"
+    next "LEAF"
+   next "AMANDA"
+    db   "@"
 
 DefaultNamesRival:
 	db   "NEW NAME"
@@ -39,7 +53,7 @@ DefaultNamesRival:
 DefaultNamesJunior:
 	db   "NEW NAME"
 	next "YELLOW"
-	next "HARRISON"
+	next "ERIC"
 	next "JUNIOR"
 	db   "@"
 ENDC

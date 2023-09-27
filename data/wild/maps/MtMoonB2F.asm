@@ -4,9 +4,9 @@ MtMoonB2FWildMons:
 	db  9, GEODUDE
 	db 10, BITTYBAT
 	db 10, GEODUDE
-	db 11, BITTYBAT
+	db 11, EKANS
 	db 10, PARAS
-	db 12, PARAS
+	db 12, MANKEY
 	db 10, CLEFAIRY
 	db 12, BITTYBAT
 	db 12, CLEFAIRY
