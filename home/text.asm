@@ -90,9 +90,9 @@ PlaceNextChar::
 	dict "<PAGE>",    PageChar
 	dict "<PLAYER>",  PrintPlayerName
 	dict "<RIVAL>",   PrintRivalName
+	dict "<JUNIOR>",  PrintJuniorName
 	dict "#",         PlacePOKe
 	dict "<PC>",      PCChar
-	dict "<ROCKET>",  RocketChar
 	dict "<TM>",      TMChar
 	dict "<TRAINER>", TrainerChar
 	dict "<CONT>",    ContText
@@ -137,11 +137,9 @@ PrintPlayerName:: print_name wPlayerName
 PrintRivalName::  print_name wRivalName
 PrintJuniorName:: print_name wJuniorName
 
-
 TrainerChar:: print_name TrainerCharText
 TMChar::      print_name TMCharText
 PCChar::      print_name PCCharText
-RocketChar::  print_name RocketCharText
 PlacePOKe::   print_name PlacePOKeText
 SixDotsChar:: print_name SixDotsCharText
 PlacePKMN::   print_name PlacePKMNText
@@ -181,7 +179,6 @@ PlaceCommandCharacter::
 TMCharText::      db "TM@"
 TrainerCharText:: db "TRAINER@"
 PCCharText::      db "PC@"
-RocketCharText::  db "ROCKET@"
 PlacePOKeText::   db "POKé@"
 SixDotsCharText:: db "……@"
 EnemyText::       db "Enemy @"

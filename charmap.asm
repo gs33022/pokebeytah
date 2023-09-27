@@ -13,17 +13,17 @@
 	charmap "<PARA>",    $51
 	charmap "<PLAYER>",  $52 ; wPlayerName
 	charmap "<RIVAL>",   $53 ; wRivalName
-	charmap "#",         $54 ; "POKé"
-	charmap "<CONT>",    $55
-	charmap "<……>",      $56 ; "……"
-	charmap "<DONE>",    $57
-	charmap "<PROMPT>",  $58
-	charmap "<TARGET>",  $59
-	charmap "<USER>",    $5a
-	charmap "<PC>",      $5b ; "PC"
-	charmap "<TM>",      $5c ; "TM"
-	charmap "<TRAINER>", $5d ; "TRAINER"
-	charmap "<ROCKET>",  $5e ; "ROCKET"
+	charmap "JUNIOR>",   $54 ; wJuniorName
+	charmap "#",         $55 ; "POKé"
+	charmap "<CONT>",    $56
+	charmap "<……>",      $57 ; "……"
+	charmap "<DONE>",    $58
+	charmap "<PROMPT>",  $59
+	charmap "<TARGET>",  $5a
+	charmap "<USER>",    $5b
+	charmap "<PC>",      $5c ; "PC"
+	charmap "<TM>",      $5d ; "TM"
+	charmap "<TRAINER>", $5e ; "TRAINER"
 	charmap "<DEXEND>",  $5f
 
 ; Actual characters (from gfx/font/font_extra.png)

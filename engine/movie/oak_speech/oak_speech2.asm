@@ -54,7 +54,7 @@ ChooseRivalName:
 	call ClearScreen
 	call Delay3
 	ld de, Rival1Pic
-	ld b, $13
+	ld b, BANK(Rival1Pic)
 	call IntroDisplayPicCenteredOrUpperRight
 .done
 	ld hl, HisNameIsText
@@ -83,7 +83,7 @@ ChooseJuniorName:
 	call ClearScreen
 	call Delay3
 	ld de, JuniorPic
-	ld b, $13
+	ld b, BANK(JuniorPic)
 	call IntroDisplayPicCenteredOrUpperRight
 .done
 	ld hl, BroHisNameIsText

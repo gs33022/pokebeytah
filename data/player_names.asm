@@ -15,9 +15,9 @@ DefaultNamesRival:
 	
 DefaultNamesJunior:
 	db   "NEW NAME"
-	next "SATOSHI"
-	next "QUENTIN"
-	next "SHADOW"
+	next "YELLOW"
+	next "HARRISON"
+	next "JUNIOR"
 	db   "@"
 ENDC
 
@@ -38,8 +38,8 @@ DefaultNamesRival:
 	
 DefaultNamesJunior:
 	db   "NEW NAME"
-	next "SATOSHI"
-	next "QUENTIN"
-	next "SHADOW"
+	next "YELLOW"
+	next "HARRISON"
+	next "JUNIOR"
 	db   "@"
 ENDC
