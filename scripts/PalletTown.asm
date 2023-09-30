@@ -19,9 +19,6 @@ PalletTown_ScriptPointers:
 
 PalletTownDefaultScript:
 	CheckEvent EVENT_FOLLOWED_OAK_INTO_LAB
-	ld a, HS_PALLET_TOWN_OAK
-	ld [wMissableObjectIndex], a
-	predef ShowObject
 	ret nz
 	ld a, [wYCoord]
 	cp 6 ; is player near north exit?
