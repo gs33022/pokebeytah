@@ -51,8 +51,11 @@ PalletTownOakHeyWaitScript:
 	call DisplayTextID
 	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
-	
-; trigger the next script
+	ld a, HS_PALLET_TOWN_OAK
+	ld [wMissableObjectIndex], a
+	predef ShowObject
+
+	; trigger the next script
 	ld a, SCRIPT_PALLETTOWN_OAK_WALKS_TO_PLAYER
 	ld [wPalletTownCurScript], a
 	ret
@@ -82,7 +85,7 @@ PalletTownOakWalksToPlayerScript:
 	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
 
-; trigger the next script
+	; trigger the next script
 	ld a, SCRIPT_PALLETTOWN_OAK_NOT_SAFE_COME_WITH_ME
 	ld [wPalletTownCurScript], a
 	ret
