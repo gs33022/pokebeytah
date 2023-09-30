@@ -55,8 +55,6 @@ TrainerPicAndMoneyPointers::
 	pic_money AgathaPic,       9900
 	pic_money LancePic,        9900
 	pic_money YujirouPic,      9900
-	pic_money CooltrainerBetaMPic, 3500
-	pic_money CooltrainerBetaFPic, 3500
 	pic_money FirefighterPic,   500
 	pic_money JuniorPic,       2500
 	assert_table_length NUM_TRAINERS

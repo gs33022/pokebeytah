@@ -1,20 +1,18 @@
 _PalletTownOakHeyWaitDontGoOutText::
-	text "OAK: Hey! Wait!"
-	line "Don't go out!@"
+	text "OAK: Hey!"
+	line "<PLAYER>!@"
 	text_end
 
 _PalletTownOakItsUnsafeText::
-	text "OAK: It's unsafe!"
-	line "Wild #MON live"
-	cont "in tall grass!"
+	text "OAK: So, you're"
+	line "finally awake!"
 
-	para "You need your own"
-	line "#MON for your"
-	cont "protection."
-	cont "I know!"
+	para "It's time for you"
+	line "to begin your"
+	cont "#MON journey!"
 
 	para "Here, come with"
-	line "me!"
+	line "me to my LAB!"
 	done
 
 _PalletTownGirlText::
@@ -52,5 +50,5 @@ _PalletTownPlayersHouseSignText::
 	done
 
 _PalletTownRivalsHouseSignText::
-	text "<RIVAL>'s house "
+	text "ROUTE 1 AHEAD"
 	done
