@@ -27,9 +27,9 @@ ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayerList:
 	db "NEW NAME@"
-	db "BLUE@"
-	db "GARY@"
-	db "JOHN@"
+	db "RED@"
+	db "TAJIRI@"
+	db "JACK@"
 	
 DefaultNamesGirlList:
   	db "NEW NAME@"
@@ -39,9 +39,9 @@ DefaultNamesGirlList:
 
 DefaultNamesRivalList:
 	db "NEW NAME@"
-	db "RED@"
-	db "ASH@"
-	db "JACK@"
+	db "BLUE@"
+	db "SHIGERU@"
+	db "JEAN@"
 	
 DefaultNamesJuniorList:
 	db "NEW NAME@"
