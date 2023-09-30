@@ -48,6 +48,8 @@ TrainerNames::
 	li "AGATHA"
 	li "LANCE"
 	li "DOUG"
+	li "COOLTRAINER♂"
+	li "COOLTRAINER♀"
 	li "FIREFIGHTER"
 	li "JUNIOR"
 	assert_list_length NUM_TRAINERS

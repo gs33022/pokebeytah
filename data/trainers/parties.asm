@@ -48,6 +48,8 @@ TrainerDataPointers:
 	dw AgathaData
 	dw LanceData
 	dw YujirouData
+	dw CooltrainerBetaMData
+	dw CooltrainerBetaFData
 	dw FirefighterData
 	dw JuniorData
 	assert_table_length NUM_TRAINERS
@@ -79,14 +81,14 @@ YoungsterData:
 	db 19, SANDSHREW, ZUBAT, 0
 	db 17, RATTATA, RATTATA, RATICATE, 0
 	db 18, NIDORAN_M, NIDORINO, 0
-; Viridian Gym
-	db 4, RATTATA, 0
+; Unused
+	db 17, SPEAROW, RATTATA, RATTATA, SPEAROW, 0
 
 BugCatcherData:
 ; Viridian Forest
-	db 6, CATERPIE, METAPOD, 0
-	db 7, METAPOD, KAKUNA, METAPOD, 0
-	db 9, VENONAT, METAPOD, 0
+	db 7, CATERPIE, METAPOD, 0
+	db 8, METAPOD, KAKUNA, METAPOD, 0
+	db 12, VENONAT, METAPOD, 0
 ; Route 3
 	db 12, CATERPIE, WEEDLE, KAKUNA, CATERPIE, WEEDLE, 0
 	db 10, CATERPIE, VENONAT, 0
@@ -149,7 +151,7 @@ SailorData:
 
 JrTrainerMData:
 ; Pewter Gym
-	db  4, CATERPIE, 0
+	db 11, MANKEY, PIKACHU, 0
 ; Route 24/Route 25
 	db 14, SLOWPOKE, NIDORINO, 0
 ; Route 24
@@ -648,13 +650,13 @@ BrunoData:
 	db $FF, 53, PRIMEAPE, 55, HITMONCHAN, 55, HITMONLEE, 56, ONIX, 58, MACHAMP, 0
 
 BrockData:
-	db $FF, 12, DIGLETT, 14, ONIX, 0
+	db $FF, 16, DIGLETT, 18, ONIX, 0
 
 MistyData:
-	db $FF, 18, OREFRY, 21, SEADRA, 0
+	db $FF, 22, GOLDEEN, 24, SEADRA, 0
 
 LtSurgeData:
-	db $FF, 21, TYKER, 18, PIKACHU, 24, ELECTABUZZ, 0
+	db $FF, 24, TYKER, 21, PIKACHU, 28, ELECTABUZZ, 0
 
 ErikaData:
 	db $FF, 29, IVYSAUR, 24, WEEPINBELL, 29, EXEGGUTOR, 0
@@ -752,7 +754,15 @@ LanceData:
 
 YujirouData:
 ; Viridian Gym
-	db $FF, 5, RATTATA, 6, PIDGEY, 0
+	db $FF, 10, EEVEE, 12, LICKITUNG, 0
+	
+CooltrainerBetaMData:
+; Viridian Gym
+	db $FF, 4, RATTATA, 5, MEOWTH, 0
+	
+CooltrainerBetaFData:
+; Viridian Gym
+	db $FF, 4, PIDGEY, 5, CLEFAIRY, 0
 	
 FirefighterData:
 ; Cerulean Gym

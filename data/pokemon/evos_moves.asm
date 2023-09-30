@@ -597,17 +597,15 @@ FearowEvosMoves:
 
 PidgeyEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 20, PIDGEOTTO
+	db EV_LEVEL, 18, PIDGEOTTO
 	db 0
 ; Learnset
-	db 5, SCRATCH
-	db 7, WING_ATTACK
-	db 9, PECK
-	db 11, SAND_ATTACK
-	db 13, TACKLE
-	db 15, LEER
-	db 17, WHIRLWIND
-	db 19, GUST
+	db 5, SAND_ATTACK
+	db 12, QUICK_ATTACK
+	db 19, WHIRLWIND
+	db 28, WING_ATTACK
+	db 36, AGILITY
+	db 44, MIRROR_MOVE
 	db 0
 
 SlowpokeEvosMoves:
@@ -725,12 +723,11 @@ ParasectEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 28, CUT
-	db 31, TWINEEDLE
-	db 34, THRASH
-	db 37, ABSORB
-	db 40, PIN_MISSILE
-	db 43, REFLECT
+	db 13, STUN_SPORE
+	db 20, LEECH_LIFE
+	db 30, SPORE
+	db 39, SLASH
+	db 48, GROWTH
 	db 0
 
 PsyduckEvosMoves:
@@ -1447,15 +1444,14 @@ EkansEvosMoves:
 
 ParasEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 26, PARASECT
+	db EV_LEVEL, 24, PARASECT
 	db 0
 ; Learnset
-	db 15, TACKLE
-	db 17, LEECH_LIFE
-	db 19, SUPERSONIC
-	db 21, GROWTH
-	db 23, SWORDS_DANCE
-	db 25, POISON_BEAM
+	db 13, STUN_SPORE
+	db 20, LEECH_LIFE
+	db 27, SPORE
+	db 34, SLASH
+	db 41, GROWTH
 	db 0
 
 PoliwhirlEvosMoves:
@@ -1823,22 +1819,27 @@ AlakazamEvosMoves:
 
 PidgeottoEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 30, PIDGEOT
+	db EV_LEVEL, 36, PIDGEOT
 	db 0
 ; Learnset
-	db 22, MIRROR_MOVE
-	db 24, FURY_ATTACK
-	db 26, THRASH
-	db 28, SUPERSONIC
+	db 5, SAND_ATTACK
+	db 12, QUICK_ATTACK
+	db 21, WHIRLWIND
+	db 31, WING_ATTACK
+	db 40, AGILITY
+	db 49, MIRROR_MOVE
 	db 0
 
 PidgeotEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 35, SING
-	db 40, FLY
-	db 45, SONICBOOM
+	db 5, SAND_ATTACK
+	db 12, QUICK_ATTACK
+	db 21, WHIRLWIND
+	db 31, WING_ATTACK
+	db 44, AGILITY
+	db 54, MIRROR_MOVE
 	db 0
 
 StarmieEvosMoves:

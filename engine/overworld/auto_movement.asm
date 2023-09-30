@@ -45,8 +45,63 @@ _EndNPCMovementScript::
 	ret
 
 PalletMovementScriptPointerTable::
+	dw PalletMovementScript_OakMoveLeft
+	dw PalletMovementScript_PlayerMoveLeft
+	dw PalletMovementScript_WaitAndWalkToLab
 	dw PalletMovementScript_WalkToLab
 	dw PalletMovementScript_Done
+
+PalletMovementScript_OakMoveLeft:
+	ld a, [wXCoord]
+	sub $a
+	ld [wNumStepsToTake], a
+	jr z, .playerOnLeftTile
+; The player is on the right tile of the northern path out of Pallet Town and
+; Prof. Oak is below.
+; Make Prof. Oak step to the left.
+	ld b, 0
+	ld c, a
+	ld hl, wNPCMovementDirections2
+	ld a, NPC_MOVEMENT_LEFT
+	call FillMemory
+	ld [hl], $ff
+	ld a, [wSpriteIndex]
+	ldh [hSpriteIndex], a
+	ld de, wNPCMovementDirections2
+	call MoveSprite
+	ld a, $1
+	ld [wNPCMovementScriptFunctionNum], a
+	jr .done
+; The player is on the left tile of the northern path out of Pallet Town and
+; Prof. Oak is below.
+; Prof. Oak is already where he needs to be.
+.playerOnLeftTile
+	ld a, $3
+	ld [wNPCMovementScriptFunctionNum], a
+.done
+	ld hl, wFlags_D733
+	set 1, [hl]
+	ld a, SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
+	ld [wJoyIgnore], a
+	ret
+
+PalletMovementScript_PlayerMoveLeft:
+	ld a, [wd730]
+	bit 0, a ; is an NPC being moved by a script?
+	ret nz ; return if Oak is still moving
+	ld a, [wNumStepsToTake]
+	ld [wSimulatedJoypadStatesIndex], a
+	ldh [hNPCMovementDirections2Index], a
+	predef ConvertNPCMovementDirectionsToJoypadMasks
+	call StartSimulatingJoypadStates
+	ld a, $2
+	ld [wNPCMovementScriptFunctionNum], a
+	ret
+
+PalletMovementScript_WaitAndWalkToLab:
+	ld a, [wSimulatedJoypadStatesIndex]
+	and a ; is the player done moving left yet?
+	ret nz
 
 PalletMovementScript_WalkToLab:
 	xor a
@@ -73,14 +128,20 @@ PalletMovementScript_WalkToLab:
 	ret
 
 RLEList_ProfOakWalkToLab:
-	db NPC_MOVEMENT_RIGHT, 7
+	db NPC_MOVEMENT_DOWN, 5
+	db NPC_MOVEMENT_LEFT, 1
+	db NPC_MOVEMENT_DOWN, 5
+	db NPC_MOVEMENT_RIGHT, 3
 	db NPC_MOVEMENT_UP, 1
 	db NPC_CHANGE_FACING, 1
 	db -1 ; end
 
 RLEList_PlayerWalkToLab:
 	db D_UP, 2
-	db D_RIGHT, 8
+	db D_RIGHT, 3
+	db D_DOWN, 5
+	db D_LEFT, 1
+	db D_DOWN, 6
 	db -1 ; end
 
 PalletMovementScript_Done:

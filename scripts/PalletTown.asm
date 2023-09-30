@@ -12,6 +12,7 @@ PalletTown_ScriptPointers:
 	def_script_pointers
 	dw_const PalletTownDefaultScript,              SCRIPT_PALLETTOWN_DEFAULT
 	dw_const PalletTownOakHeyWaitScript,           SCRIPT_PALLETTOWN_OAK_HEY_WAIT
+	dw_const PalletTownOakWalksToPlayerScript,     SCRIPT_PALLETTOWN_OAK_WALKS_TO_PLAYER
 	dw_const PalletTownOakNotSafeComeWithMeScript, SCRIPT_PALLETTOWN_OAK_NOT_SAFE_COME_WITH_ME
 	dw_const PalletTownPlayerFollowsOakScript,     SCRIPT_PALLETTOWN_PLAYER_FOLLOWS_OAK
 	dw_const PalletTownDaisyScript,                SCRIPT_PALLETTOWN_DAISY
@@ -21,11 +22,11 @@ PalletTownDefaultScript:
 	CheckEvent EVENT_FOLLOWED_OAK_INTO_LAB
 	ret nz
 	ld a, [wYCoord]
-	cp 6 ; is player near north exit?
+	cp 1 ; is player near north exit?
 	ret nz
 	xor a
 	ldh [hJoyHeld], a
-	ld a, PLAYER_DIR_RIGHT
+	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
 	ld a, SFX_STOP_ALL_MUSIC
 	call PlaySound
@@ -50,6 +51,39 @@ PalletTownOakHeyWaitScript:
 	call DisplayTextID
 	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
+	ld a, HS_PALLET_TOWN_OAK
+	ld [wMissableObjectIndex], a
+	predef ShowObject
+
+	; trigger the next script
+	ld a, SCRIPT_PALLETTOWN_OAK_WALKS_TO_PLAYER
+	ld [wPalletTownCurScript], a
+	ret
+
+PalletTownOakWalksToPlayerScript:
+	ld a, PALLETTOWN_OAK
+	ldh [hSpriteIndex], a
+	ld a, SPRITE_FACING_UP
+	ldh [hSpriteFacingDirection], a
+	call SetSpriteFacingDirectionAndDelay
+	call Delay3
+	ld a, 1
+	ld [wYCoord], a
+	ld a, 1
+	ldh [hNPCPlayerRelativePosPerspective], a
+	ld a, 1
+	swap a
+	ldh [hNPCSpriteOffset], a
+	predef CalcPositionOfPlayerRelativeToNPC
+	ld hl, hNPCPlayerYDistance
+	dec [hl]
+	predef FindPathToPlayer ; load Oak's movement into wNPCMovementDirections2
+	ld de, wNPCMovementDirections2
+	ld a, PALLETTOWN_OAK
+	ldh [hSpriteIndex], a
+	call MoveSprite
+	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
+	ld [wJoyIgnore], a
 
 	; trigger the next script
 	ld a, SCRIPT_PALLETTOWN_OAK_NOT_SAFE_COME_WITH_ME
@@ -60,7 +94,7 @@ PalletTownOakNotSafeComeWithMeScript:
 	ld a, [wd730]
 	bit 0, a
 	ret nz
-	ld a, SPRITE_FACING_RIGHT
+	xor a ; ld a, SPRITE_FACING_DOWN
 	ld [wSpritePlayerStateData1FacingDirection], a
 	ld a, 1
 	ld [wcf0d], a
@@ -149,7 +183,7 @@ PalletTownOakText:
 	ld [wEmotionBubbleSpriteIndex], a ; player's sprite
 	ld [wWhichEmotionBubble], a ; EXCLAMATION_BUBBLE
 	predef EmotionBubble
-	ld a, PLAYER_DIR_RIGHT
+	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
 	jp TextScriptEnd
 
