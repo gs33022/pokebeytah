@@ -1,17 +1,17 @@
-	db DEX_JABETTA ; pokedex id
+	db DEX_CROAKOZUNA ; pokedex id
 
-	db  70,  85,  80,  65,  75
+	db  90,  80,  55,  60,  70
 	;   hp  atk  def  spd  spc
 
 	db WATER, FIGHTING ; type
-	db 85 ; catch rate
-	db 100 ; base exp
+	db 50 ; catch rate
+	db 130 ; base exp
 
-	INCBIN "gfx/pokemon/front/jabetta.pic", 0, 1 ; sprite dimensions
-	dw JabettaPicFront, JabettaPicBack
+	INCBIN "gfx/pokemon/front/croakazuna.pic", 0, 1 ; sprite dimensions
+	dw CroakazunaPicFront, CroakazunaPicBack
 
-	db WATER_GUN, KICK, PUNCH, DOUBLESLAP ; level 1 learnset
-	db GROWTH_MEDIUM_SLOW ; growth rate
+	db PUNCH, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
@@ -19,8 +19,8 @@
 	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
 	     EARTHQUAKE,   FISSURE,      PSYCHIC_M,    MIMIC,        DOUBLE_TEAM,  \
 	     BIDE,         METRONOME,    SKULL_BASH,   REST,         PSYWAVE,      \
-	     SUBSTITUTE,   SURF,         STRENGTH
+	     SUBSTITUTE,   SURF
 	; end
 
-	db BANK(JabettaPicFront)
-	assert BANK(JabettaPicFront) == BANK(JabettaPicBack)
+	db BANK(CroakazunaPicFront)
+	assert BANK(CroakazunaPicFront) == BANK(CroakazunaPicBack)

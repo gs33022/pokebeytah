@@ -268,10 +268,13 @@ SECTION "Text 11", ROMX
 
 INCLUDE "data/text/text_7.asm"
 
-SECTION "Pokédex Text", ROMX
+SECTION "Pokédex Text 1", ROMX
 
-INCLUDE "data/pokemon/dex_text.asm"
+INCLUDE "data/pokemon/dex_text1.asm"
 
+SECTION "Pokédex Text 2", ROMX
+
+INCLUDE "data/pokemon/dex_text2.asm"
 
 SECTION "Move Names", ROMX
 

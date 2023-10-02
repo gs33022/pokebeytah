@@ -11,6 +11,6 @@ ShadyShopMtMoon_Object:
 	def_bg_events
 
 	def_object_events
-	object_event  1,  1, SPRITE_CLERK, STAY, DOWN, TEXT_SHADYSHOPMTMOON_DEALER
+	object_event  0,  3, SPRITE_CLERK, STAY, DOWN, TEXT_SHADYSHOPMTMOON_DEALER
 
 	def_warps_to SHADY_SHOP_MT_MOON

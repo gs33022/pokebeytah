@@ -85,8 +85,8 @@ PokedexEntryPointers:
 	dw NinetalesDexEntry
 	dw PikachuDexEntry
 	dw RaichuDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw RibbitoDexEntry
+	dw CroakozunaDexEntry
 	dw DratiniDexEntry
 	dw DragonairDexEntry
 	dw KabutoDexEntry
@@ -784,12 +784,26 @@ PikachuDexEntry:
 	dw 130
 	text_far _PikachuDexEntry
 	text_end
-
+	
 RaichuDexEntry:
 	db "MOUSE@"
 	db 2,7
 	dw 660
 	text_far _RaichuDexEntry
+	text_end
+	
+RibbitoDexEntry:
+	db "SUMO FROG@"
+	db 2,11
+	dw 1918
+	text_far _RibbitoDexEntry
+	text_end
+	
+CroakozunaDexEntry:
+	db "SUMO FROG@"
+	db 6,3
+	dw 4453
+	text_far _CroakozunaDexEntry
 	text_end
 
 DratiniDexEntry:

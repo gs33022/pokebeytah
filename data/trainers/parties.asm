@@ -338,7 +338,7 @@ FisherData:
 
 SwimmerData:
 ; Cerulean Gym
-	db 15, OREFRY, STARYU, 0
+	db 15, SHELLDER, STARYU, 0
 ; Route 19
 	db 30, TENTACOOL, SHELLDER, 0
 	db 29, GOLDEEN, HORSEA, STARYU, 0
@@ -756,7 +756,7 @@ YujirouData:
 	
 FirefighterData:
 ; Cerulean Gym
-	db $FF, 16, CHEEP, 17, OREFRY, 0
+	db $FF, 16, BLASTYKE, 17, RIBBITO, 0
 	
 JuniorData:
 	db 5, SQUIRTLE, 0

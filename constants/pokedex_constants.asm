@@ -142,6 +142,8 @@
 	const DEX_SEAKING    ; 119
 	const DEX_CHEEP
 	const DEX_JABETTA
+	const DEX_RIBBITO
+	const DEX_CROAKOZUNA
 	const DEX_STARYU     ; 120
 	const DEX_STARMIE    ; 121
 	const DEX_MR_MIME    ; 122

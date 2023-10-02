@@ -154,6 +154,7 @@ ROMX $20
 	"Predefs"
 ROMX $21
 	"Text 2"
+	"Pokédex Text 2"
 ROMX $22
 	"Text 3"
 ROMX $23
@@ -173,7 +174,7 @@ ROMX $29
 ROMX $2A
 	"Text 11"
 ROMX $2B
-	"Pokédex Text"
+	"Pokédex Text 1"
 ROMX $2C
 	"Move Names"
 	"Tilesets 4"

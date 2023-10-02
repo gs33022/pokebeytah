@@ -88,8 +88,8 @@ EvosMovesPointerTable:
 	dw NinetalesEvosMoves
 	dw PikachuEvosMoves
 	dw RaichuEvosMoves
-	dw MissingNo56EvosMoves
-	dw MissingNo57EvosMoves
+	dw RibbitoEvosMoves
+	dw CroakozunaEvosMoves
 	dw DratiniEvosMoves
 	dw DragonairEvosMoves
 	dw KabutoEvosMoves
@@ -1185,16 +1185,26 @@ RaichuEvosMoves:
 	db 37, THUNDER
 	db 0
 
-MissingNo56EvosMoves:
+RibbitoEvosMoves:
 ; Evolutions
-	db 0
+	db EV_LEVEL, 26, CROAKOZUNA
 ; Learnset
+	db 14, GROWL
+	db 16, BUBBLE
+	db 18, COUNTER
+	db 20, SING
+	db 22, WATER_GUN
+	db 24, SCREECH
 	db 0
 	
-MissingNo57EvosMoves:
+CroakozunaEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 30, HYDRO_PUMP
+	db 34, BODY_SLAM
+	db 39, SURF
+	db 45, SUBMISSION
 	db 0
 
 DratiniEvosMoves:

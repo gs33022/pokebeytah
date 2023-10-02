@@ -92,8 +92,8 @@ CryData::
 	mon_cry SFX_CRY_24, $88, $60 ; Ninetales
 	mon_cry SFX_CRY_0F, $EE, $01 ; Pikachu
 	mon_cry SFX_CRY_09, $EE, $08 ; Raichu
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_00, $00, $80 ; Ribbito (PLACEHOLDER)
+	mon_cry SFX_CRY_00, $00, $80 ; Croakozuna (PLACEHOLDER)
 	mon_cry SFX_CRY_0F, $60, $40 ; Dratini
 	mon_cry SFX_CRY_0F, $40, $80 ; Dragonair
 	mon_cry SFX_CRY_16, $BB, $40 ; Kabuto

@@ -73,4 +73,4 @@ BetaGym_Coll::
 	coll_tiles $0B, $0E, $1E, $1F, $11
 	
 ShadyShop_Coll::
-	coll_tiles $01, $11, $1C, $1D, $1E, $1F, $0C, $0D, $0E, $0F, $4D, $4C
+	coll_tiles $01, $11, $1C, $1D, $1E, $1F, $0C, $0D, $0E, $0F, $44, $45

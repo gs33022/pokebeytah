@@ -7,7 +7,7 @@ WildDataPointers:
 	dw NothingWildMons         ; LAVENDER_TOWN
 	dw NothingWildMons         ; VERMILION_CITY
 	dw NothingWildMons         ; CELADON_CITY
-	dw NothingWildMons         ; FUCHSIA_CITY
+	dw FuchsiaCityWildMons     ; FUCHSIA_CITY
 	dw NothingWildMons         ; CINNABAR_ISLAND
 	dw NothingWildMons         ; INDIGO_PLATEAU
 	dw NothingWildMons         ; SAFFRON_CITY
@@ -321,3 +321,4 @@ INCLUDE "data/wild/maps/VictoryRoad2F.asm"
 INCLUDE "data/wild/maps/VictoryRoad3F.asm"
 INCLUDE "data/wild/maps/VictoryRoad1F.asm"
 INCLUDE "data/wild/maps/DiglettsCave.asm"
+INCLUDE "data/wild/maps/FuchsiaCity.asm"
