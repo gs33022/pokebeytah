@@ -88,7 +88,7 @@ MonsterNames::
 	db "RIBBITO@@@"
 	db "CROAKOZUNA"
 	db "DRAGOON@@@"
-	db "DRAGONAIR@"
+	db "DRAGYN@@@@"
 	db "ATT@@@@@@@"
 	db "LANTIS@@@@"
 	db "HORSEA@@@@"
