@@ -639,7 +639,6 @@ OaksLabRivalLeavesWithPokedexScript:
 	ld a, HS_ROUTE_22_RIVAL_1
 	ld [wMissableObjectIndex], a
 	predef ShowObject
-	ld a, SCRIPT_PALLETTOWN_DAISY
 	ld [wPalletTownCurScript], a
 	xor a
 	ld [wJoyIgnore], a
