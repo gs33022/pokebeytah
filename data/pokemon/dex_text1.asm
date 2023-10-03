@@ -71,7 +71,7 @@ _NidokingDexEntry::
 _SlowbroDexEntry::
 	text "The SHELLDER that"
 	next "is latched onto"
-	next "SLOWPOKE's tail"
+	next "SLOWMO's tail"
 
 	page "is said to feed"
 	next "on the host's left"
@@ -95,7 +95,7 @@ _ExeggutorDexEntry::
 
 	page "will drop off and"
 	next "continue on as an"
-	next "EXEGGCUTE"
+	next "EGGSTREME"
 	dex
 
 _LickitungDexEntry::
@@ -615,7 +615,7 @@ _CoinpurDexEntry::
 
 	page "and other toys. It"
 	next "doesn't get along"
-	next "with GROWLITHE"
+	next "with FLAMIE"
 	dex
 	
 _MagnetiteDexEntry::
@@ -625,7 +625,7 @@ _MagnetiteDexEntry::
 
 	page "tricity. It often"
 	next "uses its powers to"
-	next "attract MAGNETON"
+	next "attract JIBACOIL"
 	dex
 
 _FarfetchdDexEntry::
@@ -1159,7 +1159,7 @@ _PrimeapeDexEntry::
 	dex
 
 _DugtrioDexEntry::
-	text "A team of DIGLETT"
+	text "A team of DIGDA"
 	next "triplets."
 	next "It triggers huge"
 
@@ -1341,10 +1341,10 @@ _ClefableDexEntry::
 _WeezingDexEntry::
 	text "Where two kinds"
 	next "of poison gases"
-	next "meet, 2 KOFFINGs"
+	next "meet, 2 NYs"
 
 	page "can fuse into a"
-	next "WEEZING over many"
+	next "LA over many"
 	next "years"
 	dex
 
