@@ -1,109 +1,109 @@
 _CharmanderDexEntry::
-	text "Obviously prefers"
-	next "hot places. When"
-	next "it rains, steam"
-
-	page "is said to spout"
-	next "from the tip of"
-	next "its tail"
+	text "From the time it"
+	next "is born, a flame"
+	next "burns at the tip"
+	
+	page "of its tail. Its"
+	next "life would go out"
+	next "with this flame"
 	dex
 
 _SquirtleDexEntry::
-	text "After birth, its"
-	next "back swells and"
-	next "hardens into a"
-
-	page "shell. Powerfully"
-	next "sprays foam from"
-	next "its mouth"
+	text "When it retracts"
+	next "its long neck"
+	next "into its shell,"
+	
+	page "it squirts out"
+	next "water with "
+	next "vigorous force"
 	dex
 
 _CharmeleonDexEntry::
-	text "When it swings"
-	next "its burning tail,"
-	next "it elevates the"
-
-	page "temperature to"
-	next "unbearably high"
-	next "levels"
+	text "It lashes about"
+	next "with its tail to"
+	next "knock down foes."
+	
+	page "It then tears at"
+	next "the fallen with"
+	next "sharp claws"
 	dex
 
 _WartortleDexEntry::
-	text "Often hides in"
-	next "water to stalk"
-	next "unwary prey. For"
-
-	page "swimming fast, it"
-	next "moves its ears to"
-	next "maintain balance"
+	text "This #MON is"
+	next "very popular as a"
+	next "pet. Its fur-"
+	
+	page "covered tail is a"
+	next "symbol of its "
+	next "longevity"
 	dex
 
 _CharizardDexEntry::
-	text "Spits fire that"
-	next "is hot enough to"
-	next "melt boulders."
-
-	page "Known to cause"
-	next "forest fires"
-	next "unintentionally"
+	text "Its wings carry"
+	next "this POKéMON near"
+	next "an altitude of"
+	
+	page "4,600 ft. It blows"
+	next "out fire at very"
+	next "high temperatures"
 	dex
 
 _OddishDexEntry::
-	text "During the day,"
-	next "it keeps its face"
-	next "buried in the"
-
-	page "ground. At night,"
-	next "it wanders around"
-	next "sowing its seeds"
+	text "Its scientic name"
+	next "is 'Oddium"
+	next "Wanderus.' At"
+	
+	page "night, it is said"
+	next "to walk nearly 1000"
+	next "ft on its two roots"
 	dex
 
 _GloomDexEntry::
-	text "The fluid that"
-	next "oozes from its"
-	next "mouth isn't drool."
-
-	page "It is a nectar"
-	next "that is used to"
-	next "attract prey"
+	text "Its pistils exude"
+	next "a terribly foul"
+	next "odor. The stench"
+	
+	page "can cause fainting"
+	next "at a distance of"
+	next "1.25 mi"
 	dex
 
 _VileplumeDexEntry::
-	text "The larger its"
-	next "petals, the more"
-	next "toxic pollen it"
-
-	page "contains. Its big"
-	next "head is heavy and"
-	next "hard to hold up"
+	text "Has the world's"
+	next "largest petals."
+	next "It fiendishly"
+	
+	page "scatters allergy-"
+	next "causing pollen"
+	next "from its petals"
 	dex
 
 _BellsproutDexEntry::
-	text "A carnivorous"
-	next "#MON that traps"
-	next "and eats bugs."
-
-	page "It uses its root"
-	next "feet to soak up"
-	next "needed moisture"
+	text "Its bud resembles"
+	next "a human face."
+	next "Due to the bud,"
+	
+	page "it is rumored to"
+	next "be the legendary"
+	next "mandrake plant"
 	dex
 
 _WeepinbellDexEntry::
-	text "It spits out"
-	next "POISONPOWDER to"
-	next "immobilize the"
-
-	page "enemy and then"
-	next "finishes it with"
-	next "a spray of ACID"
+	text "The leafy parts"
+	next "act as blades for"
+	next "slashing foes."
+	
+	page "It spits a fluid"
+	next "that dissolves"
+	next "everything"
 	dex
 
 _VictreebelDexEntry::
-	text "Said to live in"
-	next "huge colonies"
-	next "deep in jungles,"
-
-	page "although no one"
-	next "has ever returned"
-	next "from there"
+	text "Lures prey into"
+	next "its mouth with a"
+	next "honeylike aroma."
+	
+	page "The helpless prey"
+	next "is melted with a"
+	next "dissolving fluid"
 	dex
