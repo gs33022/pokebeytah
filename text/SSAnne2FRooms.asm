@@ -22,17 +22,17 @@ _SSAnne2FRoomsGrampsText::
 
 _SSAnne2FRoomsGentleman5Text::
 	text "Have you gone to"
-	line "the SAFARI ZONE"
-	cont "in FUCHSIA CITY?"
+	line "FUCHSIA CITY?"
 
-	para "It had many rare"
+	para "Its tall grass"
+	line "has many rare"
 	line "kinds of #MON!!"
 	done
 
 _SSAnne2FRoomsLittleBoyText::
 	text "Me and my Daddy"
-	line "think the SAFARI"
-	cont "ZONE is awesome!"
+	line "think FUCHSIA"
+	cont "CITY is awesome!"
 	done
 
 _SSAnne2FRoomsBrunetteGirlText::

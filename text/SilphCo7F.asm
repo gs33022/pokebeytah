@@ -1,8 +1,24 @@
 _SilphCo7FSilphWorkerM1HaveThisPokemonText::
-	text "Oh! Hi! You're"
-	line "not a ROCKET! You"
-	cont "came to save us?"
-	cont "Why, thank you!"
+	text "DAD: Oh, my"
+	line "child! We fin-"
+	cont "ally meet again!"
+	
+	para "So, you've began"
+	line "your own #MON"
+	cont "journey at last."
+	
+	para "I'm so proud"
+	line "of you!"
+	
+	para "I only wish we"
+	line "reunited on"
+	cont "better terms..."
+	
+	para "Now, how can"
+	line "I help you on"
+	cont "your journey..."
+	
+	para "Oh, I know!"
 
 	para "I want you to"
 	line "have this #MON"

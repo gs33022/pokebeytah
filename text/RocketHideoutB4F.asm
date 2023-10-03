@@ -2,6 +2,17 @@ _RocketHideoutB4FGiovanniImpressedYouGotHereText::
 	text "So! I must say, I"
 	line "am impressed you"
 	cont "got here!"
+	
+	para "TEAM ROCKET needs"
+    line "#MON to fund"
+    cont "our evil deeds!"
+
+    para "I am its leader,"
+    line "GIOVANNI!"
+
+    para "For your insolence"
+    line "you will feel a"
+    cont "world of pain!"
 	done
 
 _RocketHideoutB4FGiovanniWhatCannotBeText::
