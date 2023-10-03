@@ -14,6 +14,7 @@ PalletTown_ScriptPointers:
 	dw_const PalletTownOakHeyWaitScript,           SCRIPT_PALLETTOWN_OAK_HEY_WAIT
 	dw_const PalletTownOakNotSafeComeWithMeScript, SCRIPT_PALLETTOWN_OAK_NOT_SAFE_COME_WITH_ME
 	dw_const PalletTownPlayerFollowsOakScript,     SCRIPT_PALLETTOWN_PLAYER_FOLLOWS_OAK
+	dw_const PalletTownDaisyScript,                SCRIPT_PALLETTOWN_DAISY
 	dw_const PalletTownNoopScript,                 SCRIPT_PALLETTOWN_NOOP
 
 PalletTownDefaultScript:
@@ -91,8 +92,29 @@ PalletTownOakNotSafeComeWithMeScript:
 PalletTownPlayerFollowsOakScript:
 	ld a, [wNPCMovementScriptPointerTableNum]
 	and a ; is the movement script over?
+	ret nz
+
+	; trigger the next script
+	ld a, SCRIPT_PALLETTOWN_DAISY
+	ld [wPalletTownCurScript], a
 	ret
-	
+
+PalletTownDaisyScript:
+	CheckEvent EVENT_DAISY_WALKING
+	jr nz, .next
+	CheckBothEventsSet EVENT_GOT_TOWN_MAP, EVENT_ENTERED_BLUES_HOUSE, 1
+	jr nz, .next
+	SetEvent EVENT_DAISY_WALKING
+	ld a, HS_DAISY_SITTING
+	ld [wMissableObjectIndex], a
+	predef HideObject
+	ld a, HS_DAISY_WALKING
+	ld [wMissableObjectIndex], a
+	predef_jump ShowObject
+.next
+	CheckEvent EVENT_GOT_POKEBALLS_FROM_OAK
+	ret z
+	SetEvent EVENT_PALLET_AFTER_GETTING_POKEBALLS_2
 PalletTownNoopScript:
 	ret
 
