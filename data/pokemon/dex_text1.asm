@@ -1,41 +1,41 @@
 _RhydonDexEntry::
-	text "Protected by an"
-	next "armor-like hide,"
-	next "it is capable of"
+	text "It begins walking"
+	next "on its hind legs"
+	next "after evolution."
 
-	page "living in molten"
-	next "lava of 3,600"
-	next "degrees"
+	page "It can punch holes"
+	next "through boulders"
+	next "with its horn"
 	dex
 
 _KangaskhanDexEntry::
-	text "The infant rarely"
-	next "ventures out of"
-	next "its mother's"
+	text "The female raises"
+	next "its offspring in"
+	next "a pouch on its"
 
-	page "protective pouch"
-	next "until it is 3"
-	next "years old"
+	page "belly. It is"
+	next "skilled at using"
+	next "COMET PUNCH"
 	dex
 
 _NidoranMDexEntry::
-	text "Stiffens its ears"
-	next "to sense danger."
-	next "The larger its"
+	text "Its large ears are"
+	next "flapped like wings"
+	next "when listening to"
 
-	page "horns, the more"
-	next "powerful its"
-	next "secreted venom"
+	page "distant sounds. It"
+	next "extends its toxic"
+	next "barbs when irked"
 	dex
 
 _ClefairyDexEntry::
-	text "Its magical and"
-	next "cute appeal has"
-	next "many admirers."
+	text "Its adorable"
+	next "appearance makes"
+	next "it popular as a"
 
-	page "It is rare and"
-	next "found only in"
-	next "certain areas"
+	page "pet. However, it"
+	next "is rare and"
+	next "difficult to find"
 	dex
 
 _SpearowDexEntry::
@@ -530,7 +530,7 @@ _ElectabuzzDexEntry::
 
 _MagnetonDexEntry::
 	text "Formed by several"
-	next "MAGNEMITEs linked"
+	next "COILSs linked"
 	next "together. They"
 
 	page "frequently appear"
@@ -1105,7 +1105,7 @@ _PoliwrathDexEntry::
 
 	page "stroke. Easily"
 	next "overtakes the best"
-	next "human swimmers"
+	next "Olympic swimmers"
 	dex
 
 _WeedleDexEntry::
@@ -1159,8 +1159,8 @@ _PrimeapeDexEntry::
 	dex
 
 _DugtrioDexEntry::
-	text "A team of DIGDA"
-	next "triplets."
+	text "A close-knit team"
+	next "of DIGDA triplets."
 	next "It triggers huge"
 
 	page "earthquakes by"

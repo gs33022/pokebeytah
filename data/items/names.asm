@@ -2,7 +2,7 @@ ItemNames::
 	list_start ItemNames
 	li "MASTER BALL"
 	li "ULTRA BALL"
-	li "GREAT BALL"
+	li "SUPER BALL"
 	li "POKé BALL"
 	li "TOWN MAP"
 	li "BICYCLE"

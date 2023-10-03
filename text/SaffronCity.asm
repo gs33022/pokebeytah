@@ -65,7 +65,8 @@ _SaffronCityGentlemanText::
 	done
 
 _SaffronCityPidgeotText::
-	text "PIDGEOT: Bi bibii!@"
+	text "PIDGEOTT: Bi"
+	line "bibii!@"
 	text_end
 
 _SaffronCityRockerText::
@@ -124,7 +125,7 @@ _SaffronCityTrainerTips1Text::
 _SaffronCityTrainerTips2Text::
 	text "TRAINER TIPS"
 
-	para "New GREAT BALL"
+	para "New SUPER BALL"
 	line "offers improved"
 	cont "capture rates."
 

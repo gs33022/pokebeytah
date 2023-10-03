@@ -15,15 +15,16 @@ _SilphCo5FRocket2BattleText::
 	done
 
 _SilphCo5FRocket2EndBattleText::
-	text "Cough..."
-	line "Cough..."
+	text "You"
+	line "just got lucky!"
 	prompt
 
 _SilphCo5FRocket2AfterBattleText::
-	text "Which reminds me."
-
-	para "KOFFING evolves"
-	line "into WEEZING!"
+	text "Speaking of lucky,"
+	line "LUCKY is the only"
+	cont "#MON that can"
+	
+	para "use SOFTBOILED!"
 	done
 
 _SilphCo5FPokemonReport1Text::
