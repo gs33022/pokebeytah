@@ -1051,7 +1051,7 @@ _VaporeonDexEntry::
 _MachopDexEntry::
 	text "Its whole body is"
 	next "made of muscles."
-	next "Though it’s the"
+	next "Though it's the"
 	
 	page "size of a human"
 	next "child, it can"
@@ -1105,7 +1105,7 @@ _PoliwrathDexEntry::
 	
 	page "and more. Faster"
 	next "than even the best"
-	next "human swimmers."
+	next "human swimmers"
 	dex
 
 _WeedleDexEntry::

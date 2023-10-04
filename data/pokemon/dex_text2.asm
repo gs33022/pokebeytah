@@ -53,9 +53,9 @@ _OddishDexEntry::
 	next "is 'Oddium"
 	next "Wanderus.' At"
 	
-	page "night, it is said"
-	next "to walk nearly 1000"
-	next "ft on its two roots"
+	page "night, it's said to"
+	next "walk nearly 1000ft"
+	next "on its two roots"
 	dex
 
 _GloomDexEntry::

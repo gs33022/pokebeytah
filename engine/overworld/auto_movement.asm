@@ -52,29 +52,29 @@ PalletMovementScriptPointerTable::
 	dw PalletMovementScript_Done
 
 PalletMovementScript_OakMoveLeft:
-	ld a, [wXCoord]
-	sub $a
-	ld [wNumStepsToTake], a
-	jr z, .playerOnLeftTile
-; The player is on the right tile of the northern path out of Pallet Town and
-; Prof. Oak is below.
-; Make Prof. Oak step to the left.
-	ld b, 0
-	ld c, a
-	ld hl, wNPCMovementDirections2
-	ld a, NPC_MOVEMENT_LEFT
-	call FillMemory
-	ld [hl], $ff
-	ld a, [wSpriteIndex]
-	ldh [hSpriteIndex], a
-	ld de, wNPCMovementDirections2
-	call MoveSprite
-	ld a, $1
-	ld [wNPCMovementScriptFunctionNum], a
-	jr .done
-; The player is on the left tile of the northern path out of Pallet Town and
-; Prof. Oak is below.
-; Prof. Oak is already where he needs to be.
+;			ld a, [wXCoord]
+;			sub $a
+;			ld [wNumStepsToTake], a
+;			jr z, .playerOnLeftTile
+;		; The player is on the right tile of the northern path out of Pallet Town and
+;		; Prof. Oak is below.
+;		; Make Prof. Oak step to the left.
+;			ld b, 0
+;			ld c, a
+;			ld hl, wNPCMovementDirections2
+;			ld a, NPC_MOVEMENT_LEFT
+;			call FillMemory
+;			ld [hl], $ff
+;			ld a, [wSpriteIndex]
+;			ldh [hSpriteIndex], a
+;			ld de, wNPCMovementDirections2
+;			call MoveSprite
+;			ld a, $1
+;			ld [wNPCMovementScriptFunctionNum], a
+;			jr .done
+;		; The player is on the left tile of the northern path out of Pallet Town and
+;		; Prof. Oak is below.
+;		; Prof. Oak is already where he needs to be.
 .playerOnLeftTile
 	ld a, $3
 	ld [wNPCMovementScriptFunctionNum], a
@@ -128,20 +128,15 @@ PalletMovementScript_WalkToLab:
 	ret
 
 RLEList_ProfOakWalkToLab:
-	db NPC_MOVEMENT_DOWN, 5
-	db NPC_MOVEMENT_LEFT, 1
-	db NPC_MOVEMENT_DOWN, 5
-	db NPC_MOVEMENT_RIGHT, 3
+	db NPC_MOVEMENT_RIGHT, 7
 	db NPC_MOVEMENT_UP, 1
 	db NPC_CHANGE_FACING, 1
 	db -1 ; end
 
+;player movements are stored backwards
 RLEList_PlayerWalkToLab:
-	db D_UP, 2
-	db D_RIGHT, 3
-	db D_DOWN, 5
-	db D_LEFT, 1
-	db D_DOWN, 6
+	db D_UP, 2 ; when changing directions, player will only turn, so it needs two movements (turn + step)
+	db D_RIGHT, 8
 	db -1 ; end
 
 PalletMovementScript_Done:
