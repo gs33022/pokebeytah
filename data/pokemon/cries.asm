@@ -159,8 +159,8 @@ CryData::
 	mon_cry SFX_CRY_14, $28, $C0 ; Pidgeotto
 	mon_cry SFX_CRY_14, $11, $FF ; Pidgeot
 	mon_cry SFX_CRY_1E, $FF, $FF ; Starmie
-	mon_cry SFX_CRY_0F, $80, $01 ; Bulbasaur
-	mon_cry SFX_CRY_0F, $00, $C0 ; Venusaur
+	mon_cry SFX_CRY_08, $80, $01 ; Bulbasaur
+	mon_cry SFX_CRY_08, $00, $FF ; Venusaur
 	mon_cry SFX_CRY_1A, $EE, $FF ; Tentacruel
 	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
 	mon_cry SFX_CRY_16, $80, $40 ; Goldeen

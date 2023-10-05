@@ -19,7 +19,7 @@
 	     EARTHQUAKE,   FISSURE,      DIG,          PSYCHIC_M,    TELEPORT,     \
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         FIRE_BLAST,   \
 	     SWIFT,        SKULL_BASH,   REST,         THUNDER_WAVE, PSYWAVE,      \
-	     TRI_ATTACK,   SUBSTITUTE,   SURF,         STRENGTH,     FLASH
+	     TRI_ATTACK,   SUBSTITUTE,   HYDRO_PUMP,   STRENGTH,     FLASH
 	; end
 
 	db BANK(SlowpokePicFront)

@@ -27,7 +27,7 @@ _CurrentTooFastText::
 
 _CyclingIsFunText::
 	text "Cycling is fun!"
-	line "Forget SURFing!"
+	line "Forget JETTing!"
 	prompt
 
 _FlashLightsAreaText::

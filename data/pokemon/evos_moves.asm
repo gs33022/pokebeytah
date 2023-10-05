@@ -970,11 +970,11 @@ DragoniteEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 10, THUNDER_WAVE
-	db 20, AGILITY
-	db 35, SLAM
-	db 45, DRAGON_RAGE
-	db 60, HYPER_BEAM
+	db 43, WHIRLWIND
+	db 46, FOCUS_ENERGY
+	db 49, DRAGON_RAGE
+	db 52, AGILITY
+	db 55, HYPER_BEAM
 	db 0
 
 CoaltaEvosMoves:
@@ -1209,26 +1209,26 @@ CroakozunaEvosMoves:
 
 DratiniEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 30, DRAGONAIR
+	db EV_LEVEL, 15, DRAGONAIR
 	db 0
 ; Learnset
-	db 10, THUNDER_WAVE
-	db 20, AGILITY
-	db 30, SLAM
-	db 40, DRAGON_RAGE
-	db 50, HYPER_BEAM
+	db 7, WRAP
+	db 10, THRASH ;LUNGE
+	db 13, SLAM
 	db 0
 
 DragonairEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 55, DRAGONITE
+	db EV_LEVEL, 40, DRAGONITE
 	db 0
 ; Learnset
-	db 10, THUNDER_WAVE
-	db 20, AGILITY
-	db 35, SLAM
-	db 45, DRAGON_RAGE
-	db 55, HYPER_BEAM
+	db 18, GUST
+	db 21, TAKE_DOWN
+	db 24, GLARE
+	db 27, FLY
+	db 30, FIRE_BLAST
+	db 33, AURORA_BEAM
+	db 36, THUNDER
 	db 0
 
 KabutoEvosMoves:

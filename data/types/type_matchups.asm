@@ -90,5 +90,7 @@ TypeEffects:
 	db ROCK,         BIRD,         SUPER_EFFECTIVE
 	db BIRD,         GHOST,        SUPER_EFFECTIVE
 	db GHOST,        BIRD,         NOT_VERY_EFFECTIVE
-	db FLYING,       BIRD,         NO_EFFECT
+	db ROCK,         BIRD,         SUPER_EFFECTIVE
+	db POISON,       BIRD,         SUPER_EFFECTIVE
+	db GRASS,        BIRD,         NOT_VERY_EFFECTIVE
 	db -1 ; end

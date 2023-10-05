@@ -67,7 +67,8 @@ _WardensHouseWardenHM04ExplanationText::
 	line "win an HM!"
 
 	para "I hear it's the"
-	line "rare SURF HM."
+	line "rare HYDRO JET"
+	cont "HM."
 	done
 
 _WardensHouseWardenHM04NoRoomText::

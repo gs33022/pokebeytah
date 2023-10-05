@@ -4,7 +4,7 @@
 
 	db CUT
 	db FLY
-	db SURF
+	db HYDRO_PUMP
 	db STRENGTH
 	db FLASH
 	db -1 ; end

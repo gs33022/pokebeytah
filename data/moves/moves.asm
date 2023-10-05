@@ -66,8 +66,8 @@ Moves:
 	move FLAMETHROWER, BURN_SIDE_EFFECT1,           95, FIRE,         100, 15
 	move MIST,         MIST_EFFECT,                  0, ICE,          100, 30
 	move WATER_GUN,    NO_ADDITIONAL_EFFECT,        40, WATER,        100, 25
-	move SURF,         NO_ADDITIONAL_EFFECT,        95, WATER,        100, 15
-	move HYDRO_PUMP,   NO_ADDITIONAL_EFFECT,       120, WATER,         80,  5
+	move HYDRO_PUMP,   NO_ADDITIONAL_EFFECT,        95, WATER,        100, 15
+	move SURF,         NO_ADDITIONAL_EFFECT,       120, WATER,         80,  5
 	move ICE_BEAM,     FREEZE_SIDE_EFFECT,          95, ICE,          100, 10
 	move BLIZZARD,     FREEZE_SIDE_EFFECT,         120, ICE,           90,  5
 	move PSYBEAM,      CONFUSION_SIDE_EFFECT,       65, PSYCHIC_TYPE, 100, 20

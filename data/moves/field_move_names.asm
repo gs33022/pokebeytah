@@ -3,7 +3,7 @@ FieldMoveNames:
 	db "CUT@"
 	db "FLY@"
 	db "@"
-	db "SURF@"
+	db "HYDRO PUMP@"
 	db "STRENGTH@"
 	db "FLASH@"
 	db "DIG@"

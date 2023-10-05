@@ -177,6 +177,6 @@ MoveNames::
 	assert_list_length NUM_ATTACKS
 
 ; add:
-; Poison Beam thing?, 4 Dragon moves ig, Squid Ink,
+; 4 Dragon moves ig, Squid Ink, Twister, Dragon Breath
 ; Star Freeze, Lunge, stronger Vine Whip,
 ; beta Flying move

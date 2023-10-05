@@ -18,7 +18,7 @@
 	     ICE_BEAM,     BLIZZARD,     RAGE,         THUNDERBOLT,  THUNDER,      \
 	     PSYCHIC_M,    TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      \
 	     BIDE,         SWIFT,        SKULL_BASH,   REST,         THUNDER_WAVE, \
-	     PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   SURF,         FLASH
+	     PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   HYDRO_PUMP,   FLASH
 	; end
 
 	db BANK(StaryuPicFront)

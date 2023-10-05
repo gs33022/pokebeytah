@@ -5,7 +5,7 @@ FieldMoveDisplayData:
 	db CUT,        1, $0C
 	db FLY,        2, $0C
 	db ANIM_B4,    3, $0C ; unused
-	db SURF,       4, $0C
+	db HYDRO_PUMP, 4, $0C
 	db STRENGTH,   5, $0A
 	db FLASH,      6, $0C
 	db DIG,        7, $0C

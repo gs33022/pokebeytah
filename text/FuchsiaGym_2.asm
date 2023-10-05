@@ -17,8 +17,8 @@ _FuchsiaGymKogaSoulBadgeInfoText::
 	cont "increases!"
 
 	para "It also lets you"
-	line "SURF outside of"
-	cont "battle!"
+	line "HYDRO JET outside"
+	cont "of battle!"
 
 	para "Ah! Take this"
 	line "too!"

@@ -11,7 +11,7 @@ SafariZoneSecretHouseFishingGuruText:
 	jr nz, .got_item
 	ld hl, .YouHaveWonText
 	call PrintText
-	lb bc, HM_SURF, 1
+	lb bc, HM_HYDRO_PUMP, 1
 	call GiveItem
 	jr nc, .bag_full
 	ld hl, .ReceivedHM03Text

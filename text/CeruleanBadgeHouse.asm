@@ -73,8 +73,8 @@ _CeruleanBadgeHouseSoulBadgeText::
 	cont "a little bit."
 
 	para "It also lets you"
-	line "use SURF outside"
-	cont "of battle."
+	line "use HYDRO JET"
+	cont "outside of battle."
 	prompt
 
 _CeruleanBadgeHouseMarshBadgeText::

@@ -139,7 +139,7 @@ ENDM
 DEF HM01 EQU const_value
 	add_hm CUT          ; $C4
 	add_hm FLY          ; $C5
-	add_hm SURF         ; $C6
+	add_hm HYDRO_PUMP   ; $C6
 	add_hm STRENGTH     ; $C7
 	add_hm FLASH        ; $C8
 DEF NUM_HMS EQU const_value - HM01

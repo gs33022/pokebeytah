@@ -53,7 +53,7 @@ IF DEF(_DEBUG)
 	ld [hli], a
 	ld a, CUT
 	ld [hli], a
-	ld a, SURF
+	ld a, HYDRO_PUMP
 	ld [hli], a
 	ld a, STRENGTH
 	ld [hl], a
