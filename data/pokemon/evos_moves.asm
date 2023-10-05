@@ -459,6 +459,7 @@ ShellderEvosMoves:
 	db 18, SUPERSONIC
 	db 23, CLAMP
 	db 30, AURORA_BEAM
+	db 35, POWDER_SNOW
 	db 39, LEER
 	db 50, ICE_BEAM
 	db 0
@@ -526,6 +527,7 @@ PinsirEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 21, STUN_CUT
 	db 25, SEISMIC_TOSS
 	db 30, GUILLOTINE
 	db 36, FOCUS_ENERGY
@@ -643,6 +645,7 @@ GravelerEvosMoves:
 	db EV_LEVEL, 36, GOLEM
 	db 0
 ; Learnset
+	db  9, MUD_SLAP
 	db 11, DEFENSE_CURL
 	db 16, ROCK_THROW
 	db 21, SELFDESTRUCT
@@ -702,11 +705,13 @@ HitmonchanEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 33, FIRE_PUNCH
-	db 38, ICE_PUNCH
-	db 43, THUNDERPUNCH
-	db 48, MEGA_PUNCH
-	db 53, COUNTER
+	db 35, FIRE_PUNCH
+	db 39, ICE_PUNCH
+	db 42, THUNDERPUNCH
+	db 45, UPPERCUT
+	db 49, MEGA_PUNCH
+	db 53, PUNCH_OUT
+	db 57, COUNTER
 	db 0
 
 ArbokEvosMoves:
@@ -761,6 +766,7 @@ GolemEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db  9, MUD_SLAP
 	db 11, DEFENSE_CURL
 	db 16, ROCK_THROW
 	db 21, SELFDESTRUCT
@@ -835,6 +841,7 @@ KoffingEvosMoves:
 	db 0
 ; Learnset
 	db 32, SLUDGE
+	db 34, POISON_BEAM
 	db 37, SMOKESCREEN
 	db 40, SELFDESTRUCT
 	db 45, HAZE
@@ -853,7 +860,7 @@ VulpiiiEvosMoves:
 
 MankeyEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 28, PRIMEAPE
+	db EV_LEVEL, 33, PRIMEAPE
 	db 0
 ; Learnset
 	db 12, KARATE_CHOP
@@ -889,6 +896,7 @@ DiglettEvosMoves:
 	db 15, GROWL
 	db 19, DIG
 	db 24, SAND_ATTACK
+	db 28, MUD_SLAP
 	db 31, SLASH
 	db 40, EARTHQUAKE
 	db 0
@@ -1103,10 +1111,11 @@ KrabbyEvosMoves:
 	db 0
 ; Learnset
 	db 20, VICEGRIP
-	db 25, GUILLOTINE
-	db 30, STOMP
-	db 35, CRABHAMMER
-	db 40, HARDEN
+	db 25, STUN_CUT
+	db 30, GUILLOTINE
+	db 35, STOMP
+	db 40, CRABHAMMER
+	db 45, HARDEN
 	db 0
 
 OrefryEvosMoves:
@@ -1551,6 +1560,7 @@ DugtrioEvosMoves:
 	db 15, GROWL
 	db 19, DIG
 	db 24, SAND_ATTACK
+	db 28, MUD_SLAP
 	db 35, SLASH
 	db 47, EARTHQUAKE
 	db 0
@@ -1722,10 +1732,11 @@ KinglerEvosMoves:
 	db 0
 ; Learnset
 	db 20, VICEGRIP
-	db 25, GUILLOTINE
-	db 34, STOMP
-	db 42, CRABHAMMER
-	db 49, HARDEN
+	db 25, STUN_CUT
+	db 30, GUILLOTINE
+	db 38, STOMP
+	db 46, CRABHAMMER
+	db 53, HARDEN
 	db 0
 
 CloysterEvosMoves:
@@ -1763,6 +1774,7 @@ WeezingEvosMoves:
 	db 0
 ; Learnset
 	db 32, SLUDGE
+	db 35, POISON_BEAM
 	db 39, SMOKESCREEN
 	db 43, SELFDESTRUCT
 	db 49, HAZE
@@ -2031,6 +2043,7 @@ GeodudeEvosMoves:
 	db EV_LEVEL, 25, GRAVELER
 	db 0
 ; Learnset
+	db  9, MUD_SLAP
 	db 11, DEFENSE_CURL
 	db 16, ROCK_THROW
 	db 21, SELFDESTRUCT
@@ -2194,6 +2207,7 @@ OddishEvosMoves:
 	db 15, POISONPOWDER
 	db 17, STUN_SPORE
 	db 19, SLEEP_POWDER
+	db 21, GASTRO_ACID
 	db 24, ACID
 	db 33, PETAL_DANCE
 	db 46, SOLARBEAM
@@ -2207,6 +2221,7 @@ GloomEvosMoves:
 	db 15, POISONPOWDER
 	db 17, STUN_SPORE
 	db 19, SLEEP_POWDER
+	db 21, GASTRO_ACID
 	db 28, ACID
 	db 38, PETAL_DANCE
 	db 52, SOLARBEAM
@@ -2228,8 +2243,9 @@ BellsproutEvosMoves:
 ; Learnset
 	db 13, WRAP
 	db 15, POISONPOWDER
-	db 18, SLEEP_POWDER
-	db 21, STUN_SPORE
+	db 17, SLEEP_POWDER
+	db 19, STUN_SPORE
+	db 21, GASTRO_ACID
 	db 26, ACID
 	db 33, RAZOR_LEAF
 	db 42, SLAM
@@ -2242,8 +2258,9 @@ WeepinbellEvosMoves:
 ; Learnset
 	db 13, WRAP
 	db 15, POISONPOWDER
-	db 18, SLEEP_POWDER
-	db 23, STUN_SPORE
+	db 17, SLEEP_POWDER
+	db 19, STUN_SPORE
+	db 21, GASTRO_ACID
 	db 29, ACID
 	db 38, RAZOR_LEAF
 	db 49, SLAM

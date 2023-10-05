@@ -173,6 +173,7 @@ AttackAnimationPointers:
 	dw GastroAcidAnim
 	dw PowderSnowAnim
 	dw PoisonBeamAnim
+	dw MudSlapAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -1174,6 +1175,12 @@ PowderSnowAnim:
 PoisonBeamAnim:	
 	battle_anim POISON_BEAM, SUBANIM_0_BEAM, 0, 3
 	battle_anim ACID, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
+	db -1 ; end
+	
+MudSlapAnim:
+	battle_anim DOUBLE_TEAM, SE_SHAKE_BACK_AND_FORTH
+	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+	battle_anim SAND_ATTACK, SUBANIM_1_SAND, 1, 6
 	db -1 ; end
 	
 BallTossAnim:

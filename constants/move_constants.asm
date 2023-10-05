@@ -179,6 +179,7 @@
 	const GASTRO_ACID
 	const POWDER_SNOW
 	const POISON_BEAM
+	const MUD_SLAP
 	const STRUGGLE     ; a5
 DEF NUM_ATTACKS EQU const_value - 1
 

@@ -173,6 +173,7 @@ MoveNames::
 	li "GASTRO ACID"
 	li "POWDER SNOW"
 	li "POISON BEAM"
+	li "MUD-SLAP"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
 
