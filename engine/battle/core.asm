@@ -1497,6 +1497,8 @@ TryRunningFromBattle:
 	jp z, .canEscape ; jump if it's a ghost battle
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
+	dec a
+	cp BATTLE_TYPE_STARTER
 	jp z, .canEscape ; jump if it's a safari battle
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
@@ -2180,6 +2182,7 @@ DisplayBattleMenu::
 	call SaveScreenTilesToBuffer2
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
+	cp BATTLE_TYPE_STARTER
 	jr nz, BagWasSelected
 
 ; bait was selected
@@ -2271,6 +2274,7 @@ UseBagItem:
 
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
+	cp BATTLE_TYPE_STARTER
 	jr z, .returnAfterUsingItem_NoCapture
 ; not a safari battle
 	call LoadScreenTilesFromBuffer1
@@ -2302,6 +2306,7 @@ PartyMenuOrRockOrRun:
 	call SaveScreenTilesToBuffer2
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
+	cp BATTLE_TYPE_STARTER
 	jr nz, .partyMenuWasSelected
 ; safari battle
 	ld a, SAFARI_ROCK
