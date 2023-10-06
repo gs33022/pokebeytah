@@ -2151,6 +2151,10 @@ DisplayBattleMenu::
 .handleMenuSelection
 	and a
 	jr nz, .upperLeftMenuItemWasNotSelected
+; Starter type, please work
+	ld a, [wBattleType]
+	cp BATTLE_TYPE_STARTER
+	jr c, .throwPokeBallWasSelected
 ; the upper left menu item was selected
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
@@ -2161,6 +2165,10 @@ DisplayBattleMenu::
 	jp LoadScreenTilesFromBuffer1 ; restore saved screen and return
 .throwSafariBallWasSelected
 	ld a, SAFARI_BALL
+	ld [wcf91], a
+	jr UseBagItem
+.throwPokeBallWasSelected
+	ld a, POKE_BALL
 	ld [wcf91], a
 	jr UseBagItem
 
