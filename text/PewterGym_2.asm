@@ -67,26 +67,33 @@ _PewterGymBrockBoulderBadgeInfoText::
 	prompt
 
 _PewterGymCooltrainerMBattleText::
-	text "Stop right there,"
-	line "kid!"
-
-	para "You're still light"
-	line "years from facing"
-	cont "BROCK!"
+	text "You can't shock"
+	line "my ground type"
+	cont "#MON!"
 	done
 
 _PewterGymCooltrainerMEndBattleText::
-	text "Darn!"
-
-	para "Light years isn't"
-	line "time! It measures"
-	cont "distance!"
+	text "You sure"
+	line "shocked me!"
 	prompt
 
 _PewterGymCooltrainerMAfterBattleText::
-	text "You're pretty hot,"
-	line "but not as hot"
-	cont "as BROCK!"
+	text "Just try to"
+	line "beat BROCK, kid!"
+	done
+	
+_PewterGymHiker2BattleText::
+	text "This GYM rocks!"
+	done
+
+_PewterGymHiker2EndBattleText::
+	text "Rock on!"
+	prompt
+
+_PewterGymHiker2AfterBattleText::
+	text "You'll need luck"
+	line "while facing"
+	cont "BROCK, kid!"
 	done
 
 _PewterGymGuidePreAdviceText::

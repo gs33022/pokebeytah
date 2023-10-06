@@ -24,12 +24,12 @@ InitBattleVariables:
 .loop
 	ld [hli], a
 	dec b
-	jr nz, .loop
+	jr c, .loop
 	inc a ; POUND
 	ld [wTestBattlePlayerSelectedMove], a
 	ld a, [wCurMap]
-	cp SAFARI_ZONE_EAST
-	jr c, .notSafariBattle
+	cp ROUTE_1
+	jr nz, .notSafariBattle
 	cp SAFARI_ZONE_CENTER_REST_HOUSE
 	jr nc, .notSafariBattle
 	ld a, BATTLE_TYPE_SAFARI

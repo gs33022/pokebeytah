@@ -76,13 +76,15 @@ PewterGymScriptReceiveTM34:
 
 	; deactivate gym trainers
 	SetEvent EVENT_BEAT_PEWTER_GYM_TRAINER_0
+	SetEvent EVENT_BEAT_PEWTER_GYM_TRAINER_1
 
 	jp PewterGymResetScripts
 
 PewterGym_TextPointers:
 	def_text_pointers
 	dw_const PewterGymBrockText,             TEXT_PEWTERGYM_BROCK
-	dw_const PewterGymCooltrainerMText,      TEXT_PEWTERGYM_COOLTRAINER_M
+	dw_const PewterGymHikerText,             TEXT_PEWTERGYM_HIKER
+	dw_const PewterGymHiker2Text,            TEXT_PEWTERGYM_HIKER2
 	dw_const PewterGymGuideText,             TEXT_PEWTERGYM_GYM_GUIDE
 	dw_const PewterGymBrockWaitTakeThisText, TEXT_PEWTERGYM_BROCK_WAIT_TAKE_THIS
 	dw_const PewterGymReceivedTM34Text,      TEXT_PEWTERGYM_RECEIVED_TM34
@@ -91,7 +93,9 @@ PewterGym_TextPointers:
 PewterGymTrainerHeaders:
 	def_trainers 2
 PewterGymTrainerHeader0:
-	trainer EVENT_BEAT_PEWTER_GYM_TRAINER_0, 5, PewterGymCooltrainerMBattleText, PewterGymCooltrainerMEndBattleText, PewterGymCooltrainerMAfterBattleText
+	trainer EVENT_BEAT_PEWTER_GYM_TRAINER_0, 2, PewterGymCooltrainerMBattleText, PewterGymCooltrainerMEndBattleText, PewterGymCooltrainerMAfterBattleText
+PewterGymTrainerHeader1:	
+	trainer EVENT_BEAT_PEWTER_GYM_TRAINER_1, 1, PewterGymHiker2BattleText, PewterGymHiker2EndBattleText, PewterGymHiker2AfterBattleText
 	db -1 ; end
 
 PewterGymBrockText:
@@ -158,7 +162,7 @@ PewterGymBrockReceivedBoulderBadgeText:
 	text_far _PewterGymBrockBoulderBadgeInfoText ; Text to tell that the flash technique can be used
 	text_end
 
-PewterGymCooltrainerMText:
+PewterGymHikerText:
 	text_asm
 	ld hl, PewterGymTrainerHeader0
 	call TalkToTrainer
@@ -174,6 +178,24 @@ PewterGymCooltrainerMEndBattleText:
 
 PewterGymCooltrainerMAfterBattleText:
 	text_far _PewterGymCooltrainerMAfterBattleText
+	text_end
+	
+PewterGymHiker2Text:
+	text_asm
+	ld hl, PewterGymTrainerHeader1
+	call TalkToTrainer
+	jp TextScriptEnd
+
+PewterGymHiker2BattleText:
+	text_far _PewterGymHiker2BattleText
+	text_end
+
+PewterGymHiker2EndBattleText:
+	text_far _PewterGymHiker2EndBattleText
+	text_end
+
+PewterGymHiker2AfterBattleText:
+	text_far _PewterGymHiker2AfterBattleText
 	text_end
 
 PewterGymGuideText:

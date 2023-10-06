@@ -4,8 +4,8 @@ SeaRoutesWildMons:
 
 	def_water_wildmons 5 ; encounter rate
 	db  5, TENTACOOL
-	db 10, TENTACOOL ; RIBBITO
-	db 15, TENTACOOL ; RIBBITO
+	db 10, RIBBITO
+	db 15, RIBBITO
 	db  5, TENTACOOL
 	db 10, SEEL
 	db 15, CHEEP

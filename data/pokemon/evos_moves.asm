@@ -579,8 +579,9 @@ OnixEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 13, MUD_SLAP
 	db 15, BIND
-	db 19, ROCK_THROW
+	db 19, ROCK_SLIDE
 	db 25, RAGE
 	db 33, SLAM
 	db 43, HARDEN

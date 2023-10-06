@@ -46,6 +46,7 @@
 	const EVENT_GOT_OLD_AMBER
 	const_skip 8
 	const EVENT_BEAT_PEWTER_GYM_TRAINER_0
+	const EVENT_BEAT_PEWTER_GYM_TRAINER_1
 	const_skip 3
 	const EVENT_GOT_TM34
 	const EVENT_BEAT_BROCK
@@ -771,7 +772,7 @@ DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
 	const EVENT_SEAFOAM4_BOULDER2_DOWN_HOLE
 	const_skip 8
 	const EVENT_BEAT_ARTICUNO
-
+	
 ; End of events
 	const_next $A00
 DEF NUM_EVENTS EQU const_value

@@ -61,10 +61,11 @@ SpecialTrainerMoves:
 	db 0
 
 	db SABRINA, 1
-	db 1, 1, FLASH
-	db 2, 1, KINESIS
-	db 2, 4, PSYWAVE
-	db 3, 1, PSYWAVE
+	db 1, 1, PSYCHIC_M
+	db 1, 2, HYDRO_PUMP
+	db 2, 1, BARRIER
+	db 3, 4, PSYWAVE
+	db 4, 1, KINESIS
 	db 0
 
 	db GIOVANNI, 3
@@ -105,14 +106,12 @@ SpecialTrainerMoves:
 	db 0
 
 	db AGATHA, 1
-	db 1, 2, SUBSTITUTE
-	db 1, 3, LICK
-	db 1, 4, MEGA_DRAIN
-	db 2, 2, TOXIC
-	db 2, 4, LEECH_LIFE
-	db 3, 2, LICK
-	db 4, 1, WRAP
-	db 5, 2, PSYCHIC_M
+	db 1, 2, THRASH
+	db 1, 3, SKULL_BASH
+	db 2, 2, MEGA_DRAIN
+	db 2, 4, SOLARBEAM
+	db 4, 1, THUNDERBOLT
+	db 5, 2, HYDRO_PUMP
 	db 0
 
 	db LANCE, 1
