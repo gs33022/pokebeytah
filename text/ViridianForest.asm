@@ -7,40 +7,38 @@ _ViridianForestYoungster1Text::
 	done
 
 _ViridianForestYoungster2BattleText::
+	text "This place makes"
+	line "my skin crawl!"
+	done
+
+_ViridianForestYoungster2EndBattleText::
+	text "Eek!"
+	line "I think I felt"
+	cont "a CATERPIE!"
+	prompt
+
+_ViridianForestYoungster2AfterBattleText::
+	text "Bugs give me"
+	line "the creeps!"
+	done
+
+_ViridianForestYoungster3BattleText::
 	text "Hey! You have"
 	line "#MON! Come on!"
 	cont "Let's battle'em!"
 	done
 
-_ViridianForestYoungster2EndBattleText::
+_ViridianForestYoungster3EndBattleText::
 	text "No!"
 	line "CATERPIE can't"
 	cont "cut it!"
 	prompt
 
-_ViridianForestYoungster2AfterBattleText::
+_ViridianForestYoungster3AfterBattleText::
 	text "Ssh! You'll scare"
 	line "the bugs away!"
 	done
-
-_ViridianForestYoungster3BattleText::
-	text "Yo! You can't jam"
-	line "out if you're a"
-	cont "#MON trainer!"
-	done
-
-_ViridianForestYoungster3EndBattleText::
-	text "Huh?"
-	line "I ran out of"
-	cont "#MON!"
-	prompt
-
-_ViridianForestYoungster3AfterBattleText::
-	text "Darn! I'm going"
-	line "to catch some"
-	cont "stronger ones!"
-	done
-
+	
 _ViridianForestYoungster4BattleText::
 	text "Hey, wait up!"
 	line "What's the hurry?"
