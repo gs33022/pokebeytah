@@ -2,7 +2,7 @@ WildDataPointers:
 	table_width 2, WildDataPointers
 	dw NothingWildMons         ; PALLET_TOWN
 	dw NothingWildMons         ; VIRIDIAN_CITY
-	dw NothingWildMons         ; PEWTER_CITY
+	dw PewterCityWildMons      ; PEWTER_CITY
 	dw NothingWildMons         ; CERULEAN_CITY
 	dw NothingWildMons         ; LAVENDER_TOWN
 	dw NothingWildMons         ; VERMILION_CITY
@@ -322,3 +322,4 @@ INCLUDE "data/wild/maps/VictoryRoad3F.asm"
 INCLUDE "data/wild/maps/VictoryRoad1F.asm"
 INCLUDE "data/wild/maps/DiglettsCave.asm"
 INCLUDE "data/wild/maps/FuchsiaCity.asm"
+INCLUDE "data/wild/maps/PewterCity.asm"

@@ -29,16 +29,10 @@ InitBattleVariables:
 	ld [wTestBattlePlayerSelectedMove], a
 	ld a, [wCurMap]
 	cp SAFARI_ZONE_EAST
-	jr nz, .notSafariBattle
+	jr c, .notSafariBattle
 	cp SAFARI_ZONE_CENTER_REST_HOUSE
 	jr nc, .notSafariBattle
 	ld a, BATTLE_TYPE_SAFARI
 	ld [wBattleType], a
-	cp ROUTE_1
-	jr nz, .notStarterBattle
-	ld a, BATTLE_TYPE_STARTER
-	ld [wBattleType], a
 .notSafariBattle
-	jpfar PlayBattleMusic
-.notStarterBattle
 	jpfar PlayBattleMusic
