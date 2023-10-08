@@ -86,7 +86,6 @@ SECTION "Battle Engine 1", ROMX
 INCLUDE "engine/overworld/is_player_just_outside_map.asm"
 INCLUDE "engine/pokemon/status_screen.asm"
 INCLUDE "engine/menus/party_menu.asm"
-INCLUDE "gfx/player.asm"
 INCLUDE "engine/overworld/turn_sprite.asm"
 INCLUDE "engine/menus/start_sub_menus.asm"
 INCLUDE "engine/items/tms.asm"
@@ -353,3 +352,4 @@ INCLUDE "engine/items/tm_prices.asm"
 
 SECTION "Slots", ROMX
 INCLUDE "engine/battle/just_slot_machine_stuff.asm" ; to free bank1E
+INCLUDE "gfx/player.asm"
