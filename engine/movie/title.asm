@@ -47,28 +47,25 @@ DisplayTitleScreen:
 	call FarCopyData2
 	ld hl, PokemonLogoGraphics
 	ld de, vTitleLogo
-	ld bc, $60 tiles
-	ld a, BANK(PokemonLogoGraphics)
-	call FarCopyData2          ; first chunk
-	ld hl, PokemonLogoGraphics tile $60
-	ld de, vTitleLogo2
 	ld bc, $70 tiles
 	ld a, BANK(PokemonLogoGraphics)
-	call FarCopyData2          ; second chunk
-	ld hl, Version_GFX
-	ld de, vChars2 tile $60 + (10 tiles - (Version_GFXEnd - Version_GFX) * 2) / 2
-	ld bc, Version_GFXEnd - Version_GFX
-	ld a, BANK(Version_GFX)
-	call FarCopyDataDouble
+	call FarCopyData2
+	
+	ld hl, PokemonLogo2Graphics
+	ld de, vTitleLogo tile 128
+	ld bc, $24 tiles
+	ld a, BANK(PokemonLogo2Graphics)
+	call FarCopyData2	
+
 	call ClearBothBGMaps
 
-; place tiles for pokemon logo (except for the last row)
-	hlcoord 2, 1
+; logo first half
+	hlcoord 1, 1
 	ld a, $80
-	ld de, SCREEN_WIDTH
+	ld de, 20
 	ld c, 6
 .pokemonLogoTileLoop
-	ld b, $10
+	ld b, $12
 	push hl
 .pokemonLogoTileRowLoop ; place tiles for one row
 	ld [hli], a
@@ -79,16 +76,23 @@ DisplayTitleScreen:
 	add hl, de
 	dec c
 	jr nz, .pokemonLogoTileLoop
-
-; place tiles for the last row of the pokemon logo
-	hlcoord 2, 7
-	ld a, $31
-	ld b, $10
-.pokemonLogoLastTileRowLoop
+; logo second half
+	hlcoord 1, 7
+	ld a, $00
+	ld de, 20
+	ld c, 2
+.pokemonLogo2TileLoop
+	ld b, $12
+	push hl
+.pokemonLogo2TileRowLoop ; place tiles for one row
 	ld [hli], a
 	inc a
 	dec b
-	jr nz, .pokemonLogoLastTileRowLoop
+	jr nz, .pokemonLogo2TileRowLoop
+	pop hl
+	add hl, de
+	dec c
+	jr nz, .pokemonLogo2TileLoop	
 
 	call DrawPlayerCharacter
 
