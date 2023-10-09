@@ -94,6 +94,10 @@ INCLUDE "engine/battle/move_effects/conversion.asm"
 INCLUDE "engine/battle/move_effects/haze.asm"
 INCLUDE "engine/battle/get_trainer_name.asm"
 INCLUDE "engine/math/random.asm"
+INCLUDE "gfx/player.asm"
+INCLUDE "engine/items/tms.asm"
+INCLUDE "engine/menus/start_sub_menus.asm"
+
 
 
 SECTION "Battle Engine 2", ROMX
@@ -350,6 +354,3 @@ INCLUDE "engine/items/tm_prices.asm"
 
 SECTION "Slots", ROMX
 INCLUDE "engine/battle/just_slot_machine_stuff.asm" ; to free bank1E
-INCLUDE "gfx/player.asm"
-INCLUDE "engine/items/tms.asm"
-INCLUDE "engine/menus/start_sub_menus.asm"

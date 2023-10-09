@@ -186,28 +186,9 @@ ENDC
 	ld a, SFX_INTRO_WHOOSH
 	call PlaySound
 
-; scroll game version in from the right
-	call PrintGameVersionOnTitleScreen
-	ld a, SCREEN_HEIGHT_PX
-	ldh [hWY], a
-	ld d, 144
-.scrollTitleScreenGameVersionLoop
-	ld h, d
-	ld l, 64
-	call ScrollTitleScreenGameVersion
-	ld h, 0
-	ld l, 80
-	call ScrollTitleScreenGameVersion
-	ld a, d
-	add 4
-	ld d, a
-	and a
-	jr nz, .scrollTitleScreenGameVersionLoop
-
 	ld a, HIGH(vBGMap1)
 	call TitleScreenCopyTileMapToVRAM
 	call LoadScreenTilesFromBuffer2
-	call PrintGameVersionOnTitleScreen
 	call Delay3
 	call WaitForSoundToFinish
 	ld a, MUSIC_TITLE_SCREEN
@@ -296,21 +277,6 @@ TitleScreenScrollInMon:
 	ldh [hWY], a
 	ret
 
-ScrollTitleScreenGameVersion:
-.wait
-	ldh a, [rLY]
-	cp l
-	jr nz, .wait
-
-	ld a, h
-	ldh [rSCX], a
-
-.wait2
-	ldh a, [rLY]
-	cp h
-	jr z, .wait2
-	ret
-
 DrawPlayerCharacter:
 	ld hl, PlayerCharacterTitleGraphics
 	ld de, vSprites
@@ -387,21 +353,6 @@ CopyrightTextString:
 	db   "@"
 
 INCLUDE "data/pokemon/title_mons.asm"
-
-; prints version text (red, blue)
-PrintGameVersionOnTitleScreen:
-	hlcoord 7, 8
-	ld de, VersionOnTitleScreenText
-	jp PlaceString
-
-; these point to special tiles specifically loaded for that purpose and are not usual text
-VersionOnTitleScreenText:
-IF DEF(_RED)
-	db $60,$61,$7F,$65,$66,$67,$68,$69,"@" ; "Red Version"
-ENDC
-IF DEF(_BLUE)
-	db $61,$62,$63,$64,$65,$66,$67,$68,"@" ; "Blue Version"
-ENDC
 
 DebugNewGamePlayerName:
 	db "NINTEN@"

@@ -193,9 +193,9 @@ RLEList_PewterMuseumPlayer:
 
 RLEList_PewterMuseumGuy:
 	db NPC_MOVEMENT_UP, 6
-	db NPC_MOVEMENT_LEFT, 13
-	db NPC_MOVEMENT_UP, 3
-	db NPC_MOVEMENT_LEFT, 1
+	db NPC_MOVEMENT_LEFT, 16
+	db NPC_MOVEMENT_UP, 6
+	db NPC_MOVEMENT_LEFT, 2
 	db -1 ; end
 
 PewterMovementScript_Done:
