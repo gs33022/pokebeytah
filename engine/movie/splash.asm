@@ -1,33 +1,34 @@
 LoadShootingStarGraphics:
-	ld a, $f9
+	ld a, $e4
 	ldh [rOBP0], a
-	ld a, $a4
-	ldh [rOBP1], a
-	ld de, MoveAnimationTiles1 tile 3 ; star tile (top left quadrant)
-	ld hl, vChars1 tile $20
-	lb bc, BANK(MoveAnimationTiles1), 1
-	call CopyVideoData
-	ld de, MoveAnimationTiles1 tile 19 ; star tile (bottom left quadrant)
-	ld hl, vChars1 tile $21
-	lb bc, BANK(MoveAnimationTiles1), 1
-	call CopyVideoData
-	ld de, FallingStar
-	ld hl, vChars1 tile $22
-	lb bc, BANK(FallingStar), (FallingStarEnd - FallingStar) / $10
-	call CopyVideoData
+	;ld a, $a4
+	;ldh [rOBP1], a
+	;ld de, MoveAnimationTiles1 tile 3 ; star tile (top left quadrant)
+	;ld hl, vChars1 tile $20
+	;lb bc, BANK(MoveAnimationTiles1), 1
+	;call CopyVideoData
+	;ld de, MoveAnimationTiles1 tile 19 ; star tile (bottom left quadrant)
+	;ld hl, vChars1 tile $21
+	;lb bc, BANK(MoveAnimationTiles1), 1
+	;call CopyVideoData
+	;ld de, FallingStar
+	;ld hl, vChars1 tile $22
+	;lb bc, BANK(FallingStar), (FallingStarEnd - FallingStar) / $10
+	;call CopyVideoData
 	ld hl, GameFreakLogoOAMData
 	ld de, wShadowOAMSprite24
 	ld bc, GameFreakLogoOAMDataEnd - GameFreakLogoOAMData
-	call CopyData
-	ld hl, GameFreakShootingStarOAMData
-	ld de, wShadowOAM
-	ld bc, GameFreakShootingStarOAMDataEnd - GameFreakShootingStarOAMData
+	;call CopyData
+	;ld hl, GameFreakShootingStarOAMData
+	;ld de, wShadowOAM
+	;ld bc, GameFreakShootingStarOAMDataEnd - GameFreakShootingStarOAMData
 	jp CopyData
 
 AnimateShootingStar:
 	call LoadShootingStarGraphics
-	ld a, SFX_SHOOTING_STAR
-	call PlaySound
+	;ld a, SFX_SHOOTING_STAR
+	;call PlaySound
+	ret
 
 ; Move the big star down and left across the screen.
 	ld hl, wShadowOAM
@@ -124,7 +125,7 @@ AnimateShootingStar:
 	ld a, [wMoveDownSmallStarsOAMCount]
 	cp 24
 	jr z, .next2
-	add 6 ; should be 4, but the extra 2 aren't visible on screen
+	add 4 ; should be 4, but the extra 2 aren't visible on screen
 	ld [wMoveDownSmallStarsOAMCount], a
 .next2
 	call MoveDownSmallStars
@@ -191,6 +192,8 @@ MoveDownSmallStars:
 	ld de, -4
 	ld c, a
 .innerLoop
+	inc [hl] ; Y
+	inc [hl] ; Y
 	inc [hl] ; Y
 	add hl, de
 	dec c

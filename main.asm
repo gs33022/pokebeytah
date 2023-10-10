@@ -80,6 +80,13 @@ SECTION "Font Graphics", ROMX
 
 INCLUDE "gfx/font.asm"
 
+SECTION "Title Graphics", ROMX
+
+PokemonLogoGraphics: INCBIN "gfx/title/pokemon_logo.2bpp"
+
+SECTION "Title Graphics 2", ROMX
+
+PokemonLogoGraphics2: INCBIN "gfx/title/pokemon_logo_2.2bpp"
 
 SECTION "Battle Engine 1", ROMX
 

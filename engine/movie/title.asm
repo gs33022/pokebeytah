@@ -39,6 +39,9 @@ DisplayTitleScreen:
 	ldh [hWY], a
 	call ClearScreen
 	call DisableLCD
+	call DrawPlayerCharacter
+	ld a, " "
+	ld [wTileMap], a
 	call LoadFontTilePatterns
 	ld hl, NintendoCopyrightLogoGraphics
 	ld de, vTitleLogo2 tile 16
@@ -47,13 +50,13 @@ DisplayTitleScreen:
 	call FarCopyData2
 	ld hl, PokemonLogoGraphics
 	ld de, vTitleLogo
-	ld bc, $60 tiles
+	ld bc, $80 tiles
 	ld a, BANK(PokemonLogoGraphics)
 	call FarCopyData2          ; first chunk
-	ld hl, PokemonLogoGraphics tile $60
+	ld hl, PokemonLogoGraphics2
 	ld de, vTitleLogo2
 	ld bc, $10 tiles
-	ld a, BANK(PokemonLogoGraphics)
+	ld a, BANK(PokemonLogoGraphics2)
 	call FarCopyData2          ; second chunk
 	ld hl, Version_GFX
 	ld de, vChars2 tile $60 + (10 tiles - (Version_GFXEnd - Version_GFX) * 2) / 2
@@ -63,10 +66,10 @@ DisplayTitleScreen:
 	call ClearBothBGMaps
 
 ; place tiles for pokemon logo (except for the last row)
-	hlcoord 2, 1
+	hlcoord 2, 0
 	ld a, $80
 	ld de, SCREEN_WIDTH
-	ld c, 6
+	ld c, 8
 .pokemonLogoTileLoop
 	ld b, $10
 	push hl
@@ -79,18 +82,6 @@ DisplayTitleScreen:
 	add hl, de
 	dec c
 	jr nz, .pokemonLogoTileLoop
-
-; place tiles for the last row of the pokemon logo
-	hlcoord 2, 7
-	ld a, $31
-	ld b, $10
-.pokemonLogoLastTileRowLoop
-	ld [hli], a
-	inc a
-	dec b
-	jr nz, .pokemonLogoLastTileRowLoop
-
-	call DrawPlayerCharacter
 
 ; place tiles for title screen copyright
 	hlcoord 3, 17
@@ -136,10 +127,11 @@ ENDC
 	ld hl, .TitleScreenPokemonLogoYScrolls
 .bouncePokemonLogoLoop
 	ld a, [hli]
+	;cp $80 ; main.dmg
 	and a
 	jr z, .finishedBouncingPokemonLogo
 	ld d, a
-	cp -3
+	cp 2
 	jr nz, .skipPlayingSound
 	ld a, SFX_INTRO_CRASH
 	call PlaySound
@@ -151,13 +143,10 @@ ENDC
 
 .TitleScreenPokemonLogoYScrolls:
 ; Controls the bouncing effect of the Pokemon logo on the title screen
+	;db	$fe,$20,$01,$10,$fe,$08,$01,$08,$ff,$08,$80 ; main.dmg
 	db -4,16  ; y scroll amount, number of times to scroll
-	db 3,4
-	db -3,4
-	db 2,2
-	db -2,2
-	db 1,2
-	db -1,2
+	db 2,3
+	db -2,3
 	db 0      ; terminate list with 0
 
 .ScrollTitleScreenPokemonLogo:
@@ -177,12 +166,14 @@ ENDC
 	call DelayFrames
 	ld a, SFX_INTRO_WHOOSH
 	call PlaySound
+	ld c, 8
+	call DelayFrames
 
 ; scroll game version in from the right
 	call PrintGameVersionOnTitleScreen
 	ld a, SCREEN_HEIGHT_PX
 	ldh [hWY], a
-	ld d, 144
+	ld d, 140
 .scrollTitleScreenGameVersionLoop
 	ld h, d
 	ld l, 64
@@ -313,7 +304,7 @@ DrawPlayerCharacter:
 	ld b, 7
 .loop
 	push de
-	ld c, 5
+	ld c, 6
 .innerLoop
 	ld a, d
 	ld [hli], a ; Y
@@ -369,16 +360,27 @@ LoadCopyrightTiles:
 	jp PlaceString
 
 CopyrightTextString:
-	db   $60,$61,$62,$63,$6D,$6E,$6F,$70,$71,$72             ; ©1995 Nintendo
-	next $60,$61,$62,$63,$73,$74,$75,$76,$77,$78,$6B,$6C     ; ©1995 Creatures inc.
-	next $60,$61,$62,$63,$64,$65,$66,$67,$68,$69,$6A,$6B,$6C ; ©1995 GAME FREAK inc.
+	db   $60,$61,$62,$63,$6D,$6E,$6F,$70,$71,$72             ; ©1994 Nintendo
+	next $60,$61,$62,$63,$73,$74,$75,$76,$77,$78             ; ©1994 APE inc.
+	next $60,$61,$62,$63,$64,$65,$66,$67,$68,$69,$6A,$6B,$6C ; ©1994 GAME FREAK inc.
 	db   "@"
 
 INCLUDE "data/pokemon/title_mons.asm"
 
 ; prints version text (red, blue)
 PrintGameVersionOnTitleScreen:
-	hlcoord 7, 8
+
+; place tiles for the last row of the pokemon logo
+	hlcoord 2, 8
+	ld a, $31
+	ld b, $10
+.pokemonLogoLastTileRowLoop
+	ld [hli], a
+	inc a
+	dec b
+	jr nz, .pokemonLogoLastTileRowLoop
+
+	hlcoord 7, 9
 	ld de, VersionOnTitleScreenText
 	jp PlaceString
 

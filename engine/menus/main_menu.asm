@@ -434,8 +434,8 @@ PrintPlayTime:
 SaveScreenInfoText:
 	db   "PLAYER"
 	next "BADGES    "
-	next "#DEX    "
-	next "TIME@"
+	next "CAPTURED      "
+	next "PLAYTIME@"
 
 DisplayOptionMenu:
 	hlcoord 0, 0

@@ -53,7 +53,7 @@ _MartSignText::
 	done
 
 _PokeCenterSignText::
-	text "Heal Your #MON!"
+	text "HEAL YOUR #MON!"
 	line "#MON CENTER"
 	done
 
