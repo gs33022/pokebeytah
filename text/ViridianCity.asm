@@ -173,6 +173,10 @@ _ViridianCityTrainerTips2Text::
 _ViridianCityGymSignText::
 	text "VIRIDIAN CITY"
 	line "#MON GYM"
+	cont "LEADER: DOUG"
+	
+	para "The new kid in"
+	line "town!"
 	done
 
 _ViridianCityGymLockedText::

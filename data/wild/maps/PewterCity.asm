@@ -1,9 +1,9 @@
 PewterCityWildMons:
 	def_grass_wildmons 20 ; encounter rate
-	db 4, SANDSHREW
-	db 4, GEODUDE
-	db 5, NIDORAN_M
-	db 6, NIDORAN_F
+	db 4, NIDORAN_M
+	db 4, NIDORAN_F
+	db 5, SANDSHREW
+	db 6, GEODUDE
 	db 6, PIDGEY
 	db 5, PIDGEY
 	db 4, RATTATA

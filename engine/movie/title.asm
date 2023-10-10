@@ -42,30 +42,38 @@ DisplayTitleScreen:
 	call LoadFontTilePatterns
 	ld hl, NintendoCopyrightLogoGraphics
 	ld de, vTitleLogo2 tile 16
-	ld bc, 13 tiles
+	ld bc, 5 tiles
 	ld a, BANK(NintendoCopyrightLogoGraphics)
+	call FarCopyData2
+	ld hl, GameFreakLogoGraphics
+	ld de, vTitleLogo2 tile (16 + 5)
+	ld bc, 9 tiles
+	ld a, BANK(GameFreakLogoGraphics)
 	call FarCopyData2
 	ld hl, PokemonLogoGraphics
 	ld de, vTitleLogo
-	ld bc, $70 tiles
+	ld bc, $60 tiles
 	ld a, BANK(PokemonLogoGraphics)
-	call FarCopyData2
-	
-	ld hl, PokemonLogo2Graphics
-	ld de, vTitleLogo tile 128
-	ld bc, $24 tiles
-	ld a, BANK(PokemonLogo2Graphics)
-	call FarCopyData2	
-
+	call FarCopyData2          ; first chunk
+	ld hl, PokemonLogoGraphics tile $60
+	ld de, vTitleLogo2
+	ld bc, $10 tiles
+	ld a, BANK(PokemonLogoGraphics)
+	call FarCopyData2          ; second chunk
+	ld hl, Version_GFX
+	ld de, vChars2 tile $60 + (10 tiles - (Version_GFXEnd - Version_GFX) * 2) / 2
+	ld bc, Version_GFXEnd - Version_GFX
+	ld a, BANK(Version_GFX)
+	call FarCopyDataDouble
 	call ClearBothBGMaps
 
-; logo first half
-	hlcoord 1, 1
+; place tiles for pokemon logo (except for the last row)
+	hlcoord 2, 1
 	ld a, $80
-	ld de, 20
+	ld de, SCREEN_WIDTH
 	ld c, 6
 .pokemonLogoTileLoop
-	ld b, $12
+	ld b, $10
 	push hl
 .pokemonLogoTileRowLoop ; place tiles for one row
 	ld [hli], a
@@ -76,33 +84,32 @@ DisplayTitleScreen:
 	add hl, de
 	dec c
 	jr nz, .pokemonLogoTileLoop
-; logo second half
-	hlcoord 1, 7
-	ld a, $00
-	ld de, 20
-	ld c, 2
-.pokemonLogo2TileLoop
-	ld b, $12
-	push hl
-.pokemonLogo2TileRowLoop ; place tiles for one row
+
+; place tiles for the last row of the pokemon logo
+	hlcoord 2, 7
+	ld a, $31
+	ld b, $10
+.pokemonLogoLastTileRowLoop
 	ld [hli], a
 	inc a
 	dec b
-	jr nz, .pokemonLogo2TileRowLoop
-	pop hl
-	add hl, de
-	dec c
-	jr nz, .pokemonLogo2TileLoop	
+	jr nz, .pokemonLogoLastTileRowLoop
 
 	call DrawPlayerCharacter
 
+; put a pokeball in the player's hand
+	ld hl, wShadowOAMSprite10
+	ld a, $74
+	ld [hl], a
+
 ; place tiles for title screen copyright
-	hlcoord 3, 17
-	ld a, $41
-	ld b, 13 tiles
+	hlcoord 2, 17
+	ld de, .tileScreenCopyrightTiles
+	ld b, $10
 .tileScreenCopyrightTilesLoop
+	ld a, [de]
 	ld [hli], a
-	inc a
+	inc de
 	dec b
 	jr nz, .tileScreenCopyrightTilesLoop
 
@@ -186,9 +193,28 @@ ENDC
 	ld a, SFX_INTRO_WHOOSH
 	call PlaySound
 
+; scroll game version in from the right
+	call PrintGameVersionOnTitleScreen
+	ld a, SCREEN_HEIGHT_PX
+	ldh [hWY], a
+	ld d, 144
+.scrollTitleScreenGameVersionLoop
+	ld h, d
+	ld l, 64
+	call ScrollTitleScreenGameVersion
+	ld h, 0
+	ld l, 80
+	call ScrollTitleScreenGameVersion
+	ld a, d
+	add 4
+	ld d, a
+	and a
+	jr nz, .scrollTitleScreenGameVersionLoop
+
 	ld a, HIGH(vBGMap1)
 	call TitleScreenCopyTileMapToVRAM
 	call LoadScreenTilesFromBuffer2
+	call PrintGameVersionOnTitleScreen
 	call Delay3
 	call WaitForSoundToFinish
 	ld a, MUSIC_TITLE_SCREEN
@@ -277,6 +303,21 @@ TitleScreenScrollInMon:
 	ldh [hWY], a
 	ret
 
+ScrollTitleScreenGameVersion:
+.wait
+	ldh a, [rLY]
+	cp l
+	jr nz, .wait
+
+	ld a, h
+	ldh [rSCX], a
+
+.wait2
+	ldh a, [rLY]
+	cp h
+	jr z, .wait2
+	ret
+
 DrawPlayerCharacter:
 	ld hl, PlayerCharacterTitleGraphics
 	ld de, vSprites
@@ -287,7 +328,7 @@ DrawPlayerCharacter:
 	xor a
 	ld [wPlayerCharacterOAMTile], a
 	ld hl, wShadowOAM
-	lb de, $60, $30
+	lb de, $60, $5a
 	ld b, 7
 .loop
 	push de
@@ -323,7 +364,7 @@ ClearBothBGMaps:
 LoadTitleMonSprite:
 	ld [wcf91], a
 	ld [wd0b5], a
-	hlcoord 9, 10
+	hlcoord 5, 10
 	call GetMonHeader
 	jp LoadFrontSpriteByMonIndex
 
@@ -340,19 +381,34 @@ LoadCopyrightAndTextBoxTiles:
 LoadCopyrightTiles:
 	ld de, NintendoCopyrightLogoGraphics
 	ld hl, vChars2 tile $60
-	lb bc, BANK(NintendoCopyrightLogoGraphics), (NintendoCopyrightLogoGraphicsEnd - NintendoCopyrightLogoGraphics) / $10
+	lb bc, BANK(NintendoCopyrightLogoGraphics), (GameFreakLogoGraphicsEnd - NintendoCopyrightLogoGraphics) / $10
 	call CopyVideoData
-	hlcoord 5, 7
+	hlcoord 2, 7
 	ld de, CopyrightTextString
 	jp PlaceString
 
 CopyrightTextString:
-	db   $60,$61,$62,$63,$6D,$6E,$6F,$70,$71,$72             ; ©1995 Nintendo
-	next $60,$61,$62,$63,$73,$74,$75,$76,$77,$78,$6B,$6C     ; ©1995 Creatures inc.
-	next $60,$61,$62,$63,$64,$65,$66,$67,$68,$69,$6A,$6B,$6C ; ©1995 GAME FREAK inc.
+	db   $60,$61,$62,$61,$63,$61,$64,$7F,$65,$66,$67,$68,$69,$6A             ; ©'95.'96.'98 Nintendo
+	next $60,$61,$62,$61,$63,$61,$64,$7F,$6B,$6C,$6D,$6E,$6F,$70,$71,$72     ; ©'95.'96.'98 Creatures inc.
+	next $60,$61,$62,$61,$63,$61,$64,$7F,$73,$74,$75,$76,$77,$78,$79,$7A,$7B ; ©'95.'96.'98 GAME FREAK inc.
 	db   "@"
 
 INCLUDE "data/pokemon/title_mons.asm"
+
+; prints version text (red, blue)
+PrintGameVersionOnTitleScreen:
+	hlcoord 7, 8
+	ld de, VersionOnTitleScreenText
+	jp PlaceString
+
+; these point to special tiles specifically loaded for that purpose and are not usual text
+VersionOnTitleScreenText:
+IF DEF(_RED)
+	db $60,$61,$7F,$65,$66,$67,$68,$69,"@" ; "Red Version"
+ENDC
+IF DEF(_BLUE)
+	db $61,$62,$63,$64,$65,$66,$67,$68,"@" ; "Blue Version"
+ENDC
 
 DebugNewGamePlayerName:
 	db "NINTEN@"
