@@ -129,7 +129,7 @@ ENDC
 	and a
 	jr z, .finishedBouncingPokemonLogo
 	ld d, a
-	cp -3
+	cp 2
 	jr nz, .skipPlayingSound
 	ld a, SFX_INTRO_CRASH
 	call PlaySound
@@ -142,12 +142,8 @@ ENDC
 .TitleScreenPokemonLogoYScrolls:
 ; Controls the bouncing effect of the Pokemon logo on the title screen
 	db -4,16  ; y scroll amount, number of times to scroll
-	db 3,4
-	db -3,4
-	db 2,2
-	db -2,2
-	db 1,2
-	db -1,2
+	db 2,3
+	db -2,3
 	db 0      ; terminate list with 0
 
 .ScrollTitleScreenPokemonLogo:
@@ -172,7 +168,7 @@ ENDC
 	call PrintGameVersionOnTitleScreen
 	ld a, SCREEN_HEIGHT_PX
 	ldh [hWY], a
-	ld d, 144
+	ld d, 140
 .scrollTitleScreenGameVersionLoop
 	ld h, d
 	ld l, 64

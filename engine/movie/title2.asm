@@ -8,13 +8,13 @@ TitleScroll_In:
 ; Scroll a TitleMon in from the right.
 ; hi: speed
 ; lo: duration
-	db $a2, $94, $84, $63, $52, $31, $11, 0
+	db $8f, 0
 
 TitleScroll_Out:
 ; Scroll a TitleMon out to the left.
 ; hi: speed
 ; lo: duration
-	db $12, $22, $32, $42, $52, $62, $83, $93, 0
+	db $8f, 0
 
 TitleScroll:
 	ld a, d
