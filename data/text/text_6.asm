@@ -57,8 +57,9 @@ _ItemUseBallText06::
 	text_end
 
 _SurfingGotOnText::
-	text "<PLAYER> got on"
-	line "@"
+	text "<PLAYER> began"
+	line "JETting on"
+	cont "@"
 	text_ram wcd6d
 	text "!"
 	prompt
@@ -218,7 +219,7 @@ _NoCyclingAllowedHereText::
 	prompt
 
 _NoSurfingHereText::
-	text "No JETTing on"
+	text "No JETting on"
 	line "@"
 	text_ram wcd6d
 	text " here!"

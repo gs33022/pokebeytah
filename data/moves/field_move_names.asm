@@ -1,9 +1,9 @@
 ; see also FieldMoveDisplayData
 FieldMoveNames:
 	db "CUT@"
-	db "FLY@"
+	db "DIVE BOMB@"
 	db "@"
-	db "HYDRO PUMP@"
+	db "HYDRO JET@"
 	db "STRENGTH@"
 	db "FLASH@"
 	db "DIG@"
