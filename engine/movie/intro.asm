@@ -347,7 +347,9 @@ PlayShootingStar:
 	;call PlaySound
 	call IntroClearMiddleOfScreen
 	call ClearSprites
+	call DisableLCD
 	call IntroDrawBlackBars
+	call EnableLCD
 	jp Delay3
 
 IntroDrawBlackBars:

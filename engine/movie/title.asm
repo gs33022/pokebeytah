@@ -37,9 +37,11 @@ DisplayTitleScreen:
 	ldh [hSCY], a
 	ld a, $90
 	ldh [hWY], a
-	call DrawPlayerCharacter
 	call ClearScreen
 	call DisableLCD
+	call DrawPlayerCharacter
+	ld a, " "
+	ld [wTileMap], a
 	call LoadFontTilePatterns
 	ld hl, NintendoCopyrightLogoGraphics
 	ld de, vTitleLogo2 tile 16
