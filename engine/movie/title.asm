@@ -359,9 +359,9 @@ LoadCopyrightTiles:
 	jp PlaceString
 
 CopyrightTextString:
-	db   $60,$61,$62,$63,$6D,$6E,$6F,$70,$71,$72             ; ©1995 Nintendo
-	next $60,$61,$62,$63,$73,$74,$75,$76,$77,$78,$6B,$6C     ; ©1995 Creatures inc.
-	next $60,$61,$62,$63,$64,$65,$66,$67,$68,$69,$6A,$6B,$6C ; ©1995 GAME FREAK inc.
+	db   $60,$61,$62,$63,$6D,$6E,$6F,$70,$71,$72             ; ©1994 Nintendo
+	next $60,$61,$62,$63,$73,$74,$75,$76,$77,$78             ; ©1994 APE inc.
+	next $60,$61,$62,$63,$64,$65,$66,$67,$68,$69,$6A,$6B,$6C ; ©1994 GAME FREAK inc.
 	db   "@"
 
 INCLUDE "data/pokemon/title_mons.asm"
