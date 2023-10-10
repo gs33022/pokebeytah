@@ -126,17 +126,24 @@ _Route3Youngster5AfterBattleText::
 	done
 
 _Route3CooltrainerF3BattleText::
-	text "Eek! Did you"
-	line "touch me?"
+	text "NIECHELLE in the"
+	line "house!"
+	
+	para "Just try to beat"
+	line "my cutie #MON!"
 	done
 
 _Route3CooltrainerF3EndBattleText::
-	text "That's it?"
+	text "My"
+	line "cute JIGGLYPUFF!"
 	prompt
 
 _Route3CooltrainerF3AfterBattleText::
-	text "ROUTE 4 is at the"
-	line "foot of MT.MOON."
+	text "JIGGLYPUFF is my"
+	line "favorite #MON!"
+	
+	para "My boyfriend"
+	line "loves it, too!"
 	done
 
 _Route3SignText::
