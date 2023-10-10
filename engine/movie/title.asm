@@ -37,6 +37,7 @@ DisplayTitleScreen:
 	ldh [hSCY], a
 	ld a, $90
 	ldh [hWY], a
+	call DrawPlayerCharacter
 	call ClearScreen
 	call DisableLCD
 	call LoadFontTilePatterns
@@ -79,8 +80,6 @@ DisplayTitleScreen:
 	add hl, de
 	dec c
 	jr nz, .pokemonLogoTileLoop
-
-	call DrawPlayerCharacter
 
 ; place tiles for title screen copyright
 	hlcoord 3, 17
@@ -301,7 +300,7 @@ DrawPlayerCharacter:
 	ld b, 7
 .loop
 	push de
-	ld c, 5
+	ld c, 6
 .innerLoop
 	ld a, d
 	ld [hli], a ; Y
