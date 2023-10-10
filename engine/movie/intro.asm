@@ -12,6 +12,8 @@ PlayIntro:
 	ldh [hAutoBGTransferEnabled], a
 	call PlayShootingStar
 	call PlayIntroScene
+	ld c, 60
+	call DelayFrames
 	call GBFadeOutToWhite
 	xor a
 	ldh [hSCX], a
@@ -315,7 +317,6 @@ PlayShootingStar:
 	call DisableLCD
 	xor a
 	ld [wCurOpponent], a
-	call IntroDrawBlackBars
 	call LoadIntroGraphics
 	call EnableLCD
 	ld hl, rLCDC
@@ -335,7 +336,7 @@ PlayShootingStar:
     inc a
     dec c
     jr nz, .loop
-	ld c, 40
+	ld c, 150
 	call DelayFrames
 .next
 	;ld a, BANK(Music_IntroBattle)
@@ -346,6 +347,7 @@ PlayShootingStar:
 	;call PlaySound
 	call IntroClearMiddleOfScreen
 	call ClearSprites
+	call IntroDrawBlackBars
 	jp Delay3
 
 IntroDrawBlackBars:
