@@ -125,6 +125,7 @@ ENDC
 	ld hl, .TitleScreenPokemonLogoYScrolls
 .bouncePokemonLogoLoop
 	ld a, [hli]
+	;cp $80 ; main.dmg
 	and a
 	jr z, .finishedBouncingPokemonLogo
 	ld d, a
@@ -140,6 +141,7 @@ ENDC
 
 .TitleScreenPokemonLogoYScrolls:
 ; Controls the bouncing effect of the Pokemon logo on the title screen
+	;db	$fe,$20,$01,$10,$fe,$08,$01,$08,$ff,$08,$80 ; main.dmg
 	db -4,16  ; y scroll amount, number of times to scroll
 	db 2,3
 	db -2,3
