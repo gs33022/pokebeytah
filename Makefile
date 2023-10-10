@@ -123,6 +123,7 @@ endif
 
 %.asm: ;
 
+pokebeytah_pad    = 0x00
 pokebeytah_vc_pad    = 0x00
 pokebeytah_debug_pad = 0xff
 
