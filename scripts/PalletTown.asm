@@ -35,12 +35,12 @@ PalletTownDefaultScript:
 	ldh [hJoyHeld], a
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
-	ld a, SFX_STOP_ALL_MUSIC
-	call PlaySound
-	ld a, BANK(Music_MeetProfOak)
-	ld c, a
-	ld a, MUSIC_MEET_PROF_OAK ; "oak appears" music
-	call PlayMusic
+	;ld a, SFX_STOP_ALL_MUSIC
+	;call PlaySound
+	;ld a, BANK(Music_MeetProfOak)
+	;ld c, a
+	;ld a, MUSIC_MEET_PROF_OAK ; "oak appears" music
+	;call PlayMusic
 	ld a, SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
 	SetEvent EVENT_OAK_APPEARED_IN_PALLET
@@ -56,6 +56,7 @@ PalletTownOakHeyWaitScript:
 	ld a, TEXT_PALLETTOWN_OAK
 	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
+	call Delay3
 	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
 
@@ -77,6 +78,7 @@ PalletTownOakNotSafeComeWithMeScript:
 	ld a, TEXT_PALLETTOWN_OAK
 	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
+	call Delay3
 ; set up movement script that causes the player to follow Oak to his lab
 	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
