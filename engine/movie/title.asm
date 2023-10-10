@@ -309,7 +309,7 @@ DrawPlayerCharacter:
 	xor a
 	ld [wPlayerCharacterOAMTile], a
 	ld hl, wShadowOAM
-	lb de, $60, $5a
+	lb de, $60, $30
 	ld b, 7
 .loop
 	push de
