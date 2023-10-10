@@ -1,4 +1,4 @@
-FontGraphics:: INCBIN "gfx/font/font.1bpp"
+FontGraphics:: INCBIN "gfx/font/font_alt.1bpp"
 FontGraphicsEnd::
 
 ABTiles: INCBIN "gfx/font/AB.2bpp"
