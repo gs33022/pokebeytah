@@ -1,24 +1,12 @@
-# Pokémon Red and Blue [![Build Status][ci-badge]][ci]
+# Pokémon Beta Version
 
-This is a disassembly of Pokémon Red and Blue.
+![](doc/title.png)
 
-It builds the following ROMs:
-
-- Pokemon Red (UE) [S][!].gb `sha1: ea9bcae617fdf159b045185467ae58b2e4a48b9a`
-- Pokemon Blue (UE) [S][!].gb `sha1: d7037c83e1ae5b39bde3c30787637ba1d4c48ce2`
-- BLUEMONS.GB (debug build) `sha1: 5b1456177671b79b263c614ea0e7cc9ac542e9c4`
-- dmgapae0.e69.patch `sha1: 0fb5f743696adfe1dbb2e062111f08f9bc5a293a`
-- dmgapee0.e68.patch `sha1: ed4be94dc29c64271942c87f2157bca9ca1019c7`
-
-To set up the repository, see [**INSTALL.md**](INSTALL.md).
-
+Based on mid-development assets and various development material for Pokémon Red and Blue, with our own twists. Think of this as a sort of "prequel" to [Pokémon October][pokeoctober] :)
 
 ## See also
 
-- [**Wiki**][wiki] (includes [tutorials][tutorials])
-- [**Symbols**][symbols]
-- **Discord:** [pret][discord]
-- **IRC:** [libera#pret][irc]
+- **Discord:** [Pokémon October/Beta][discord]
 
 Other disassembly projects:
 
@@ -39,10 +27,7 @@ Other disassembly projects:
 [pokeruby]: https://github.com/pret/pokeruby
 [pokefirered]: https://github.com/pret/pokefirered
 [pokeemerald]: https://github.com/pret/pokeemerald
-[wiki]: https://github.com/pret/pokered/wiki
-[tutorials]: https://github.com/pret/pokered/wiki/Tutorials
-[symbols]: https://github.com/pret/pokered/tree/symbols
-[discord]: https://discord.gg/d5dubZ3
-[irc]: https://web.libera.chat/?#pret
-[ci]: https://github.com/pret/pokered/actions
-[ci-badge]: https://github.com/pret/pokered/actions/workflows/main.yml/badge.svg
+
+[discord]: https://discord.gg/Fc4M7cJMjC
+[pokeoctober]: https://github.com/pokeachromicdevs/pokeoctober
+
