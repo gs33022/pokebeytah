@@ -163,6 +163,8 @@ ENDC
 	call DelayFrames
 	ld a, SFX_INTRO_WHOOSH
 	call PlaySound
+	ld c, 8
+	call DelayFrames
 
 ; scroll game version in from the right
 	call PrintGameVersionOnTitleScreen
