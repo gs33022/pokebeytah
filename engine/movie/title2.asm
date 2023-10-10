@@ -49,11 +49,11 @@ _TitleScroll:
 
 .loop
 	ld h, d
-	ld l, $48
+	ld l, $58 ; start range
 	call .ScrollBetween
 
 	ld h, $00
-	ld l, $88
+	ld l, $88 ; end range
 	call .ScrollBetween
 
 	ld a, d
