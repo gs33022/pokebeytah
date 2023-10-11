@@ -134,8 +134,8 @@ _Route3CooltrainerF3BattleText::
 	done
 
 _Route3CooltrainerF3EndBattleText::
-	text "My"
-	line "cute JIGGLYPUFF!"
+	text "My cute"
+	line "JIGGLYPUFF!"
 	prompt
 
 _Route3CooltrainerF3AfterBattleText::
