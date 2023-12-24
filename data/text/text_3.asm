@@ -105,7 +105,7 @@ _GreatlyRoseText::
 	text_end
 
 _RoseText::
-	text " rose!"
+	text " up!"
 	prompt
 
 _MonsStatsFellText::
@@ -120,7 +120,7 @@ _GreatlyFellText::
 	text_end
 
 _FellText::
-	text " fell!"
+	text " down!"
 	prompt
 
 _RanFromBattleText::

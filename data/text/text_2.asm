@@ -1255,9 +1255,10 @@ _EnemyAppearedText::
 	prompt
 
 _TrainerWantsToFightText::
+	text "The @"
 	text_ram wTrainerName
-	text " wants"
-	line "to fight!"
+	text_start
+	line "wants to fight!"
 	prompt
 
 _UnveiledGhostText::
