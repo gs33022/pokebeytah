@@ -375,7 +375,7 @@ _KadabraDexEntry::
 	
 	page "who awoke in bed"
 	next "transformed into"
-	next "a KADABRA"
+	next "a POCUS"
 	dex
 
 _GravelerDexEntry::
