@@ -200,23 +200,9 @@ PewterGymHiker2AfterBattleText:
 
 PewterGymGuideText:
 	text_asm
-	ld a, [wBeatGymFlags]
-	bit BIT_CASCADEBADGE, a
+	CheckEvent EVENT_BEAT_MISTY
 	jr nz, .afterBeat
 	ld hl, PewterGymGuidePreAdviceText
-	call PrintText
-	call YesNoChoice
-	ld a, [wCurrentMenuItem]
-	and a
-	jr nz, .PewterGymGuideBeginAdviceText
-	ld hl, PewterGymGuideBeginAdviceText
-	call PrintText
-	jr .PewterGymGuideAdviceText
-.PewterGymGuideBeginAdviceText
-	ld hl, PewterGymGuideFreeServiceText
-	call PrintText
-.PewterGymGuideAdviceText
-	ld hl, PewterGymGuideAdviceText
 	call PrintText
 	jr .done
 .afterBeat
