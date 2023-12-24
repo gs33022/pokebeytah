@@ -142,7 +142,7 @@ EvosMovesPointerTable:
 	dw MissingNo8AEvosMoves
 	dw KinglerEvosMoves
 	dw CloysterEvosMoves
-	dw MissingNo8CEvosMoves
+	dw GavillainEvosMoves
 	dw ElectrodeEvosMoves
 	dw ClefableEvosMoves
 	dw WeezingEvosMoves
@@ -1747,10 +1747,17 @@ CloysterEvosMoves:
 	db 50, SPIKE_CANNON
 	db 0
 
-MissingNo8CEvosMoves:
+GavillainEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 20, BITE
+	db 25, MUD_SLAP
+	db 32, RAGE
+	db 37, SLASH
+	db 43, SPIKE_CANNON
+	db 48, DIG
+	db 55, THRASH
 	db 0
 
 ElectrodeEvosMoves:

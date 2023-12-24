@@ -139,7 +139,7 @@ PokedexEntryPointers:
 	dw MissingNoDexEntry
 	dw KinglerDexEntry
 	dw CloysterDexEntry
-	dw MissingNoDexEntry
+	dw GavillainDexEntry
 	dw ElectrodeDexEntry
 	dw ClefableDexEntry
 	dw WeezingDexEntry
@@ -1119,6 +1119,13 @@ CloysterDexEntry:
 	db 4,11
 	dw 2920
 	text_far _CloysterDexEntry
+	text_end
+	
+GavillainDexEntry:
+	db "CROC@"
+	db 4,3
+	dw 1058
+	text_far _GavillainDexEntry
 	text_end
 
 ElectrodeDexEntry:

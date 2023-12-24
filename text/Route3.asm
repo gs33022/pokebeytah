@@ -135,11 +135,11 @@ _Route3CooltrainerF3BattleText::
 
 _Route3CooltrainerF3EndBattleText::
 	text "My cute"
-	line "JIGGLYPUFF!"
+	line "PUDDING!"
 	prompt
 
 _Route3CooltrainerF3AfterBattleText::
-	text "JIGGLYPUFF is my"
+	text "PUDDING is my"
 	line "favorite #MON!"
 	
 	para "My boyfriend"

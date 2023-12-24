@@ -1,3 +1,13 @@
+_MagnemiteDexEntry::
+	text "It moves while"
+	next "always hovering."
+	next "Discharges moves"
+	
+	page "like THUNDER WAVE"
+	next "from the units at"
+	next "its sides"
+	dex
+
 _CharmanderDexEntry::
 	text "From the time it"
 	next "is born, a flame"

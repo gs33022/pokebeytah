@@ -850,12 +850,12 @@ _RaichuDexEntry::
 
 _RibbitoDexEntry::
 	text "Despite its small"
-	next "small size, it is"
-	next "very heavy, and"
+	next "size, it is very"
+	next "heavy, and will"
 
-	page "will only gain"
-	next "more and more"
-	next "weight as it grows"
+	page "only gain more"
+	next "and more weight"
+	next "as it grows"
 	dex
 	
 _CroakozunaDexEntry::
@@ -1317,6 +1317,16 @@ _CloysterDexEntry::
 	next "shell opens only"
 	next "when it attacks"
 	dex
+	
+_GavillainDexEntry::
+	text "It hides in"
+	next "deserts, waiting"
+	next "for its prey."
+	
+	page "Legends say that"
+	next "making eye contact"
+	next "will paralyze"
+	dex
 
 _ElectrodeDexEntry::
 	text "It explodes in"
@@ -1596,14 +1606,4 @@ _AerodactylDexEntry::
 	page "amber. It makes"
 	next "high-pitched"
 	next "cries as it soars"
-	dex
-
-_MagnemiteDexEntry::
-	text "It moves while"
-	next "always hovering."
-	next "Discharges moves"
-	
-	page "like THUNDER WAVE"
-	next "from the units at"
-	next "its sides"
 	dex

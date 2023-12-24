@@ -417,6 +417,8 @@ RibbitoPicFront::   INCBIN "gfx/pokemon/front/ribbito.pic"
 RibbitoPicBack::      INCBIN "gfx/pokemon/back/ribbitob.pic"
 CroakazunaPicFront::   INCBIN "gfx/pokemon/front/croakazuna.pic"
 CroakazunaPicBack::      INCBIN "gfx/pokemon/back/croakazunab.pic"
+GavillainPicFront::   INCBIN "gfx/pokemon/front/gavillain.pic"
+GavillainPicBack::      INCBIN "gfx/pokemon/back/gavillainb.pic"
 
 RedPicBack::           INCBIN "gfx/player/redb.pic"
 GreenPicBack::         INCBIN "gfx/player/greenb.pic"

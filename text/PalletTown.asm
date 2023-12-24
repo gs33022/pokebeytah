@@ -6,6 +6,9 @@ _PalletTownOakHeyWaitDontGoOutText::
 _PalletTownOakItsUnsafeText::
 	text "OAK: So, you're"
 	line "finally awake!"
+	
+	para "You overslept,"
+	line "you know!"
 
 	para "It's time for you"
 	line "to begin your"

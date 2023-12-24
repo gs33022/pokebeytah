@@ -139,7 +139,7 @@ MonsterNames::
 	db "MISSINGNO."
 	db "KINGLER@@@"
 	db "CLOYSTER@@"
-	db "MISSINGNO."
+	db "GAVILLAIN@"
 	db "ELECTRODE@"
 	db "ARIALA@@@@"
 	db "LA@@@@@@@@"
