@@ -3,18 +3,23 @@ _PewterGymBrockPostBattleAdviceText::
 	line "kinds of trainers"
 	cont "in the world!"
 
-	para "You appear to be"
-	line "very gifted as a"
-	cont "#MON trainer!"
+	para "The more ground"
+	line "you cover, the"
+	cont "more strategies"
 
-	para "Go to the GYM in"
-	line "CERULEAN and test"
-	cont "your abilities!"
+	para "you'll get to"
+	line "face! You should"
+	
+	para "head to the GYM"
+	line "in CERULEAN and"
+	cont "continue your"
+	
+	para "training!"
 	done
 
 _PewterGymBrockWaitTakeThisText::
-	text "Wait! Take this"
-	line "with you!"
+	text "Wait! You should"
+	line "take this."
 	done
 
 _PewterGymReceivedTM34Text::
@@ -25,16 +30,17 @@ _PewterGymReceivedTM34Text::
 _TM34ExplanationText::
 	text_start
 
-	para "TM28 contains"
-	line "DIG!"
-
-	para "Your #MON will"
-	line "go underground"
-	cont "for one turn,"
-	cont "then attack the"
+	para "This TM con-"
+	line "tains DIG, a"
+	cont "strong attack"
 	
-	para "next for huge"
-	line "damage!"
+	para "that lets the"
+	line "user hide under-"
+	cont "ground for one"
+	
+	para "turn before"
+	line "striking the"
+	cont "next!"
 	done
 
 _PewterGymTM34NoRoomText::
@@ -43,11 +49,12 @@ _PewterGymTM34NoRoomText::
 	done
 
 _PewterGymBrockReceivedBoulderBadgeText::
-	text "I took"
-	line "you for granted."
+	text "Your strat-"
+	line "egy was well"
+	cont "grounded."
 
 	para "As proof of your"
-	line "victory, here's"
+	line "victory, take"
 	cont "the BOULDERBADGE!"
 
 	para "<PLAYER> received"
@@ -57,9 +64,9 @@ _PewterGymBrockReceivedBoulderBadgeText::
 _PewterGymBrockBoulderBadgeInfoText::
 	text_start
 
-	para "Its bearer's"
-	line "#MON become"
-	cont "more powerful!"
+	para "Your #MON"
+	line "will deal strong-"
+	cont "er blows."
 
 	para "The technique"
 	line "CUT can now be"
@@ -68,7 +75,7 @@ _PewterGymBrockBoulderBadgeInfoText::
 
 _PewterGymCooltrainerMBattleText::
 	text "You can't shock"
-	line "my ground type"
+	line "my ground-type"
 	cont "#MON!"
 	done
 

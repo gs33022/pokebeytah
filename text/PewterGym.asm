@@ -1,24 +1,21 @@
 _PewterGymBrockPreBattleText::
-	text "Welcome to PEWTER"
-	line "CITY's GYM. I'm"
-	cont "BROCK, and I'm"
+	text "I'm BROCK,"
+	line "PEWTER's GYM"
+	cont "LEADER."
 	
-	para "its LEADER. Me"
-	line "and my #MON"
-	cont "ground ourselves"
+	para "I believe the"
+	line "strongest"
+	cont "#MON are rug-"
 	
-	para "for hours in"
-	line "training! Zaps of"
-	cont "electricity can't"
+	para "ged and strong,"
+	line "and so all of my"
+	cont "#MON are of"
 	
-	para "affect us!"
-	line "Fuhaha!"
-	cont "Are you prepared"
+	para "the ground-type!"
+	line "If you think you"
+	cont "have what it"
 	
-	para "to quake in fear"
-	line "of my ground-type"
-	cont "#MON?"
-	
-	para "Show me your"
-	line "best!"
+	para "takes to erode"
+	line "our confidence,"
+	cont "bring it on!"
 	done
