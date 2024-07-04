@@ -272,6 +272,7 @@ OaksLabChoseStarterScript:
 	ld de, .LeftBallMovement2 ; the rival is not currently onscreen, so account for that
 	pop hl
 	jr .moveBlue
+	SetEvent EVENT_GOT_POKEDEX
 
 .LeftBallMovement1
 	db NPC_MOVEMENT_DOWN
@@ -933,6 +934,7 @@ OaksLabMonChoiceMenu:
 	ld a, SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
 	ld a, SCRIPT_OAKSLAB_CHOSE_STARTER_SCRIPT
+	SetEvent EVENT_GOT_POKEDEX
 	ld [wOaksLabCurScript], a
 OaksLabMonChoiceEnd:
 	jp TextScriptEnd
