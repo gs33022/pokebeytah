@@ -239,12 +239,23 @@ ClefairyEvosMoves:
 	db EV_ITEM, MOON_STONE, 1, CLEFABLE
 	db 0
 ; Learnset
-	db 13, SING
-	db 18, DOUBLESLAP
-	db 24, MINIMIZE
-	db 31, METRONOME
-	db 39, DEFENSE_CURL
-	db 48, LIGHT_SCREEN
+	db 8, SAND_ATTACK
+	db 10, TAKE_DOWN
+	db 12, TACKLE ; beta thing in the future
+	db 14, LEER
+	db 16, LIGHT_SCREEN
+	db 18, GROWL
+	db 20, TACKLE ; beta thing in the future
+	db 22, MINIMIZE
+	db 24, SING
+	db 26, DEFENSE_CURL
+	db 28, SUBMISSION
+	db 30, LOW_KICK
+	db 32, METRONOME
+	db 34, FOCUS_ENERGY
+	db 36, DOUBLESLAP
+	db 38, TACKLE ; beta thing in the future
+	db 40, TACKLE ; beta thing in the future
 	db 0
 
 SpearowEvosMoves:
@@ -298,13 +309,14 @@ IvysaurEvosMoves:
 	db EV_LEVEL, 37, VENUSAUR
 	db 0
 ; Learnset
-	db 21, BIND
-	db 23, SLAM
+	db 22, BIND
+	db 24, SLAM
 	db 26, TAKE_DOWN
-	db 29, SLASH
-	db 32, SOLARBEAM
-	db 34, REFLECT
-	db 36, ABSORB
+	db 28, SLASH
+	db 30, SOLARBEAM
+	db 32, REFLECT
+	db 34, ABSORB
+	db 36, RAZOR_LEAF
 	db 0
 
 ExeggutorEvosMoves:
@@ -1775,6 +1787,7 @@ ClefableEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 40, TACKLE ; LUNGE
 	db 0
 
 WeezingEvosMoves:
@@ -1885,9 +1898,9 @@ BulbasaurEvosMoves:
 	db 7, SCRATCH
 	db 9, SAND_ATTACK
 	db 12, LEER
-	db 15, GROWTH
-	db 17, LEECH_SEED
-	db 19, VINE_WHIP
+	db 14, GROWTH
+	db 16, MEGA_DRAIN
+	db 18, RAZOR_LEAF
 	db 0
 
 VenusaurEvosMoves:
@@ -1895,7 +1908,7 @@ VenusaurEvosMoves:
 	db 0
 ; Learnset
 	db 40, RAZOR_LEAF
-	db 43, MEGA_DRAIN
+	db 43, MEGA_DRAIN ; beta thing in future
 	db 46, POISONPOWDER
 	db 49, STUN_SPORE
 	db 52, SLEEP_POWDER
@@ -2139,7 +2152,6 @@ SquirtleEvosMoves:
 	db 15, COMET_PUNCH
 	db 17, LEER
 	db 19, WITHDRAW
-	db 21, STOMP
 	db 21, SKULL_BASH
 	db 0
 
@@ -2152,7 +2164,7 @@ CharmeleonEvosMoves:
 	db 29, THRASH
 	db 31, SLASH
 	db 33, LIGHT_SCREEN
-	db 35, RAGE
+	db 35, FLY
 	db 37, FLAMETHROWER
 	db 0
 
@@ -2162,14 +2174,15 @@ WartortleEvosMoves:
 	db 0
 ; Learnset
 	db 23, MEGA_PUNCH
-	db 26, BUBBLEBEAM
-	db 29, TAKE_DOWN
-	db 32, BUBBLE ; LUNGE
-	db 34, MEGA_KICK
-	db 36, DOUBLE_EDGE
-	db 38, HAZE
-	db 40, SKULL_BASH
-	db 42, HYDRO_PUMP
+	db 25, STOMP
+	db 27, TAKE_DOWN
+	db 29, BUBBLE ; LUNGE
+	db 31, MEGA_KICK
+	db 33, DOUBLE_EDGE
+	db 35, HAZE
+	db 37, BUBBLEBEAM
+	db 39, HYDRO_PUMP
+	db 41, TACKLE ; beta thing in future
 	db 0
 
 CharizardEvosMoves:
@@ -2177,7 +2190,7 @@ CharizardEvosMoves:
 	db 0
 ; Learnset
 	db 40, GUST
-	db 42, FLY
+	db 42, TACKLE ; beta thing in future
 	db 44, WING_ATTACK
 	db 46, GLARE
 	db 48, WHIRLWIND
